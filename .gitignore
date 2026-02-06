@@ -33,4 +33,4 @@ build/
 .vscode/
 
 ### proto ###
-src/main/proto/
+#src/main/proto/

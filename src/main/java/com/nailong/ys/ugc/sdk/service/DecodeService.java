@@ -33,7 +33,7 @@ public class DecodeService {
      */
     @PostConstruct
     public void init() throws IOException {
-        for (File file : findFilesByExtension("./input", new String[]{".gil", ".gia"})) {
+        for (File file : findFilesByExtension("./input", new String[]{".gil", ".gia", "gip", "gir"})) {
             String fileName = file.getName();
 
             GiFileModel fileModel = decodeGiFile(String.valueOf(file));

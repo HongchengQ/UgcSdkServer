@@ -9,8 +9,9 @@
 // game version: OSRELWin6.3.0
 
 syntax = "proto3";
-option java_package = "com.nailong.ys.ugc.proto";
+package gil;
 
+option java_package = "com.nailong.ys.ugc.proto.gil";
 option java_multiple_files = true;
 
 message BPNLEJODLEG {

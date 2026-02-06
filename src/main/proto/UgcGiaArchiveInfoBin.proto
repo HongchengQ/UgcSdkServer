@@ -1,0 +1,6451 @@
+// https://gitcode.com/HongchengQ/proto_script_jnl
+// usedTime: 2026-02-07 06:24:45
+
+// Game Version: 6.3.0
+
+syntax = "proto3";
+package gia;
+
+option java_package = "com.nailong.ys.ugc.proto.gia";
+option java_multiple_files = true;
+
+message BPNLEJODLEG {
+	int32 route_id = 1; /*[CHEHNFFEJEF->route_id]*/
+}
+
+
+message DlcData { /*[INJCIDNEOCE->DlcData]*/
+	KAFFGFJPHOA data = 1; /*[GGEBNBICIKB->data]*/
+}
+
+
+message DHMEJIDDCAE {
+	int32 GBGFOCMCNNK = 501;
+	oneof detail { /*[ENPDCINEPHH->detail]*/
+		NPBOLOGMENK skill_area = 12;
+		DIMJJJMONEH none_intrinsic_ui = 15;
+		JGDIDHAFFMI basic_active_control = 16;
+		FMNDBFKDCCA player_hp = 11;
+		JDFKLFGELAO team_and_faction = 13;
+		KNJAJHIELGF mini_map = 14;
+	}
+}
+
+
+enum HJCLNBFEIEP {
+	HJCLNBFEIEP_LIGHT_COLOR_WHITE = 0;
+	HJCLNBFEIEP_LIGHT_COLOR_GREEN = 1;
+	HJCLNBFEIEP_LIGHT_COLOR_BLUE = 2;
+	HJCLNBFEIEP_LIGHT_COLOR_ORANGE = 3;
+	HJCLNBFEIEP_LIGHT_COLOR_RED = 4;
+}
+
+
+message AMCIPCEMDNO {
+	OHDAMLAGNFL AOHPMOEKLOG = 1;
+	uint32 ODIJGDINNFJ = 2;
+	CLHCMNFEMDP KGKFOHJALJK = 3;
+	oneof detail { /*[ENPDCINEPHH->detail]*/
+		InfoServerParamDictionary info_server_param_dictionary = 101; /*[DELENICGLJI->InfoServerParamDictionary]*/
+		InfoStructId info_struct_id = 100; /*[EMPEOINCBDO->InfoStructId]*/
+	}
+}
+
+
+message FBDLAOBGBCF {
+	LJGJDAMBIIA FGJDDBGBILN = 1;
+}
+
+
+message MKLCFBLOEBI {
+}
+
+
+message FrogParamTypeInfo { /*[KOGJGMNLDHM->FrogParamTypeInfo]*/
+	LAAPGDENHHI GCAFHEDCJIP = 3;
+	uint32 CAGNEGGHBME = 2;
+	oneof MBDFGCJAKEJ {
+		PLCJMJDPONH ref_struct_id = 100;
+		EABPIMCBNCE ref_kv_pair = 101;
+	}
+}
+
+
+message GHBNLPHMOCM {
+	int32 DOJAAFDPJMB = 501;
+	oneof detail { /*[ENPDCINEPHH->detail]*/
+		CCJPGGCFKIJ read_transform = 11;
+		JIDDHPBFHDK edit_transform = 12;
+	}
+}
+
+
+message CFGPEICACLO {
+	HAHOHFLOAPM OFHMMCDBKEJ = 1;
+}
+
+
+message ConfigFireSignal { /*[FJFMLBLNDON->ConfigFireSignal]*/
+	OHDAMLAGNFL JILACOHEBOH = 2;
+	string AFAHIOECEHF = 1;
+	OHDAMLAGNFL OEEIMFLILDI = 3;
+}
+
+
+message JDCBHJMAAPD {
+	float duration = 1; /*[MJOMGMMICLA->duration]*/
+}
+
+
+message PIJKFLBDNLB {
+	string CBJAIEBCGHM = 501;
+	repeated FMAGCBGPFMO OECCOFOMJKP = 3;
+	uint32 FMINBCJDHAE = 1;
+	uint32 life_state = 502; /*[ELDJBHJCFKM->life_state]*/
+	uint32 version = 503; /*[HFBIBKANLDM->version]*/
+	DAMCDDPNPCH GHCICELPLFD = 2;
+}
+
+
+message OGEHAFFNIAK {
+	OHKNEFMLAKD BBEHCBMDGHJ = 2;
+	repeated OHKNEFMLAKD BICCGKLADGI = 6;
+	repeated OHKNEFMLAKD NOEFNKDCBKN = 4;
+	bool BIBLAOKOLHF = 1;
+	int32 IEGNBFPFEDC = 5;
+	int32 KKHCNNBOAAI = 3;
+}
+
+
+message JFNMBFPJECB {
+	string MBNAHJBPEDI = 2;
+	string KODNDFIFIOB = 502;
+	DEHJDOAANPI NMCGLFCGJMJ = 4;
+	DEHJDOAANPI PNGBMOEGJMF = 3;
+	EKJLJCCIAPC IGFPHIICKLJ = 7;
+	uint32 CABHILCCFED = 1;
+	LFGLDPNCABE GDMFFMHCEJH = 5;
+	LFGLDPNCABE follow_type = 6; /*[OIFDNPMBMOI->follow_type]*/
+}
+
+
+message DLEHFBBMAEP {
+	string EHIJKEOFLHL = 502;
+	repeated DGDOCDECOKO ENAPANNFDEC = 4;
+	bool CFJMELIFAKH = 3;
+	bool is_active = 2; /*[PPLMDHPODMN->is_active]*/
+	int32 id = 1; /*[PCPENLLKDLK->id]*/
+}
+
+
+enum PEIOOPHCKNL {
+	PEIOOPHCKNL_NONE = 0;
+	PEIOOPHCKNL_AUDIO_ID = 1;
+	PEIOOPHCKNL_BGM_ID = 2;
+	PEIOOPHCKNL_AI_STATE_GRAPH_ID = 3;
+}
+
+
+message JGILIAMCCGN {
+	DEHJDOAANPI HFBHOLGPABP = 3;
+	float time = 1; /*[HGPLMCPPPPC->time]*/
+	float GPHPHDGGAJE = 2;
+}
+
+
+message NNGLMCLAOHB {
+	uint32 LFKJDAPELGB = 2;
+	uint32 KIOPFDDAMCK = 3;
+	uint32 LMLAGCLDHLC = 4;
+	uint32 IBNEBLKBKCG = 1;
+}
+
+
+message BHJIPGADBPD {
+}
+
+
+message HCDLIFIHLIK {
+	repeated GCJGALEKGFH LNIOBDPMGKB = 7;
+	repeated NOGGFECJMFP OCGGCNIEKMJ = 6;
+	repeated KLLHGCFEPJF FIKACKOJHGJ = 5;
+	DJPJCELGHEI JEFBEHBIGCL = 2;
+	uint32 guid = 1; /*[OIIGKJPGPBC->guid]*/
+	uint32 FNELAEKJJIH = 8;
+}
+
+
+message NFCOMACKNDP {
+	string name = 200; /*[PEMBNEOLEAN->name]*/
+	repeated DJAKEAECLGI NFJBEMNCABF = 4;
+	repeated BHDJOAIGIKM IIDMEGKCCHJ = 102;
+	repeated HJHJBMPANNI PIDKCMJHCJH = 107;
+	repeated APCEFMPGMGO EGEDDEKPCJE = 104;
+	repeated BHDJOAIGIKM JEBCAEHKFOP = 101;
+	repeated BHDJOAIGIKM OJKBICFHHIM = 100;
+	string HNEABPPNDMI = 201;
+	repeated FNNCCMIDJNC JCFDFGECNCB = 208;
+	repeated BHDJOAIGIKM extra_param_list = 106; /*[PPOMHMPGJIM->extra_param_list]*/
+	repeated BHDJOAIGIKM NJAALJMIMEN = 103;
+	uint32 IAEFLKLODJG = 206;
+	CGPAKHLMKBL GHDNEMCMAKL = 205;
+	uint32 POEOBFNGANN = 207;
+	bool KOOGFECHHOF = 108;
+	LLEFBCJKAEC PMBOIDGJCEK = 204;
+	LFMABPEIAEL JEOBBDGGIJC = 203;
+	optional KNLHDPPJNAO flow_control_config = 1000;
+}
+
+
+message IKMIFOCHPKL {
+	CGHAMEPPPAO MPODLDPFBBC = 3;
+	EAPKIALFJKI CPNANKIMEKL = 2;
+	string IHMAGAMKIPP = 12;
+	uint32 id = 1; /*[PCPENLLKDLK->id]*/
+}
+
+
+message KFLPJDMBHPJ {
+	repeated ICHAJJEDONJ JEMFBNEPIJE = 1;
+}
+
+
+message CEIKPMGIEAN {
+	BNOKNMKGDNL EPBCPLCFIEP = 1;
+}
+
+
+message HDIHBDHKACI {
+	string MOOHEBJHOFJ = 1;
+}
+
+
+message EHDHEMEKPIK {
+	MJCCHCDNHHL OFHMMCDBKEJ = 502;
+	int32 CFOLGLDOKEK = 501;
+}
+
+
+message GINDJIMPEIE {
+}
+
+
+message CCJPGGCFKIJ {
+}
+
+
+message IAHDCAEAFNB {
+	float KCGCMEGDIDA = 1;
+	float FOHBLEAJJMA = 3;
+	bool IHAKFPPAGNN = 4;
+	bool LCAAGOAJJIF = 2;
+}
+
+
+message DCGPKLCFPFL {
+	float FLBLABPCIIG = 11;
+	float LEKCIHPFKCD = 6;
+	float KCLBBOIHKJL = 14;
+	float PMGJOBMHFAP = 13;
+	float FACNAMFBNKN = 4;
+	bool AAFLLCHLHOO = 2;
+	bool JCPAKINEKIN = 1;
+	bool JCHAOOBMGMN = 8;
+	float COJKOKFCNGH = 7;
+	float FNEOLLAHDKC = 12;
+	float OABAOFODAGA = 5;
+	float ONECEJLDMKH = 10;
+	EHPEMBKFAEA NFJBKHBHLDE = 9;
+	EHPEMBKFAEA KOIAALKLENP = 3;
+}
+
+
+enum EPIAMDDCKAP {
+	EPIAMDDCKAP_ENTER_COMBAT = 0;
+	EPIAMDDCKAP_LEAVE_COMBAT = 1;
+}
+
+
+message CMLAFHCBEMH {
+	KAFFGFJPHOA OFHMMCDBKEJ = 1;
+}
+
+
+message IJEFFBBLDBE {
+	repeated NOGGFECJMFP OCGGCNIEKMJ = 5;
+	repeated KLLHGCFEPJF FIKACKOJHGJ = 4;
+	bool KPIFMMACGMH = 3;
+	uint32 AHDCLLEIFDD = 2;
+	uint32 KFBNJGBHLFP = 1;
+}
+
+
+enum NLJFKMCHNBF {
+	NLJFKMCHNBF_DROP = 0;
+	NLJFKMCHNBF_DESTROY = 1;
+	NLJFKMCHNBF_RETAIN = 2;
+	NLJFKMCHNBF_DROP_BY_STUFF_CONFIG = 3;
+}
+
+
+message HBLBEMMAAHO {
+	OKBNCDDIENI MFCLBMOLGMO = 516;
+	EBNGOGICKKH ODHOMFIPBBE = 513;
+	COKKJPJAKKM BGALHKNAPIJ = 511;
+	string name = 517; /*[PEMBNEOLEAN->name]*/
+	LJCCNFOIHKA KBFKAPGPOJK = 509;
+	EAPKIALFJKI IPEIABNKHPO = 503;
+	JNLAFINDLAC KFHLEKMMCOC = 512;
+	string NPGEBNGAJGM = 504;
+	CPEHEDAOBDH KPNPIKJBCGI = 510;
+	bool is_active = 502; /*[PPLMDHPODMN->is_active]*/
+	bool KADLJEBFIGN = 514;
+	int32 ENLAGPEHFLN = 508;
+	int32 index = 501; /*[BIJCOCHPGDN->index]*/
+	int32 NOKIMKDPFNH = 507;
+	bool AIDJGPFCNJG = 515;
+	bool MNIPBGAJOCA = 506;
+	bool FGFMOBNOJEO = 505;
+}
+
+
+message GBGAIKJJCMP {
+	LFGLDPNCABE point_type = 3; /*[BOFBIFKMDBG->point_type]*/
+	int32 AGHGDCPDKIM = 1;
+	float time = 2; /*[HGPLMCPPPPC->time]*/
+	bool BJIGIELKDFD = 4;
+}
+
+
+message MNIMPEHPHNI {
+	uint32 CPLPEHLNKMM = 1;
+	float NBBDLLEAOMD = 4;
+	uint32 IJKAEPIJMCF = 2;
+	uint32 EIIBFKIDBGI = 3;
+}
+
+
+message InstanceData { /*[BPIDHFCGGAF->InstanceData]*/
+	uint32 template_id = 1; /*[ADMCOFDPOLE->template_id]*/
+}
+
+
+enum GMOCJMKHOFD {
+	GMOCJMKHOFD_NORMAL = 0;
+	GMOCJMKHOFD_DEFAULT = 1;
+	GMOCJMKHOFD_CUSTOM = 2;
+}
+
+
+enum BANMCEGHLKO {
+	BANMCEGHLKO_NONE = 0;
+	BANMCEGHLKO_SERVER_PARAM = 1;
+	BANMCEGHLKO_FROG_PARAM = 2;
+	BANMCEGHLKO_GENERAL_VALUE_TYPE = 3;
+}
+
+
+message ValueEnum { /*[CAMHJOLNHII->ValueEnum]*/
+	uint32 value = 1; /*[GONNLMLACCM->value]*/
+}
+
+
+message LLCLALONENJ {
+	string template_id = 1; /*[ADMCOFDPOLE->template_id]*/
+	DEHJDOAANPI MNFNKGHOLPB = 4;
+	float POCFEIMEFGK = 3;
+	float FMFOLCNONOB = 15;
+	float KGIKAEPIENJ = 16;
+	float MFONOKICBLN = 20;
+	float KKJKMDPFHFF = 14;
+	float OFEMJEGIBOJ = 11;
+	float FLBDHKMEBHJ = 5;
+	float radius = 2; /*[FLNKEHMENOB->radius]*/
+	float BFPLDOIDKEJ = 17;
+	BACFEPLFMDA type = 12; /*[KIFBBKDKNJI->type]*/
+	float OHGPOIMPGMI = 18;
+	bool DDNPOIECMDC = 13;
+	bool GIENNMCHNLM = 19;
+	float HJMBGMHNPAM = 6;
+}
+
+
+message LOGMGKKLMDL {
+	EAPKIALFJKI KHMBKILBADF = 1;
+	uint32 count = 2; /*[MPJIJHKIGBK->count]*/
+}
+
+
+message KNELEEAKFGK {
+	repeated NOGGFECJMFP OCGGCNIEKMJ = 5;
+	repeated KLLHGCFEPJF FIKACKOJHGJ = 4;
+	uint32 guid = 1; /*[OIIGKJPGPBC->guid]*/
+	bool ADOOMKNDNDB = 3;
+	uint32 DHDIDFHDDAH = 2;
+	oneof detail { /*[ENPDCINEPHH->detail]*/
+		PrefabData prefab_data = 11; /*[JCOMOBOICPN->PrefabData]*/
+		InstanceData instance_data = 12; /*[BPIDHFCGGAF->InstanceData]*/
+	}
+}
+
+
+message BFNGJEFMKAM {
+	FEINIEPOHPD data = 1; /*[GGEBNBICIKB->data]*/
+}
+
+
+message CEDCDIBGLHJ {
+	repeated DCCGCCLHFEM IOKPLCFGFEP = 2;
+}
+
+
+message NAEOMBDLMCH {
+	bool DFPKBKNMBKP = 501;
+	bool JFBAKJLEJGP = 502;
+}
+
+
+enum MPCJKBAMHMH {
+	MPCJKBAMHMH_NONE = 0;
+	MPCJKBAMHMH_TRIGGER_ATTACK_EVENT = 1;
+	MPCJKBAMHMH_DAMAGE_BY_ATTACK_VALUE = 2;
+	MPCJKBAMHMH_ADD_ROLE_STATUS = 3;
+	MPCJKBAMHMH_REMOVE_ROLE_STATUS = 4;
+	MPCJKBAMHMH_SEND_BLUEPRINT_EVENT = 5;
+	MPCJKBAMHMH_TRIGGER_ATTACK_EVENT_BY_ABS_POS = 6;
+	MPCJKBAMHMH_DAMAGE_BY_ATTACK_VALUE_BY_ABS_POS = 7;
+	MPCJKBAMHMH_FIRE_EFFECT_BY_ABS_POS = 8;
+	MPCJKBAMHMH_FIXED_AVATAR_RUSH_MOVE_BY_ABS_POS = 9;
+	MPCJKBAMHMH_RUSH_MOVE = 10;
+	MPCJKBAMHMH_REMOVE_VELOCITY_FORCE = 11;
+	MPCJKBAMHMH_TRIGGER_BULLET_BY_ABS_POS = 12;
+	MPCJKBAMHMH_TURN_DIRECTION = 13;
+	MPCJKBAMHMH_OVERRIDE_TARGETTING_PARAM = 14;
+	MPCJKBAMHMH_SET_SELF_ATTACK_TARGET = 15;
+	MPCJKBAMHMH_FOREACH_FROGPRINT_TARGETS = 16;
+	MPCJKBAMHMH_FROGPRINT_PREDICATED = 17;
+	MPCJKBAMHMH_SHOOT_HELPER_RESULT = 18;
+	MPCJKBAMHMH_BULLET_TRIGGER_ATTACK_EVENT = 19;
+	MPCJKBAMHMH_BULLET_DAMAGE_BY_ATTACK_VALUE = 20;
+	MPCJKBAMHMH_BULLET_FIRE_EFFECT = 21;
+	MPCJKBAMHMH_BULLET_TRIGGER_BULLET = 22;
+	MPCJKBAMHMH_KILL_SELF = 23;
+	MPCJKBAMHMH_HEAL_HP = 24;
+	MPCJKBAMHMH_LOOP_CALL = 25;
+	MPCJKBAMHMH_BREAK_LOOP = 26;
+	MPCJKBAMHMH_SET_ENMITY_VALUE = 27;
+	MPCJKBAMHMH_CHANGE_ENMITY_VALUE = 28;
+	MPCJKBAMHMH_CHANGE_ENMITY_VALUE_BY_RATIO = 29;
+	MPCJKBAMHMH_TRANSFER_ENMITY_VALUE_BY_RATIO = 30;
+	MPCJKBAMHMH_CLEAR_ENMITY_LIST = 31;
+	MPCJKBAMHMH_REMOVE_FROM_ENMITY_LIST = 32;
+	MPCJKBAMHMH_TAUNT = 33;
+	MPCJKBAMHMH_SET_FROGPRINT_TEMP_VALUE = 34;
+	MPCJKBAMHMH_TURN_TO_DIR = 35;
+	MPCJKBAMHMH_SELECT_SKILL_ATTACK_TARGET = 36;
+	MPCJKBAMHMH_FORCE_EXIT_FOCUS_STATE = 37;
+	MPCJKBAMHMH_SEND_SIGNAL = 38;
+	MPCJKBAMHMH_MONSTER_BLINK_BY_ABS_POS = 39;
+	MPCJKBAMHMH_FIXED_MONSTER_RUSH_MOVE_BY_ABS_POS = 40;
+	MPCJKBAMHMH_SET_AI_SKILL_CD_AVAILABLE_NOW = 41;
+	MPCJKBAMHMH_TRIGGER_AI_SKILL_CD = 42;
+	MPCJKBAMHMH_SET_AI_SKILL_CD = 43;
+	MPCJKBAMHMH_TRIGGER_AI_SKILL_GROUP_CD = 44;
+	MPCJKBAMHMH_SET_AI_SKILL_GROUP_CD = 45;
+	MPCJKBAMHMH_SET_AI_SKILL_GCD = 46;
+}
+
+
+message LPBNNKBGNFM {
+	uint32 BPIKDBNGGBG = 1;
+	int32 DGKICGKGOKC = 2;
+}
+
+
+message KAAHMEHCBMK {
+	DEHJDOAANPI PNGBMOEGJMF = 2;
+	DEHJDOAANPI NMCGLFCGJMJ = 3;
+	EAPKIALFJKI HODICCKFDLA = 8;
+	bool ADHPMOJKMIF = 9;
+	LFGLDPNCABE FBCFFPMNHHE = 5;
+	uint32 LMABCEOINHM = 1;
+	float ACMIIJEFEIF = 6;
+	float GNOFNBODIOJ = 4;
+	float KCOOFAPCLFI = 7;
+}
+
+
+message ICNPKDJDFKK {
+	repeated MIPGHCPBEEE AJJCFCOIKAF = 1;
+}
+
+
+message FHBLEGGGBJE {
+	MHAOOLMICBL OFHMMCDBKEJ = 2;
+}
+
+
+enum LAAPGDENHHI {
+	LAAPGDENHHI_NONE = 0;
+	LAAPGDENHHI_STRUCT = 1;
+	LAAPGDENHHI_KV_PAIR = 2;
+}
+
+
+message LJLDJEDLJLH {
+	BHLEHHMFGCF value = 1; /*[GONNLMLACCM->value]*/
+}
+
+
+message ConfigGenerics { /*[MLKPEOPNDLD->ConfigGenerics]*/
+	repeated GKHNHEFJBAC OJHNKOHIIGD = 1;
+	bool PLDMEDLKHBL = 2;
+}
+
+
+message ValueList { /*[ELIEAABHGLI->ValueList]*/
+	repeated NCNLIEFBLMN value = 1; /*[GONNLMLACCM->value]*/
+}
+
+
+message PKCBHMDLJJC {
+	EAEFOGGAEAG OFHMMCDBKEJ = 1;
+}
+
+
+message BOOEAOOFPHD {
+	string ONMHJBEAFNK = 4;
+	HEPDOAGGNMP EGKOLMDDEJP = 2;
+	uint32 NNEEIGLFLGM = 1;
+	uint32 HAPNNKMPPMH = 3;
+}
+
+
+message OOEKDGPILHH {
+	uint32 count = 1; /*[MPJIJHKIGBK->count]*/
+}
+
+
+message KFMHIGKNKCG {
+}
+
+
+enum DMNKHCFFNFK {
+	DMNKHCFFNFK_NONE = 0;
+	DMNKHCFFNFK_LEVEL_SETTLE = 1;
+	DMNKHCFFNFK_PLAY_SOUND_EFFECT = 2;
+	DMNKHCFFNFK_PLAY_MUSIC = 3;
+}
+
+
+message OPKMLIPMGOP {
+	LJGJDAMBIIA FGJDDBGBILN = 6;
+	repeated LOGMGKKLMDL value_list = 2; /*[NEBBKBNEHLL->value_list]*/
+	string KNGDPHIEPGC = 501;
+	LFGLDPNCABE LIEJOPMDECJ = 4;
+	uint32 BIGMNKGAJPF = 1;
+	bool IGMMJEGMGOI = 3;
+	bool JAJAPIEKHMA = 502;
+	LFGLDPNCABE FPLOFIPIHAL = 5;
+}
+
+
+message COKKJPJAKKM {
+	string GHMHGBAPCFC = 501;
+	int32 GMNAHOCIGEK = 502;
+}
+
+
+message DDPEFFMEAND {
+	KONPJEFKEIK guid = 1; /*[OIIGKJPGPBC->guid]*/
+	string name = 3; /*[PEMBNEOLEAN->name]*/
+	repeated KONPJEFKEIK BHPGOPEKNJH = 2;
+	GJBMJPLJIHM BHCDDDAGMBK = 5;
+	oneof param { /*[GKFAFDGAPNP->param]*/
+		JGOKBPEILIC pcg_instance = 29;
+		ChipTemplate chip_template = 24; /*[FKOMMNBJLNO->ChipTemplate]*/
+		DFHGBNFFCKC config_prefab = 15;
+		CustomUiNode custom_ui_node = 19; /*[MLJDCMCJHBL->CustomUiNode]*/
+		CameraData camera_data = 17; /*[CHCJFGFMAKP->CameraData]*/
+		BPHBDIMGPFP edit_obj = 12;
+		AttachArchetype attach_archetype = 21; /*[FKFCKAFENJO->AttachArchetype]*/
+		GLHOAEJONKC tilemap = 16;
+		Struct struct = 22; /*[DHHEEOCEIKM->Struct]*/
+		InstructionNodeConfig instruction_node_config = 14; /*[HMDMCPEANFF->InstructionNodeConfig]*/
+		AbsoluteRoute absolute_route = 23; /*[BPHABEJMMCI->AbsoluteRoute]*/
+		IEMHBIIGKIK count_down = 20;
+		IPHIPAAPFLG suite = 27;
+		CFPHBNGAPCF dummy_point = 18;
+		PcgTemplate pcg_template = 28; /*[GLCJAGCEIHC->PcgTemplate]*/
+		IPOAIDNIEGL prefab = 11;
+		JPICJAGKKNA instruction_graph = 13;
+		ENJBMGJIGDJ tag = 26;
+		ChipCustomTrialData chip_custom_trial_data = 25; /*[ILGFKALFOJM->ChipCustomTrialData]*/
+	}
+}
+
+
+message OGDINOCFBGP {
+}
+
+
+message AKDBFNFGAGA {
+	repeated JDMJJDCHKBK KABLGJLCHLP = 1;
+}
+
+
+message GOKMFDJEDNK {
+}
+
+
+message PLCJMJDPONH {
+	uint32 FMINBCJDHAE = 1;
+}
+
+
+enum OJKAPCAPGPP {
+	OJKAPCAPGPP_BEYOND_PROPERTY_TYPE_NONE = 0;
+	OJKAPCAPGPP_BEYOND_PROPERTY_TYPE_DEPLOYMENT = 1;
+	OJKAPCAPGPP_BEYOND_PROPERTY_TYPE_DEFAULT_DEFINED_STATE = 2;
+	OJKAPCAPGPP_BEYOND_PROPERTY_TYPE_BLUEPRINT_REFERENCE = 3;
+	OJKAPCAPGPP_BEYOND_PROPERTY_TYPE_DEFAULT_BORN = 4;
+	OJKAPCAPGPP_BEYOND_PROPERTY_TYPE_COLLISION = 5;
+	OJKAPCAPGPP_BEYOND_PROPERTY_TYPE_ARMY = 6;
+	OJKAPCAPGPP_BEYOND_PROPERTY_TYPE_COMBAT = 7;
+	OJKAPCAPGPP_BEYOND_PROPERTY_TYPE_MODEL_VISIBILITY = 8;
+	OJKAPCAPGPP_BEYOND_PROPERTY_TYPE_UGC_AIBETA = 9;
+	OJKAPCAPGPP_BEYOND_PROPERTY_TYPE_ATTACH_POINT = 11;
+	OJKAPCAPGPP_BEYOND_PROPERTY_TYPE_VISION_PARAM = 12;
+	OJKAPCAPGPP_BEYOND_PROPERTY_TYPE_ENMITY = 13;
+	OJKAPCAPGPP_BEYOND_PROPERTY_TYPE_MULTI_MODEL_ACCESSORY = 14;
+	OJKAPCAPGPP_BEYOND_PROPERTY_TYPE_DEFAULT_TIER_CONFIG = 15;
+	OJKAPCAPGPP_BEYOND_PROPERTY_TYPE_BIND_PARAM = 16;
+	OJKAPCAPGPP_BEYOND_PROPERTY_TYPE_ENTITY_TAG = 17;
+	OJKAPCAPGPP_BEYOND_PROPERTY_TYPE_ENDURE = 18;
+	OJKAPCAPGPP_BEYOND_PROPERTY_TYPE_SOUND_EFFECT = 19;
+	OJKAPCAPGPP_BEYOND_PROPERTY_TYPE_CLIENT_OPTIMIZATION_PARAM = 20;
+	OJKAPCAPGPP_BEYOND_PROPERTY_TYPE_MONSTER_DEFINED_STATE = 21;
+}
+
+
+message DKPJKIJDFOE {
+	string name = 1; /*[PEMBNEOLEAN->name]*/
+	LDMOFJOJPIH JBBNFNLFMKC = 502;
+	FJGOICAKAPC EECCABLAFEM = 3;
+	bool FGGFNAMMKLG = 2;
+	int32 id = 503; /*[PCPENLLKDLK->id]*/
+	oneof detail { /*[ENPDCINEPHH->detail]*/
+		JGILIAMCCGN rotate_mover_data = 12;
+		BPNLEJODLEG route_mover_data = 13;
+		OCPLMEHOFDI rotate_to_dir_mover_data = 14;
+		COAGIGLIHHH vector_mover_data = 11;
+	}
+}
+
+
+message EAPKIALFJKI {
+	uint32 FNHPJCHECDJ = 2;
+	OJJEPCGMLDD FPLOFIPIHAL = 1;
+}
+
+
+message OCGLKMADOGM {
+	string name = 1; /*[PEMBNEOLEAN->name]*/
+}
+
+
+message OCPLMEHOFDI {
+	DEHJDOAANPI LCBOMNBPDKE = 2;
+	float time = 1; /*[HGPLMCPPPPC->time]*/
+}
+
+
+message FFBGAHDAKJA {
+	repeated int32 NODMLLLEJEN = 8;
+	string PFHHEBLCMMM = 7;
+	EAPKIALFJKI KAKEPIFMIEA = 6;
+	string JKALLHCKJLH = 2;
+	string JHOEPCNJEAF = 503;
+	int32 index = 1; /*[BIJCOCHPGDN->index]*/
+	int32 filter_type = 504; /*[CFIIDPABPCM->filter_type]*/
+	uint32 DHOHLIGPMGE = 5;
+	uint32 icon = 4; /*[MCMCFPALLPM->icon]*/
+	bool is_active = 3; /*[PPLMDHPODMN->is_active]*/
+}
+
+
+message NDFBBGBFCPL {
+	CBPJDDGOFDH NJOHGDFIHAD = 509;
+	CBPJDDGOFDH OAJAAPOGNKE = 512;
+	int32 avatar_skill_id = 505; /*[AKHIEKIJBNO->avatar_skill_id]*/
+	int32 PEDMBJCGCJD = 511;
+	int32 MOLOCMNPDIO = 510;
+	int32 EGDFKJAICJN = 501;
+	uint32 JBELGJKCKPM = 504;
+	bool FIFLCNHLKII = 508;
+	bool MHBCLLPAEOD = 507;
+	int32 KIOBKOHGBDG = 502;
+	float NFDIGNOODNH = 506;
+	int32 AAIBOGELMJP = 503;
+}
+
+
+message CIDDEMPFGMP {
+	GLLCAINELOJ FBDLKPBKHBF = 4;
+	string key = 2; /*[EFGFLCKJPHM->key]*/
+	JBOCGMPLJBN DEJCJOGFDKL = 6;
+	uint32 config_id = 1; /*[KAHMADIKBNG->config_id]*/
+	CHJLDBPFIAF EJFADAFFFLB = 3;
+	bool ALOAJDADFAF = 5;
+}
+
+
+message FKPODOLNDLN {
+	DEHJDOAANPI EKNJNGPIEDC = 8;
+	repeated BHLEHHMFGCF HCOHEDNAGIL = 1;
+	IHKODBMGDNA DIMCJEIKJPF = 5;
+	float INOPCBMGEIP = 9;
+	MDPPOPKHONN GFGEMLAMEGD = 11;
+	uint32 CDAPLKLLIFI = 2;
+	BCMBBJIBIGI IFOBEEFFMKG = 18;
+	float OIOJPDIMNLI = 10;
+	MHEECGKCDDF EEIBLINOAPP = 12;
+	float MAPBLALPLCH = 7;
+	bool MGLHAHLBCFC = 3;
+	bool DLGKNDEPONC = 13;
+	bool OCPILLLDFFJ = 22;
+	float FJKPPFADCEM = 15;
+	uint32 IGKIBOFJPHH = 6;
+	float JDEFJKEHHEH = 17;
+	float MEDBGHAGEJH = 14;
+	uint32 CNOHIIOICPD = 4;
+	float JFDOMAIOHJB = 20;
+	bool HKJIPDNHBNM = 19;
+	bool IPKAMGOHMGC = 21;
+	bool AFHAFBKALAL = 16;
+	bool PAELIPOLCOL = 23;
+}
+
+
+message ECPCONHGJBP {
+	repeated string value_list = 1; /*[NEBBKBNEHLL->value_list]*/
+}
+
+
+message ConfigStruct { /*[MBNMHPMKJCC->ConfigStruct]*/
+	uint32 FMINBCJDHAE = 2;
+}
+
+
+enum BACPBLLMFPG {
+	BACPBLLMFPG_NONE = 0;
+	BACPBLLMFPG_IGAI_STATE = 1;
+}
+
+
+message AFJGMILNKMB {
+	string name = 2; /*[PEMBNEOLEAN->name]*/
+	uint32 id = 1; /*[PCPENLLKDLK->id]*/
+}
+
+
+message ValueServerParamDictionary { /*[BNMCIOBFEHK->ValueServerParamDictionary]*/
+	repeated NCNLIEFBLMN value = 1; /*[GONNLMLACCM->value]*/
+}
+
+
+message HLIOPFMILPO {
+	string key = 1; /*[EFGFLCKJPHM->key]*/
+	bool LEKDGGAKNIL = 3;
+	float GEINDFHEJFP = 2;
+	uint32 LLBANDNNGCC = 501;
+}
+
+
+message JAOKELGGJHL {
+	AKDBFNFGAGA FAMCIHGDILF = 25;
+	repeated LCNBNJDIJLJ CPBNKJHEEAH = 11;
+	float FEEMNPGIMDC = 27;
+	float KKDHMIELHBD = 5;
+	LFGLDPNCABE FIIALDAIEDB = 21;
+	LFGLDPNCABE element_type = 4; /*[MGBCPMMACMC->element_type]*/
+	float AODHBEDCIKA = 8;
+	float OGCGBJEKLFC = 3;
+	LFGLDPNCABE PDHCNAHCFOE = 7;
+	float PFHAHHNLKPL = 26;
+	bool NKKDNJOAFGG = 10;
+	bool CHCMKMEADOE = 9;
+	LFGLDPNCABE ODDPCCDPMCO = 6;
+	float DOMLIPBKHPM = 2;
+	int32 KFLAFGBIBOH = 20;
+}
+
+
+message FENFEGEKNID {
+	LLCLALONENJ DNOBOCHHANI = 2;
+	uint32 guid = 1; /*[OIIGKJPGPBC->guid]*/
+}
+
+
+message OKNCEKLPNIF {
+	repeated NFFANFNGJFA OFHMMCDBKEJ = 503;
+	int32 MIHOICOOKKC = 501;
+	int32 MFHHEMPCNLL = 502;
+	oneof detail { /*[ENPDCINEPHH->detail]*/
+		HNDEBDMEIPF skill_setting_comp = 15;
+		OFDIDLEDMDN skill_button_comp = 17;
+		KGAHHPLKAPN timer_comp = 21;
+		KFMHIGKNKCG option_selector_comp = 23;
+		DHIHNMDGEEN basic_info_comp = 12;
+		OJEGNCEHLAL option_selector_item_comp = 24;
+		DAHHBHHFOGC text_frame_comp = 19;
+		FMAHKPBICKI progress_bar_comp = 20;
+		AKHNFHHLNOB transform_comp = 11;
+		BFIDOCHMODM intrinsic_comp = 13;
+		DHMEJIDDCAE active_control_comp = 14;
+		IDFOHILEBHB option_selector_unkown_item_comp = 25;
+		HCDEGEONHKD classic_mode_skill_button_comp = 29;
+		NBMLDMOPLKP faction_setting_comp = 16;
+		GFDLBKONHCL score_board_comp = 22;
+		HGABGCBDDBI minimap_setting_comp = 27;
+		PMJBJAOCGNI popup_window_comp = 18;
+		GPMILKINANF item_slot_comp = 28;
+		OHMLEHLBJCP option_selector_item_lib_comp = 26;
+	}
+}
+
+
+message GJFPDGEEBEG {
+	string KODNDFIFIOB = 502;
+	EONADBCNHLH OLPKHMNPKHP = 1;
+	oneof detail { /*[ENPDCINEPHH->detail]*/
+		ODDGDMNBGOC beyond_bullet_move_parabola = 12;
+		ECCHLFGLIGG beyond_bullet_move_surround = 14;
+		DKPFOHIGMFH beyond_bullet_move_vector = 11;
+		KMOFOMAKDOE beyond_bullet_move_follow = 13;
+	}
+}
+
+
+message FMAGCBGPFMO {
+	string key = 501; /*[EFGFLCKJPHM->key]*/
+	string DLGDELPBKIA = 5;
+	GLLCAINELOJ FBDLKPBKHBF = 3;
+	JBOCGMPLJBN DEJCJOGFDKL = 1;
+	uint32 id = 503; /*[PCPENLLKDLK->id]*/
+	bool ADEJCGLKLFP = 2;
+	CHJLDBPFIAF EJFADAFFFLB = 502;
+	uint32 CMOKHFDJBFH = 4;
+}
+
+
+message IBFJGFLEBPD {
+	uint32 CLNCBKAPLMM = 1;
+	uint32 PGIADNGEDAM = 2;
+	uint32 EDLPLIDLALL = 3;
+}
+
+
+message NPJBFJPHAJH {
+	string HDLDPDKHNIB = 502;
+	int32 start_index = 503; /*[EMKDFMOBMLI->start_index]*/
+	int32 GDLBDKKGCNB = 501;
+	oneof detail { /*[ENPDCINEPHH->detail]*/
+		HLMDCHIONNG normal_string = 12;
+		EPMJEKFCDEA custom_value_string = 11;
+		KNHPMCHOLCA property_string = 13;
+		LKMDKIJEKAC equip_affix_string = 14;
+	}
+}
+
+
+message NONLEPGPJDI {
+	repeated OKOFOIFPOCL info_list = 3; /*[MJHNNCILNDI->info_list]*/
+	string OEJGMELHNLM = 1;
+	repeated uint32 EFMDOLEKLHJ = 501;
+	uint32 KIJNGFMIAKH = 2;
+	bool GOKKGLCGHOC = 4;
+}
+
+
+message LENOCJNAIBN {
+	string OMLHAKCMHGM = 1;
+	float value = 2; /*[GONNLMLACCM->value]*/
+}
+
+
+message BJCPGAHLGIC {
+	repeated OGMGJHKLCOE OFMDBJHOOEC = 1;
+}
+
+
+message NCNLIEFBLMN {
+	repeated NKEAPNHPJOK PIDKCMJHCJH = 3;
+	NEPPIIKONEN FONNPPFPJNM = 4;
+	repeated DBGLHCGPCGC OLGBFEDBGII = 5;
+	IAHALJHHDIC IAIJDHIDNHJ = 1;
+	bool is_dirty = 2; /*[GNEPGOGIOFF->is_dirty]*/
+	oneof detail { /*[ENPDCINEPHH->detail]*/
+		ValueUint value_uint = 101; /*[HPPAAOMBALH->ValueUint]*/
+		ValueGenerics value_generics = 110; /*[KMFKNFLLING->ValueGenerics]*/
+		ValueList value_list = 109; /*[ELIEAABHGLI->ValueList]*/
+		ValueServerParamKvPair value_server_param_kv_pair = 111; /*[AHOJBFKKPFG->ValueServerParamKvPair]*/
+		ValueEnum value_enum = 106; /*[CAMHJOLNHII->ValueEnum]*/
+		ValueServerParamDictionary value_server_param_dictionary = 112; /*[BNMCIOBFEHK->ValueServerParamDictionary]*/
+		ValueString value_string = 105; /*[MIPBKACDJJI->ValueString]*/
+		ValueBool value_bool = 103; /*[OBLFHBAIGCB->ValueBool]*/
+		ValueStruct value_struct = 108; /*[NBIGOBBCEIN->ValueStruct]*/
+		ValueInt value_int = 102; /*[CENDONBDNLL->ValueInt]*/
+		ValueFloat value_float = 104; /*[GFGBOEFDDGF->ValueFloat]*/
+		ValueVector value_vector = 107; /*[IJFDLEKJKDI->ValueVector]*/
+	}
+}
+
+
+enum DACHFBEBOEO {
+	DACHFBEBOEO_BOX = 0;
+	DACHFBEBOEO_SPHERE = 1;
+	DACHFBEBOEO_CAPSULE = 2;
+	DACHFBEBOEO_CYLINDER = 3;
+}
+
+
+message HNDKBBMNMOE {
+	PGDGLODJGEF FCDIGNEOLCK = 1;
+}
+
+
+message OGMGJHKLCOE {
+	string NHPFCGOGEOB = 502;
+	repeated DGDOCDECOKO ENAPANNFDEC = 4;
+	repeated CDPFLBJDFHB FKOLMKINEJD = 503;
+	repeated CDPFLBJDFHB DJHEDAEBMNM = 3;
+	bool is_active = 2; /*[PPLMDHPODMN->is_active]*/
+	int32 index = 1; /*[BIJCOCHPGDN->index]*/
+}
+
+
+message CNHLGDGBDDA {
+	repeated int32 OPDHFMFFMEN = 1;
+	repeated int32 NKOFAOMEDGG = 4;
+	uint32 NOLJHFFDFEG = 5;
+	int32 CLILOBKFBHO = 7;
+	uint32 HOCEFFLGLJK = 6;
+}
+
+
+message BJDMJLAKPMB {
+	repeated IHJNPHKBEGF MDDOPKDEMMJ = 2;
+	uint32 HOLCJCAGEMN = 1;
+}
+
+
+message IGOKJDMCLOD {
+	repeated KIOMJAOMEMH slot_info_list = 1; /*[ODABLMNGMIB->slot_info_list]*/
+}
+
+
+message ChipTemplate { /*[FKOMMNBJLNO->ChipTemplate]*/
+	BMDFHFMIGBN data = 1; /*[GGEBNBICIKB->data]*/
+}
+
+
+message JGMJLNIABEN {
+	bool is_active = 1; /*[PPLMDHPODMN->is_active]*/
+	bool EPGPBLDNIAK = 3;
+	bool IOOGOGPKNPK = 4;
+	LFGLDPNCABE GNNNLMKIFNC = 2;
+}
+
+
+enum NLHPHFEHBNJ {
+	NLHPHFEHBNJ_E_BEYOND_ASSISTANT_EDITOR_REPAIR_ON_IMPORT_TYPE_NONE = 0;
+	NLHPHFEHBNJ_E_BEYOND_ASSISTANT_EDITOR_REPAIR_ON_IMPORT_TYPE_BEYOND_GUID = 1;
+}
+
+
+message FAMGIJDEIKG {
+	AMGFNNPBMHA PIJFEFJJCMN = 14;
+	DHGPIMEDFGM JCILBLANDLA = 9;
+	repeated NDIJDFGHPPA FOEHOKJKIHP = 11;
+	repeated HLMNBDMKFGE DDFIMGMFNNA = 2;
+	repeated KHEPDACEPBD CLLNKDNNMND = 13;
+	repeated BGCGKEBKAGJ OKIOOENLEJL = 4;
+	repeated EDHIBFHHHOF JABPKOMLJKA = 7;
+	DHGPIMEDFGM EBOLLNKLOFG = 12;
+	repeated BGCGKEBKAGJ MILBIKKNMJD = 5;
+	DHGPIMEDFGM JNHNOKJPNIM = 10;
+	repeated JOEFOHIKLAI AHELJDJNFND = 8;
+	repeated BKCFBNCODJJ IPJNBEDLCPD = 3;
+	repeated NFMDDNLLGHM ELMNMFAHMGM = 6;
+	uint32 guid = 1; /*[OIIGKJPGPBC->guid]*/
+}
+
+
+enum OKHCAMLJAEC {
+	OKHCAMLJAEC_FREE = 0;
+	OKHCAMLJAEC_PAID = 1;
+}
+
+
+message EJAFGENFKKG {
+	uint32 GMKKCJAFOAE = 1;
+}
+
+
+enum MHEECGKCDDF {
+	MHEECGKCDDF_BEYOND_SHADOW_COLOR_DEFAULT = 0;
+	MHEECGKCDDF_BEYOND_SHADOW_COLOR_WHITE = 1;
+	MHEECGKCDDF_BEYOND_SHADOW_COLOR_GREEN = 2;
+	MHEECGKCDDF_BEYOND_SHADOW_COLOR_BLUE = 3;
+	MHEECGKCDDF_BEYOND_SHADOW_COLOR_ORANGE = 4;
+	MHEECGKCDDF_BEYOND_SHADOW_COLOR_RED = 5;
+}
+
+
+message LOMOKCADHEL {
+	repeated FNNJHLIDDGO AOIKHDBMHBJ = 1;
+}
+
+
+message OMEDDNJAPPH {
+	int32 GBGFOCMCNNK = 501;
+	bool DEGFPHKMBBF = 502;
+	oneof detail { /*[ENPDCINEPHH->detail]*/
+		OCDKEEEANDG none_intrinsic_ui = 15;
+		FBFEHPJCNGM player_hp = 11;
+		PDDGDCLDCEA skill_area = 12;
+		NAEOMBDLMCH team_and_faction = 13;
+		GINDJIMPEIE basic_active_control = 16;
+		GOKMFDJEDNK mini_map = 14;
+	}
+}
+
+
+message EJOIALNNDJA {
+	float DMHNCFDBJOM = 1;
+}
+
+
+message BGOAJHLHEPJ {
+	repeated IACCJKHLDGM BDMINGAOKKG = 4;
+	repeated DMFDCEGKABG FDOAKLNBHJL = 11;
+	PMJNDNOBBCD PCKHMOLIOLB = 7;
+	OHDAMLAGNFL AOHPMOEKLOG = 2;
+	repeated HJHJBMPANNI PIDKCMJHCJH = 8;
+	AMCIPCEMDNO JBPKPPGOPOP = 10;
+	OHDAMLAGNFL DKEJBOBLGNF = 3;
+	uint32 id = 1; /*[PCPENLLKDLK->id]*/
+	float y = 6; /*[APMPIPOAAHJ->y]*/
+	float x = 5; /*[OFLHBJCAIHD->x]*/
+	uint32 ABLBHCAGKHK = 9;
+}
+
+
+message HBGCEGJGLMB {
+	string FAJIFKNANBJ = 1;
+	uint32 LGOLIMIOPKH = 2;
+}
+
+
+message EOEFLFAELHO {
+	int32 route_id = 1; /*[CHEHNFFEJEF->route_id]*/
+}
+
+
+message ConfigPlayMusic { /*[CKOGJKACKBN->ConfigPlayMusic]*/
+	int32 OMMEHPEBMDD = 6;
+	int32 LDPCIEPAJBM = 5;
+	int32 LAAGALHDODB = 2;
+	int32 KJEGOGGFJIH = 1;
+	int32 FCOPNPBICAJ = 3;
+	int32 ADEGFJOBNCL = 7;
+	int32 ANPMFHILEBJ = 8;
+	int32 ILGCBJEHFMP = 4;
+}
+
+
+message HJHJBMPANNI {
+	bool OADDIPBMADA = 2;
+	JECJMOJPLKN LKDACPHICBK = 1;
+	oneof JHBCHEKKPGN {
+		CFLLHKBPLLJ config_function = 103;
+		ConfigMakeStruct config_make_struct = 104; /*[EFDBNCNEFMA->ConfigMakeStruct]*/
+		ConfigPinVisibilityController config_pin_visibility_controller = 100; /*[BHHJMDHOPBD->ConfigPinVisibilityController]*/
+		ConfigSetStructMember config_set_struct_member = 106; /*[FLNLKMPAKBJ->ConfigSetStructMember]*/
+		ConfigSignalEvent config_signal_event = 102; /*[GJOOHAKPKAJ->ConfigSignalEvent]*/
+		ConfigFireSignal config_fire_signal = 101; /*[FJFMLBLNDON->ConfigFireSignal]*/
+		ConfigBreakStruct config_break_struct = 105; /*[MIELBNMPEBE->ConfigBreakStruct]*/
+		ConfigPinVisibilityControllerV2 config_pin_visibility_controller_v_2 = 107; /*[IKAHNFGMLIJ->ConfigPinVisibilityControllerV2]*/
+	}
+}
+
+
+message GEMPGILLLBB {
+	repeated uint32 value_list = 1; /*[NEBBKBNEHLL->value_list]*/
+}
+
+
+message DCCJPCPPECE {
+	MIJECGAAPKD EHLLOKIKMIP = 7;
+	repeated LCNBNJDIJLJ HAKOHALHGFB = 6;
+	float MGCBIGLHAPO = 1;
+	int32 KCFNEPBHLCC = 3;
+	float NBIPEGGNIOE = 2;
+	bool DJDOOPKMNOM = 5;
+	bool JEBFOOIDJDO = 4;
+}
+
+
+message JCHFKJINFHH {
+	FIGALBBFLME OFHMMCDBKEJ = 1;
+}
+
+
+message OHDAMLAGNFL {
+	uint32 id = 5; /*[PCPENLLKDLK->id]*/
+	KOJDJPBNMPB HKJPDKLCDMC = 3;
+	KOJDJPBNMPB OGALPLKDJPL = 2;
+	KOJDJPBNMPB HJBANPALLLH = 1;
+	KOJDJPBNMPB OFIIFJPAPJE = 4;
+}
+
+
+message OFHHMLKBOAH {
+	DEHJDOAANPI JGGGKJFIKNM = 7;
+	EAPKIALFJKI HODICCKFDLA = 8;
+	DEHJDOAANPI HICCEIIKHBJ = 6;
+	float KMLNPNEMPAH = 5;
+	int32 CKGLINPBBMG = 1;
+	float MGIDMCHLHON = 13;
+	bool KAAJHGBCILI = 4;
+	bool ADHPMOJKMIF = 9;
+	int32 CFJEJGCDLAA = 10;
+	LFGLDPNCABE BOKNJOKFNAI = 3;
+	int32 GFBPAKCIJKC = 11;
+	float MKJHNAEHKMA = 12;
+}
+
+
+enum BNOKNMKGDNL {
+	BNOKNMKGDNL_NONE = 0;
+	BNOKNMKGDNL_IS_MUST_LINK = 1;
+	BNOKNMKGDNL_IS_INVISIBLE = 2;
+	BNOKNMKGDNL_IS_NOT_CHAIN_GENERICS = 3;
+	BNOKNMKGDNL_IS_NODE_TYPE_MODIFIER = 4;
+	BNOKNMKGDNL_MP_ACTION_ID = 5;
+	BNOKNMKGDNL_SIGNAL_NAME = 6;
+	BNOKNMKGDNL_FUNCTION = 7;
+	BNOKNMKGDNL_GENERICS_PIN_DICT_KEY = 8;
+	BNOKNMKGDNL_GENERICS_PIN_DICT_VE = 9;
+	BNOKNMKGDNL_GENERICS_PIN_DICT = 10;
+	BNOKNMKGDNL_GENERICS_PIN_DICT_KEY_LIST = 11;
+	BNOKNMKGDNL_GENERICS_PIN_DICT_VALUE_LIST = 12;
+	BNOKNMKGDNL_SELECT_STRUCT = 13;
+	BNOKNMKGDNL_SET_STRUCT_MEMBER_ACTIVE_CONTROLLER = 14;
+	BNOKNMKGDNL_SET_STRUCT_MEMBER_MEMBER = 15;
+	BNOKNMKGDNL_SELECT_SET_STRUCT_MEMBER_ACTIVE_IN_PARAM_LIST = 16;
+}
+
+
+message IPMICGNINDB {
+	string FDJFBBCKLAH = 4;
+	repeated OAOJFIHEDBK FGADMDKBGMG = 1;
+	uint32 MJFNOOOMOHH = 5;
+	uint32 ABEAICJIDKL = 3;
+	uint64 JJADPFJNALE = 2;
+}
+
+
+message LHGHEHJDFFJ {
+	DEHJDOAANPI GNOFNBODIOJ = 10;
+	bool PLAOOAKPNMF = 6;
+	bool OGOMLEEKLNJ = 4;
+	bool PDKPIALAHPB = 2;
+	float GPEDCNLPBDL = 1;
+	float NBJGHLHJGBM = 16;
+	float ONCOBNGPBAF = 13;
+	uint32 EOFLKFCFEGB = 3;
+	uint32 HELMPBHGKJK = 17;
+	float BIFMHANNBEA = 11;
+	float PLAGIDACMEN = 15;
+	MPKDFPFGDKN HKKJLAGJAOF = 9;
+	float OHGEHOMFNAE = 12;
+	float KBBPELJCDKJ = 14;
+	uint32 max_charge_count = 5; /*[CAJFKEINNAJ->max_charge_count]*/
+	float IOGGEGAHAAB = 8;
+}
+
+
+message CBPJDDGOFDH {
+	string ONMHJBEAFNK = 502;
+	int32 DKEBJDHGOHF = 503;
+	int32 LNIGPALBHNJ = 501;
+}
+
+
+message EGGMBKMPPFF {
+	uint32 DKDFPJHEPMK = 1;
+}
+
+
+message MGJHLBPAHNO {
+	CFNLCBCADLH OFHMMCDBKEJ = 1;
+}
+
+
+enum MCBMIOKGALD {
+	MCBMIOKGALD_ONLY_HIGH_SPEED = 0;
+	MCBMIOKGALD_ALWAYS = 1;
+}
+
+
+message OLGEOFIDHIM {
+	DMNKHCFFNFK BGMPPCCFJMP = 1;
+	oneof detail { /*[ENPDCINEPHH->detail]*/
+		ConfigPlaySoundEffect config_play_sound_effect = 100; /*[AMDMBCGBBNG->ConfigPlaySoundEffect]*/
+		ConfigPlayMusic config_play_music = 101; /*[CKOGJKACKBN->ConfigPlayMusic]*/
+	}
+}
+
+
+message LADPKCHFFLB {
+	string JGFOEJECCPP = 3;
+	string MKCLHFEHIGJ = 2;
+	DEHJDOAANPI PNGBMOEGJMF = 4;
+	DEHJDOAANPI NMCGLFCGJMJ = 5;
+	float GPHPHDGGAJE = 6;
+	uint32 OELMDFMDJIA = 1;
+}
+
+
+message DLJMDCBCBCI {
+	repeated LOGMGKKLMDL ONBPHKAEMIB = 5;
+	EAPKIALFJKI APIKEKJBEAI = 2;
+	uint32 MAKEFPKDPPH = 8;
+	uint32 DALAEMAPGJP = 3;
+	bool HJACBPLEJIO = 7;
+	bool DJIDICAPPKC = 4;
+	uint32 BKIOCELLCIA = 6;
+	uint32 OBHHBFJMEAI = 1;
+}
+
+
+enum NGGAAPMMCGB {
+	NGGAAPMMCGB_CHEST = 0;
+	NGGAAPMMCGB_TICKET = 1;
+	NGGAAPMMCGB_CUSTOM = 2;
+	NGGAAPMMCGB_CURRENCY = 3;
+}
+
+
+message AttachArchetype { /*[FKFCKAFENJO->AttachArchetype]*/
+	KNELEEAKFGK data = 1; /*[GGEBNBICIKB->data]*/
+}
+
+
+message ValueFloat { /*[GFGBOEFDDGF->ValueFloat]*/
+	float value = 1; /*[GONNLMLACCM->value]*/
+}
+
+
+message POGJHDLOEAH {
+	int32 type = 1; /*[KIFBBKDKNJI->type]*/
+	float value = 2; /*[GONNLMLACCM->value]*/
+}
+
+
+message BFIDOCHMODM {
+	int32 OMIPBJEOKMJ = 501;
+}
+
+
+message FHNJOBFOPJJ {
+	NFCOMACKNDP data = 1; /*[GGEBNBICIKB->data]*/
+}
+
+
+message IIEOHFGAONM {
+	int32 HFDPELFCBLB = 501;
+}
+
+
+message ONLPNJPADND {
+	OKBNCDDIENI MMKOOFGANEL = 505;
+	int32 MDGJMKILIKB = 507;
+	int32 EEFGIMGIEMF = 504;
+	bool AJJAFNDMGPE = 506;
+	int32 KFFEJONPDKA = 502;
+	int32 FHMJIEBHFCJ = 501;
+	int32 ELNGKNMDJFK = 503;
+}
+
+
+message FGNNCABAPJM {
+	repeated uint32 OEPDJNJOGCB = 2;
+	repeated NMMJBKEFDDP LIMDIJDLHOL = 1;
+}
+
+
+message JGDIDHAFFMI {
+}
+
+
+message HGLCEAGHABF {
+	LJGJDAMBIIA KCODDJHKMNG = 2;
+	float MOAAOLHNOKG = 1;
+	uint32 MEEABLEGJKD = 5;
+	float CCFJHMNFHLD = 9;
+	bool GCEPLFFKBND = 3;
+	bool PJLFLLAFOEB = 4;
+	bool BCFLKDODECJ = 7;
+	bool MCMOCEANLEN = 6;
+	bool HJEDCPMOHPP = 10;
+	float MMKDAEJBDHK = 8;
+}
+
+
+message LCEKHMELLPI {
+	repeated BPPPDAMHENI HDPJBILPEMA = 2;
+	uint32 CLAKFNJHCAM = 1;
+}
+
+
+message KNADCEBMECF {
+	uint32 target_id = 1; /*[MEIPLMNFJMH->target_id]*/
+}
+
+
+enum IHHOJOIIONE {
+	IHHOJOIIONE_NONE = 0;
+	IHHOJOIIONE_BY_TIME = 1;
+	IHHOJOIIONE_BY_SPEED = 2;
+}
+
+
+message PNIKOFOLNGF {
+	string MKLMIMCEOED = 2;
+	BJKAAFKIHPD hint_type = 1; /*[KLBKGOHOMNE->hint_type]*/
+	uint32 AFMGJPNMJBL = 3;
+}
+
+
+message CCJFNABAILD {
+}
+
+
+message LCNBNJDIJLJ {
+	string tag = 1; /*[AANPFGLBGFH->tag]*/
+}
+
+
+message ChipCustomTrialData { /*[ILGFKALFOJM->ChipCustomTrialData]*/
+	ICDGOCLOAHE data = 1; /*[GGEBNBICIKB->data]*/
+}
+
+
+message PEJJCINGBDH {
+	string AHKGJADMGFK = 503;
+	uint32 DPMBFEKBCBG = 515;
+	uint32 JNKOMKMNPDO = 506;
+	bool NBDFLPLMEPE = 505;
+	bool MBMALCDDAEJ = 519;
+	bool OJBCMHKOGBA = 502;
+	bool MKKLHDNKMDN = 509;
+	uint32 PCFGHKGPBFF = 504;
+	uint32 LDJLBOGKBGH = 517;
+	uint32 KDJDFPCMMLE = 512;
+	bool BJEDMHHDJBJ = 518;
+	bool GILNALCLCCA = 514;
+	bool ABNPPMFDDJN = 516;
+	bool PAMLJNKNGBI = 508;
+	uint32 BHMIEKLEIDE = 510;
+	uint32 GLEHGIONNBH = 511;
+	uint32 PDNCHLDHAKP = 507;
+	bool MEKDCHINNBB = 520;
+	bool IHMENCNMJNN = 513;
+}
+
+
+message BHDJOAIGIKM {
+	repeated CEFNKLANAHN PIDKCMJHCJH = 5;
+	repeated FHICCFABAAJ DIJDCDOJJKH = 6;
+	PinName BGAFAPDCKOO = 3; /*[KGKFKBPGIOK->PinName]*/
+	string name = 1; /*[PEMBNEOLEAN->name]*/
+	GKHNHEFJBAC LJLGCFOIDAH = 4;
+	bool FAJJJDFJMOH = 2;
+	uint32 version = 8; /*[HFBIBKANLDM->version]*/
+	uint32 BEKNILNFCHB = 9;
+	uint32 IAEFLKLODJG = 7;
+}
+
+
+message GKHNHEFJBAC {
+	repeated PNIKOFOLNGF KHJJEFIJDFE = 5;
+	NCNLIEFBLMN FBDLKPBKHBF = 2;
+	repeated NKEAPNHPJOK PIDKCMJHCJH = 7;
+	uint32 ICGONHMHEIB = 3;
+	IAHALJHHDIC IAIJDHIDNHJ = 1;
+	bool JMCMLKNANJP = 6;
+	uint32 BIOAHEGDICK = 4;
+	uint32 GIAGLHFBNNA = 8;
+	oneof EDCFPOLOJCD {
+		ConfigList config_list = 102; /*[AIAAKKPKOJO->ConfigList]*/
+		LCANFBDHIFN config_server_param_dictionary = 105;
+		ConfigEnum config_enum = 101; /*[GNBGKDIGJKD->ConfigEnum]*/
+		ConfigStruct config_struct = 104; /*[MBNMHPMKJCC->ConfigStruct]*/
+		ConfigGenerics config_generics = 103; /*[MLKPEOPNDLD->ConfigGenerics]*/
+	}
+}
+
+
+message DEHJDOAANPI {
+	float x = 1; /*[OFLHBJCAIHD->x]*/
+	float z = 3; /*[PMGEEJDCAJK->z]*/
+	float y = 2; /*[APMPIPOAAHJ->y]*/
+}
+
+
+message LIMJAPHMNLO {
+	bool MOEFJMEFBON = 2;
+	bool GKICKHBOAGD = 1;
+	bool NGBOFFNGLNK = 3;
+	bool NJFLDKAOLPA = 4;
+	float LGHBBPJLACK = 5;
+}
+
+
+message IPPGICHJLFA {
+	CCNIOPHEHNH JDEKMBBCJAP = 506;
+	CCNIOPHEHNH HNFAGOGFAOD = 504;
+	PAKFLPHCFLP GCIJJHAGIAL = 502;
+	IMCMNMIEFPJ MDBFMFKAIIM = 501;
+	CCNIOPHEHNH PCBCJIIPHGL = 505;
+	HJFDGPMBIPO OOLDGJFJDIP = 503;
+}
+
+
+message DFHGBNFFCKC {
+	IJEFFBBLDBE data = 1; /*[GGEBNBICIKB->data]*/
+}
+
+
+message LECCOGJBAPL {
+	uint32 OODDAMBCDGF = 4;
+	float NEIPFHIPMFL = 2;
+	float ALPJHAPHKIN = 3;
+	float DMDPOAMOGBO = 5;
+	uint32 KBBLMIPBHDP = 501;
+	float MIFKNDPFJPD = 1;
+}
+
+
+message FGOJCBPLIEF {
+	float NICJIODOLMO = 1;
+}
+
+
+message ECMIIABHEJC {
+	string NHGNBBBCLMC = 1;
+}
+
+
+message CEFNKLANAHN {
+	BNOKNMKGDNL LKDACPHICBK = 1;
+	bool OADDIPBMADA = 2;
+	oneof JHBCHEKKPGN {
+		MpActionId mp_action_id = 100; /*[FBDEJGJHJPA->MpActionId]*/
+		CEIKPMGIEAN config_function = 101;
+	}
+}
+
+
+message ADIOAMBJBFO {
+	LPBNNKBGNFM PMIFGCEDILK = 1;
+}
+
+
+message KBENGFIFMMK {
+	repeated AFEFLEDFFPC skill_list = 2; /*[EEGEJNJPJFB->skill_list]*/
+}
+
+
+message IMHIMLKBFHN {
+	CBPJDDGOFDH score = 502; /*[AOPMDPLGBFB->score]*/
+	int32 LNIGPALBHNJ = 501;
+}
+
+
+message CCNIOPHEHNH {
+	EAPKIALFJKI KAKEPIFMIEA = 8;
+	DEHJDOAANPI NLGHGPIDDIO = 5;
+	EAPKIALFJKI LOFCFAKJDCC = 10;
+	string LELBLLBNGOL = 503;
+	repeated int32 NODMLLLEJEN = 9;
+	DEHJDOAANPI rot = 6; /*[PPOMCELLJLE->rot]*/
+	string MBNAHJBPEDI = 2;
+	int32 filter_type = 507; /*[CFIIDPABPCM->filter_type]*/
+	bool GPFOHAJFDFC = 504;
+	bool DBBBMIIAOIN = 505;
+	bool PDJCKNNPIAO = 506;
+	bool DNBHHEENELD = 4;
+	bool GFJCHKOHDKK = 3;
+	bool ADHPMOJKMIF = 11;
+	uint32 item_id = 502; /*[MOKPIGBANPO->item_id]*/
+	int32 OCLALEECBBF = 1;
+	float GNOFNBODIOJ = 7;
+	uint32 MOIGKBEHADF = 501;
+}
+
+
+enum GOENGPPNIMH {
+	GOENGPPNIMH_NONE = 0;
+	GOENGPPNIMH_IN_PIN = 1;
+	GOENGPPNIMH_OUT_PIN = 2;
+	GOENGPPNIMH_IN_PARAM = 3;
+	GOENGPPNIMH_OUT_PARAM = 4;
+	GOENGPPNIMH_EXTRA_PARAM = 5;
+}
+
+
+message InfoStructId { /*[EMPEOINCBDO->InfoStructId]*/
+	uint32 FMINBCJDHAE = 1;
+}
+
+
+message OJHIBKDLAKJ {
+	DEHJDOAANPI center = 1; /*[BDOBKMBOOBB->center]*/
+	float radius = 2; /*[FLNKEHMENOB->radius]*/
+}
+
+
+message MICHNOHFNIG {
+	repeated bool value_list = 1; /*[NEBBKBNEHLL->value_list]*/
+}
+
+
+message DPJCOOMOMKM {
+	KKIMBLLPCBD OFHMMCDBKEJ = 1;
+}
+
+
+message MGAIBFJBEFP {
+	repeated MNGJDPAEBIH KHMGLLMOKIG = 2;
+	uint32 cell_id = 1; /*[HBGFEPKEPHD->cell_id]*/
+}
+
+
+enum PEAADLMNGMJ {
+	PEAADLMNGMJ_NONE = 0;
+	PEAADLMNGMJ_VALUE_STRUCTURE = 1;
+}
+
+
+message PGPEGOIGPCN {
+	string JJANBOBNIGL = 4;
+	float EBKHKDIJOEP = 2;
+	float DPFGNOLHEBI = 3;
+	int32 group_id = 1; /*[FKMOCFEPLDG->group_id]*/
+}
+
+
+message JEDHCJNGMOM {
+	repeated HBLBEMMAAHO LNNLDKNEKGN = 501;
+	repeated HMMPFLHLNHL OKHBINMJLDK = 1;
+}
+
+
+message PinName { /*[KGKFKBPGIOK->PinName]*/
+	int32 index = 2; /*[BIJCOCHPGDN->index]*/
+	GOENGPPNIMH LIMAAPJJBFJ = 1;
+}
+
+
+message MNGJDPAEBIH {
+	repeated int32 int_param_list = 11; /*[CDOBBAAMAPN->int_param_list]*/
+	repeated string FIKAFDNCCEK = 9;
+	DEHJDOAANPI DGIGHOHBIGN = 10;
+	EAPKIALFJKI AKHPLPNGLGE = 12;
+	LENOCJNAIBN ODLNCFIEJEE = 13;
+	repeated LFGLDPNCABE IGGOFJBEPFL = 8;
+	string NHLFNBEFLKG = 7;
+	int32 PBJAMOJIDKL = 4;
+	bool NAJBJEDGKDG = 6;
+	uint32 MEGFGOFOFCC = 2;
+	float EEJPEGCPDOA = 5;
+	KNFGNMFPCJF DEJCJOGFDKL = 1;
+	uint32 DFHNCIDFOEC = 3;
+}
+
+
+enum IDOAJPHMGFO {
+	IDOAJPHMGFO_WEATHER_NONE = 0;
+	IDOAJPHMGFO_WEATHER_FOG = 1;
+}
+
+
+message HMMPFLHLNHL {
+	EAPKIALFJKI MJFPJFOOBGH = 5;
+	int32 IMJEGOOADMP = 3;
+	int32 EGOHGDJGAKB = 1;
+	bool FGFMOBNOJEO = 7;
+	bool FGGFNAMMKLG = 2;
+}
+
+
+enum BOCBIICHEGO {
+	BOCBIICHEGO_MUTE = 0;
+	BOCBIICHEGO_LEAST_DURATION = 1;
+	BOCBIICHEGO_LEAST_REFRESH_TIME = 2;
+	BOCBIICHEGO_FIRST_SLOT = 3;
+}
+
+
+enum CLHCMNFEMDP {
+	CLHCMNFEMDP_NONE = 0;
+	CLHCMNFEMDP_STRUCT_ID = 1;
+	CLHCMNFEMDP_SERVER_PARAM_DICTIONARY = 2;
+}
+
+
+message AFDMINPNIDP {
+	PEIOOPHCKNL EPBCPLCFIEP = 1;
+}
+
+
+enum CHJLDBPFIAF {
+	CHJLDBPFIAF_NONE = 0;
+	CHJLDBPFIAF_ENTITY = 1;
+	CHJLDBPFIAF_GUID = 2;
+	CHJLDBPFIAF_INT_32 = 3;
+	CHJLDBPFIAF_BOOL = 4;
+	CHJLDBPFIAF_FLOAT = 5;
+	CHJLDBPFIAF_STRING = 6;
+	CHJLDBPFIAF_GUID_LIST = 7;
+	CHJLDBPFIAF_INT_32_LIST = 8;
+	CHJLDBPFIAF_BOOL_LIST = 9;
+	CHJLDBPFIAF_FLOAT_LIST = 10;
+	CHJLDBPFIAF_STRING_LIST = 11;
+	CHJLDBPFIAF_VECTOR_3 = 12;
+	CHJLDBPFIAF_ENTITY_LIST = 13;
+	CHJLDBPFIAF_ENUM = 14;
+	CHJLDBPFIAF_VECTOR_3_LIST = 15;
+	CHJLDBPFIAF_VARIABLE = 16;
+	CHJLDBPFIAF_ARMY = 17;
+	CHJLDBPFIAF_COMP_TYPE = 18;
+	CHJLDBPFIAF_CATEGORY_TYPE = 19;
+	CHJLDBPFIAF_CONFIG_REFERENCE = 20;
+	CHJLDBPFIAF_ENTITY_REFERENCE = 21;
+	CHJLDBPFIAF_CONFIG_REFERENCE_LIST = 22;
+	CHJLDBPFIAF_ENTITY_REFERENCE_LIST = 23;
+	CHJLDBPFIAF_ARMY_LIST = 24;
+	CHJLDBPFIAF_STRUCT = 25;
+	CHJLDBPFIAF_STRUCT_LIST = 26;
+	CHJLDBPFIAF_DICT = 27;
+	CHJLDBPFIAF_CUSTOM_VALUE_SNAPSHOT = 28;
+	CHJLDBPFIAF_ENUM_LIST = 29;
+	CHJLDBPFIAF_MAX = 50;
+}
+
+
+message IFFMHAOEJAL {
+	string IHMAGAMKIPP = 1;
+	bool HBOBJENIAED = 2;
+}
+
+
+message PBOGIOIPPFF {
+	DEHJDOAANPI NMCGLFCGJMJ = 3;
+	string name = 1; /*[PEMBNEOLEAN->name]*/
+	string HNHIOKNFMBB = 502;
+	DEHJDOAANPI PNGBMOEGJMF = 2;
+	string DJOMDBGMPPE = 505;
+	bool BKOGILIOEGM = 503;
+	bool AOPPKDPPAEL = 504;
+	uint32 item_id = 501; /*[MOKPIGBANPO->item_id]*/
+}
+
+
+enum BCMBBJIBIGI {
+	BCMBBJIBIGI_BEYOND_GALAXY_COLOR_DEFAULT = 0;
+	BCMBBJIBIGI_BEYOND_GALAXY_COLOR_WHITE = 1;
+	BCMBBJIBIGI_BEYOND_GALAXY_COLOR_GREEN = 2;
+	BCMBBJIBIGI_BEYOND_GALAXY_COLOR_BLUE = 3;
+	BCMBBJIBIGI_BEYOND_GALAXY_COLOR_ORANGE = 4;
+	BCMBBJIBIGI_BEYOND_GALAXY_COLOR_RED = 5;
+}
+
+
+message LMIEOCLCIHK {
+	repeated FNEGLPOFIDJ BMBMLBEAGKC = 501;
+	repeated ODCEMJHFPPI MFCCLOOKMHE = 1;
+}
+
+
+message KJOBKIINMIA {
+	repeated string MEEIONGKBHB = 1;
+}
+
+
+message HJFDGPMBIPO {
+	string BPOJJDNIMBB = 501;
+	float GKCICNMLMLP = 503;
+	float CBCPJHAOFDI = 502;
+}
+
+
+message LCMJNNGGPJA {
+	OFHHMLKBOAH HNCKIPLCEKM = 11;
+	repeated LFGLDPNCABE NJOIPMKFGJK = 2;
+	DEHJDOAANPI LPPALDIBANJ = 15;
+	JAOKELGGJHL JIBPIBHBLLO = 10;
+	OHJHBFDMJHE KCPPIHNDDGB = 4;
+	MIJECGAAPKD EHLLOKIKMIP = 21;
+	EAPKIALFJKI HODICCKFDLA = 22;
+	DEHJDOAANPI FNBKBNGLGGI = 14;
+	DEHJDOAANPI KEPNEOJCNFG = 8;
+	DEHJDOAANPI offset = 7; /*[ODKPNPEDGFA->offset]*/
+	string MBNAHJBPEDI = 6;
+	bool OMJDCKEPIAJ = 20;
+	bool ADHPMOJKMIF = 23;
+	int32 LABOPEOIOFD = 9;
+	LFGLDPNCABE IAGKBPHOMLF = 5;
+	LFGLDPNCABE FBCFFPMNHHE = 1;
+	LFGLDPNCABE FDAIAKMIJND = 12;
+	float BGFIIEMPPNP = 13;
+	LFGLDPNCABE DAPGMBLJNDC = 3;
+}
+
+
+message InstructionNodeConfig { /*[HMDMCPEANFF->InstructionNodeConfig]*/
+	FHNJOBFOPJJ data = 1; /*[GGEBNBICIKB->data]*/
+}
+
+
+message NFFANFNGJFA {
+	bool CEMHEILIECI = 503;
+	int32 GDLBDKKGCNB = 501;
+	int32 MFHHEMPCNLL = 502;
+	oneof detail { /*[ENPDCINEPHH->detail]*/
+		ONLPNJPADND text_frame = 19;
+		OMEDDNJAPPH active_control_setting = 14;
+		CEJMMLFBLAG layout_apply_duty_setting = 17;
+		NNNLADGJFLC faction_setting = 12;
+		HAFDALGNAHN minimap_setting = 27;
+		MNNHAIBKENN classic_mode_skill_button_setting = 29;
+		GHBNLPHMOCM transform_setting = 13;
+		MOJLHNAKJIP score_board = 22;
+		NGAIEPMAAPL option_seletor_item = 24;
+		KIMGPICLIJA popup_window = 18;
+		EBOINOPJLIN option_selector_unknown_item = 25;
+		NDFBBGBFCPL skill_button_setting = 16;
+		HLIGFBALNLA skill_setting = 11;
+		DOBELBAFNND item_slot_setting = 28;
+		DGMDJBLACMJ group_control_trans_setting = 15;
+		PEJJCINGBDH option_selector = 23;
+		PPNGHALBPCO timer = 21;
+		NDMFLDFOIIP option_selector_item_lib = 26;
+		EELPPPLMGFO progress_bar = 20;
+	}
+}
+
+
+message AFIMJECFMBG {
+	bool IFIFDFENOMM = 1;
+}
+
+
+message OMGKLMIHHIL {
+	LHGJJOMPBLK slot = 2; /*[MEPEMLENDBL->slot]*/
+	HGLCEAGHABF basic_info = 1; /*[HEJALHOMELO->basic_info]*/
+	JNHEACEAOAC CGDNDCHEELA = 3;
+	BNIEDJPNMBB KEDEIPEIMMA = 5;
+	IAPPECHJNAN BBLKJLOFPGP = 4;
+	uint32 OALJLGNKMKC = 6;
+}
+
+
+enum JECJMOJPLKN {
+	JECJMOJPLKN_NONE = 0;
+	JECJMOJPLKN_BAN_DELETE = 1;
+	JECJMOJPLKN_BAN_COPY = 2;
+	JECJMOJPLKN_PIN_VISIBILITY_CONTROLLER = 3;
+	JECJMOJPLKN_MP_ACTION_START_NODE = 6;
+	JECJMOJPLKN_FUNCTION = 7;
+	JECJMOJPLKN_DICT_CONFIG = 8;
+	JECJMOJPLKN_PIN_VISIBILITY_CONTROLLER_V_2 = 9;
+	JECJMOJPLKN_TEMPLATE_TYPE_COMPOUND = 1000;
+	JECJMOJPLKN_TEMPLATE_TYPE_FIRE_SIGNAL = 1001;
+	JECJMOJPLKN_TEMPLATE_TYPE_SIGNAL_EVENT = 1002;
+	JECJMOJPLKN_TEMPLATE_TYPE_MAKE_STRUCT = 1003;
+	JECJMOJPLKN_TEMPLATE_TYPE_BREAK_STRUCT = 1004;
+	JECJMOJPLKN_TEMPLATE_TYPE_SET_STRUCT_MEMBER = 1005;
+}
+
+
+enum JJLOEALGPFM {
+	JJLOEALGPFM_OFFICIAL = 0;
+	JJLOEALGPFM_CUSTOM = 1;
+}
+
+
+message ELGHNGINLHN {
+	DFHJELLNOEJ offset = 502; /*[ODKPNPEDGFA->offset]*/
+	DFHJELLNOEJ AGJBDAJNCIM = 503;
+	bool GOELNDOEJCI = 507;
+	int32 PONDEMJKMNG = 1;
+	int32 OELIIBNNIPB = 505;
+	int32 PHLAKHDKKFI = 504;
+	float GCLCNPPMAPM = 508;
+	int32 GMLFBLDDKKL = 506;
+}
+
+
+message NGJMDDCIECF {
+	FAMGIJDEIKG NGNNPAKKJIG = 4;
+	FAMGIJDEIKG KNONMCBNMHL = 1;
+	uint32 version = 3; /*[HFBIBKANLDM->version]*/
+	uint32 GHEEFJNPFOP = 2;
+}
+
+
+message LPDPDBKJGDB {
+}
+
+
+message IAPNFNFAGEO {
+	bool CBDLJEBMGJB = 1;
+	bool IHNBGKIFPAM = 501;
+}
+
+
+message OHKNEFMLAKD {
+	uint32 KFBNJGBHLFP = 2;
+	int32 slot_id = 1; /*[DIKOLCHMNOM->slot_id]*/
+}
+
+
+enum BACFEPLFMDA {
+	BACFEPLFMDA_CLASSIC_VIEW = 0;
+	BACFEPLFMDA_THIRD_PERSON_3_D = 1;
+	BACFEPLFMDA_VIEW_25_D = 2;
+	BACFEPLFMDA_FIRST_PERSON_VIEW = 3;
+	BACFEPLFMDA_THIRD_PERSON_CUSTOM_VIEW = 4;
+}
+
+
+message AOIANINLNML {
+	EMMJEBPEOLI ELMPPMMIAOM = 2;
+	PLNKAHMFFGO OODCALKNFLA = 1;
+	KJOBKIINMIA HPKBIPIAIBH = 3;
+}
+
+
+message OJEGNCEHLAL {
+}
+
+
+message CAMMNEGEKBL {
+	repeated JJGLAHJDADJ IHIOFBBPFKI = 3;
+	bool JNPJPDGGOBB = 2;
+	CLHCMNFEMDP KGKFOHJALJK = 1;
+	oneof HEAFGBLNLLG {
+		ConfigStructId config_struct_id = 100; /*[CFIGGGEDCCN->ConfigStructId]*/
+		GAMKBNAIMDO config_server_param_dictionary = 101;
+	}
+}
+
+
+message CEJMMLFBLAG {
+	int32 FNLKJJLFKBL = 501;
+}
+
+
+enum LFMABPEIAEL {
+	LFMABPEIAEL_NONE = 0;
+	LFMABPEIAEL_ACTION = 1;
+	LFMABPEIAEL_EVENT = 2;
+	LFMABPEIAEL_FLOW_CONTROL = 3;
+	LFMABPEIAEL_QUERY = 4;
+	LFMABPEIAEL_OPERATE = 5;
+	LFMABPEIAEL_COMPOUND = 6;
+}
+
+
+message EIHACNKPMNO {
+	repeated LNGNMHADJJE EDEMCDMICCG = 1;
+}
+
+
+message ConfigSetStructMember { /*[FLNLKMPAKBJ->ConfigSetStructMember]*/
+	uint32 FMINBCJDHAE = 1;
+}
+
+
+message NEPPIIKONEN {
+	LJBNJNJGNKN PECOHKCAPEA = 1;
+	oneof NHPCEGIOFCJ {
+		FrogParamTypeInfo frog_param_type_info = 101; /*[KOGJGMNLDHM->FrogParamTypeInfo]*/
+		ServerParamTypeInfo server_param_type_info = 100; /*[LKGLHAMNOEP->ServerParamTypeInfo]*/
+	}
+}
+
+
+message LDMOFJOJPIH {
+	repeated JLDPPHBHBDL IBNCIEJPMPK = 501;
+	repeated JLDPPHBHBDL point_list = 3; /*[KPFOLNNBFEE->point_list]*/
+	KLGAKGLDCOH OKAABBDPHHC = 502;
+	bool NFLGLCLBHJO = 503;
+	int32 route_id = 1; /*[CHEHNFFEJEF->route_id]*/
+	LFGLDPNCABE OLPKHMNPKHP = 2;
+}
+
+
+message HKLDGKPCHDK {
+	uint32 id = 1; /*[PCPENLLKDLK->id]*/
+}
+
+
+message KONPJEFKEIK {
+	uint32 PGIADNGEDAM = 2;
+	uint32 EDLPLIDLALL = 3;
+	uint32 CLNCBKAPLMM = 1;
+	uint32 IHBCGEECGKD = 4;
+}
+
+
+message IBCOELGJACO {
+	repeated HFAAMIFKIEJ NKFEPGGCAED = 2;
+	string GMPLALDLGBD = 501;
+	LJGJDAMBIIA FGJDDBGBILN = 1;
+}
+
+
+message JJGLAHJDADJ {
+	IMCFOJDCACI LDMDHGBCACH = 1;
+	oneof detail { /*[ENPDCINEPHH->detail]*/
+		StepCreateNode step_create_node = 100; /*[OJMDALMIILK->StepCreateNode]*/
+		StepCreateCompoundConnection step_create_compound_connection = 103; /*[NKGEMGPAOGE->StepCreateCompoundConnection]*/
+		StepCreateConnection step_create_connection = 102; /*[JODAJIFJJLA->StepCreateConnection]*/
+		StepModifyValue step_modify_value = 101; /*[LNHBEPEIHBM->StepModifyValue]*/
+	}
+}
+
+
+enum BJKAAFKIHPD {
+	BJKAAFKIHPD_NONE = 0;
+	BJKAAFKIHPD_DEFAULT = 1;
+	BJKAAFKIHPD_INVALID = 2;
+}
+
+
+message PKANIJIMAFN {
+	OJJEPCGMLDD value = 1; /*[GONNLMLACCM->value]*/
+}
+
+
+message JJCAMGFOBJJ {
+	uint32 value = 1; /*[GONNLMLACCM->value]*/
+}
+
+
+message PcgTemplate { /*[GLCJAGCEIHC->PcgTemplate]*/
+	EGMEOGJODHJ data = 1; /*[GGEBNBICIKB->data]*/
+}
+
+
+message KIMGPICLIJA {
+	OKBNCDDIENI content = 502; /*[AGAJKAMMHID->content]*/
+	OKBNCDDIENI title = 501; /*[BELEIOJMANC->title]*/
+}
+
+
+message NHEECEAIGPF {
+	BOMINHBPFKG OFHMMCDBKEJ = 1;
+}
+
+
+message NDIJDFGHPPA {
+	string name = 2; /*[PEMBNEOLEAN->name]*/
+	uint32 config_id = 3; /*[KAHMADIKBNG->config_id]*/
+	int32 slot_count = 4; /*[MFCJCACBICD->slot_count]*/
+	int32 index = 5; /*[BIJCOCHPGDN->index]*/
+	uint32 BLEEJDLCONE = 1;
+}
+
+
+message EKDLNJOAJIF {
+	uint32 OIGMADGDGFM = 7;
+	GANACPJFEAM skill_type = 4; /*[LAFMGMOKNCC->skill_type]*/
+	uint32 BCLPLNIPJDM = 5;
+	uint32 FCFJNFBDEPC = 6;
+}
+
+
+message ConfigBeyondGuidReferenceOnExport { /*[OANDPIOHLMH->ConfigBeyondGuidReferenceOnExport]*/
+	BACPBLLMFPG MLACKDEALMP = 1;
+}
+
+
+message IIAHIFIGCMP {
+	CJPIFKEKEJC OFHMMCDBKEJ = 1;
+}
+
+
+message JLDPPHBHBDL {
+	DEHJDOAANPI HCDNHNGEMGE = 8;
+	DEHJDOAANPI rot = 3; /*[PPOMCELLJLE->rot]*/
+	DEHJDOAANPI pos = 2; /*[CGOHAKJFKMH->pos]*/
+	DEHJDOAANPI LIJCFPDHMJC = 7;
+	int32 point_id = 1; /*[CCKIOMAHPNJ->point_id]*/
+	LFGLDPNCABE point_type = 5; /*[BOFBIFKMDBG->point_type]*/
+	bool BJIGIELKDFD = 6;
+	float time = 4; /*[HGPLMCPPPPC->time]*/
+}
+
+
+message DGDOCDECOKO {
+	string NHPFCGOGEOB = 502;
+	int32 index = 503; /*[BIJCOCHPGDN->index]*/
+	DACHFBEBOEO MGENNLBPGCA = 1;
+	bool is_show = 2; /*[NNCHINGJDKO->is_show]*/
+	oneof detail { /*[ENPDCINEPHH->detail]*/
+		OJHIBKDLAKJ sphere_data = 12;
+		AMFOBFNKIJG capsule_data = 13;
+		OOFGNICKHKO cylinder_data = 14;
+		ODGJCPFFMOF box_data = 11;
+	}
+}
+
+
+message OMCCCJGJPAH {
+	MFBJIKFGBFA value = 1; /*[GONNLMLACCM->value]*/
+}
+
+
+enum NKCNGICCKIP {
+	NKCNGICCKIP_LIGHT_TYPE_POINT = 0;
+	NKCNGICCKIP_LIGHT_TYPE_SPOT = 1;
+}
+
+
+message BCBAGIKHBAN {
+	float radius = 1; /*[FLNKEHMENOB->radius]*/
+}
+
+
+message NPLGHCHDMMA {
+	repeated DEHJDOAANPI value_list = 1; /*[NEBBKBNEHLL->value_list]*/
+}
+
+
+message MHHNJFNAPPE {
+	PEAADLMNGMJ HMBOLJIPEPL = 4;
+	optional BPEEGEBLIDE selection_info_value_structure = 100;
+}
+
+
+message DHGPIMEDFGM {
+	bool is_active = 1; /*[PPLMDHPODMN->is_active]*/
+	bool is_show = 2; /*[NNCHINGJDKO->is_show]*/
+	bool KBLEJBIBDBD = 3;
+}
+
+
+message KLLHGCFEPJF {
+	int32 DKEBJDHGOHF = 1;
+	oneof detail { /*[ENPDCINEPHH->detail]*/
+		KNADCEBMECF beyond_replace_model_property = 31;
+		DMLHHKJJKAG monster_ai_territory = 44;
+		IAJJMLMIPKE beyond_equip_stuff_tag_property = 53;
+		LKFGENGFJDJ beyond_equip_affix_property = 51;
+		DFKHCEGNPGN beyond_monster_skill_property = 78;
+		IFFMHAOEJAL basic_info_property = 11;
+		NPAFEBGCDDK beyond_dlcfree_property = 72;
+		MAFFMOFGEGH dummy_avatar = 47;
+		FHBLEGGGBJE beyond_chip_trial_data_property = 63;
+		NAINILMMIAI beyond_currency_client_property = 54;
+		HIOBGKJDKCO duty_edit_client_property_grow_config = 18;
+		EPDMPPJJFKD beyond_stuff_client_property = 49;
+		NNCLNGFEODJ beyond_localization_property = 71;
+		OKNCEKLPNIF ui_static_comp = 15;
+		PPKCGJMANKG duty_edit_client_property_base_config = 16;
+		HNDKBBMNMOE monster_ai_wander = 41;
+		FGNNCABAPJM beyond_prefab_group_owner_property = 65;
+		CLEKGGBHOHB duty_edit_client_property_level_up_config = 17;
+		MHOFPPOIKPM beyond_scan_entity_sub_tag_template_client_property = 67;
+		FEOLACGBPPB beyond_enviro_light_property = 74;
+		FOJAFCDJKEO beyond_duty_enmity_config_property = 35;
+		JCHFKJINFHH beyond_stuff_bag_client_property = 55;
+		PKCEACNCEOA billboard = 28;
+		BCADJAFJBCG beyond_equip_stuff_type_property = 52;
+		FMCANKPHJAK child_model_property = 50;
+		NHEEIGDEENP beyond_monster_ai_param_template_property = 81;
+		CFGPEICACLO beyond_equip_stuff_bag_property = 56;
+		EDFHEAMAHGF beyond_remark_property = 22;
+		NCLMFEPEOHM beyond_mpaction_property = 23;
+		MFPMJNGEOEJ reference_point = 46;
+		HGEDEBIPPCF beyond_monster_patrol_param_property = 70;
+		NBHKOGONJID beyond_pcggenerator_client_property = 77;
+		KECPCAEPDDK beyond_dlcpremium_property = 73;
+		NKOHBIGDAIP monster_ai_skill_list_property = 57;
+		MDKOGFDHLGF beyond_absolute_route_property = 64;
+		LOMOKCADHEL duty_edit_client_property_grow_curve_config = 20;
+		AOIANINLNML beyond_local_bullet_property = 32;
+		KDIJEGBGCNO beyond_shield_property = 61;
+		NNGLMCLAOHB beyond_prefab_group_instance_property = 66;
+		NGJMDDCIECF timeline = 45;
+		HMKKHFPOHCC player_edit_client_property_revive_config = 14;
+		MGJHLBPAHNO beyond_chip_achievement_trial_data_client_property = 69;
+		FBDLAOBGBCF beyond_monster_ai_graph_ref_property = 79;
+		LKBJHADGCGJ beyond_duty_enbreak_config_property = 36;
+		ADEKPCHMHML beyond_duty_custom_skill_config_property = 34;
+		PKCBHMDLJJC beyond_skill_energy_client_property = 33;
+		DPJCOOMOMKM beyond_chip_tier_trial_data_client_property = 68;
+		FIHIPCNNBJM monster_ai_threat = 42;
+		CGEJMOFCJIC enmity = 48;
+		HABHDKPOPEH beyond_role_status_client_property = 21;
+		OBEIPHLLOMO beyond_struct_client_property = 59;
+		JDCENECAAGP beyond_custom_skill_property = 30;
+		PNEGLBJOPAJ beyond_environment_property = 75;
+		CNHLGDGBDDA player_edit_client_property_base_info = 12;
+		NHEECEAIGPF beyond_shop_template_client_property = 58;
+		JDBGNANDAOP beyond_suite_item_property = 62;
+		IIAHIFIGCMP duty_edit_client_property_role_status_config = 19;
+		BFNGJEFMKAM beyond_monster_ai_skill_ref_property = 80;
+		PFPCGLDPDJD monster_ai_sensing = 43;
+		ADIOAMBJBFO monster_ai_basic = 40;
+		CMLAFHCBEMH beyond_chip_dlc_trial_data_client_property = 76;
+		AEHHPHKCJDF beyond_chip_template_client_property = 60;
+		OALOMPJHCHB empty_model = 29;
+	}
+}
+
+
+message KAFFGFJPHOA {
+	string HDFDPEHKCOG = 501;
+	repeated NIHJCOOFMNP AGAPBINMNDC = 1;
+	uint32 KOAJIOMCOBI = 503;
+	uint32 ANKIDDHDEPF = 504;
+	bool CBKAADPLJCE = 502;
+	bool OHAIOCPPAJA = 505;
+}
+
+
+message LKFGENGFJDJ {
+	KCDFIPOFEOO OFHMMCDBKEJ = 1;
+}
+
+
+message IIHFKDCNFAD {
+	repeated PGPEGOIGPCN HEJOBFKCAKD = 2;
+	float HJMABNEGLEN = 1;
+}
+
+
+message ILDOGELCDJD {
+	repeated int32 tag_list = 1; /*[OCHFAADBPIF->tag_list]*/
+}
+
+
+message FEOLACGBPPB {
+	JEOJBHOGADH OFHMMCDBKEJ = 1;
+}
+
+
+message LGLFDAOKNEE {
+	repeated DIPBBHJJJPN JOCMJJFGOBN = 1;
+}
+
+
+message IFIIIKAOFOL {
+	repeated KLLHGCFEPJF FIKACKOJHGJ = 6;
+	repeated NOGGFECJMFP OCGGCNIEKMJ = 7;
+	repeated GCJGALEKGFH LNIOBDPMGKB = 8;
+	uint32 FNHPJCHECDJ = 1;
+	uint32 DHDIDFHDDAH = 2;
+	int32 AFCEGLGKNNP = 9;
+	bool LNCLPGKPLPL = 10;
+}
+
+
+message PDDGDCLDCEA {
+	bool LPMCOGBBAGK = 509;
+	bool JLNBHEJAGNB = 501;
+	bool MJONOOLHKFA = 507;
+	bool NLCFBFPHINL = 503;
+	bool PAHOKEACHND = 506;
+	bool HJJDHDAJEKH = 510;
+	bool FKIENLILNBK = 504;
+	bool LHMKFHDOFDP = 502;
+	bool JBHGAMLGLNK = 508;
+	bool EMBCPBDGGFC = 505;
+	bool HHBADOKJLCN = 511;
+}
+
+
+enum ADCIDEDKLDJ {
+	ADCIDEDKLDJ_NONE = 0;
+	ADCIDEDKLDJ_PIN_VISIBILITY_CONTROLLER_V_2 = 1;
+}
+
+
+enum OAHKGEAJDLI {
+	OAHKGEAJDLI_FIX = 0;
+	OAHKGEAJDLI_RANDOM = 1;
+}
+
+
+message KOAAMLEHMHO {
+	DEHJDOAANPI LCBOMNBPDKE = 2;
+	float time = 1; /*[HGPLMCPPPPC->time]*/
+}
+
+
+message PINBMEPFGKG {
+	uint32 GFNGGLHLFMA = 2;
+	bool AJJHMDANEAL = 1;
+}
+
+
+message GAMKBNAIMDO {
+	uint32 HOGHGNKNOJI = 1;
+}
+
+
+enum NDEONKHNCHC {
+	NDEONKHNCHC_NONE = 0;
+	NDEONKHNCHC_MODIFY_NODE_TYPE = 1;
+}
+
+
+message JDFKLFGELAO {
+}
+
+
+message DIPBBHJJJPN {
+	string ADOCIJNOMCI = 3;
+	EAPKIALFJKI LLBBADLBNHJ = 2;
+	string LELBLLBNGOL = 501;
+	int32 MLDOIEHNDGC = 1;
+}
+
+
+message HICCFDEGMDD {
+	float value = 1; /*[GONNLMLACCM->value]*/
+}
+
+
+message OHBGJPCLMLH {
+	string name = 504; /*[PEMBNEOLEAN->name]*/
+	repeated int32 NODMLLLEJEN = 6;
+	repeated DGDOCDECOKO ENAPANNFDEC = 2;
+	EAPKIALFJKI KAKEPIFMIEA = 5;
+	int32 filter_type = 505; /*[CFIIDPABPCM->filter_type]*/
+	LFGLDPNCABE KAGDLDDAJNJ = 3;
+	int32 index = 502; /*[BIJCOCHPGDN->index]*/
+	bool FGGFNAMMKLG = 503;
+	int32 BCLKCGHLBGO = 1;
+	oneof detail { /*[ENPDCINEPHH->detail]*/
+		MNIMPEHPHNI beyond_avatar_disturber_traveller = 11;
+		BLJAPBBGNGL beyond_avatar_disturber_eject = 13;
+		OBLILFNIJBN beyond_avatar_disturber_field = 12;
+		NLNMIADEHLK beyond_avatar_disturber_drag = 14;
+	}
+}
+
+
+message HKGIPCEPMLN {
+	string value = 1; /*[GONNLMLACCM->value]*/
+	uint32 KIJNGFMIAKH = 2;
+}
+
+
+message EELPPPLMGFO {
+	CBPJDDGOFDH KNLBLCMGPDF = 504;
+	CBPJDDGOFDH max_value = 506; /*[NOMCDJLMKKD->max_value]*/
+	CBPJDDGOFDH KLOPALLAFBF = 505;
+	int32 CFCKFDDFGDH = 503;
+	int32 shape = 501; /*[MAENONBBPEE->shape]*/
+	int32 JNBNEFMEDNL = 502;
+}
+
+
+enum IAHALJHHDIC {
+	IAHALJHHDIC_NONE = 0;
+	IAHALJHHDIC_UINT = 1;
+	IAHALJHHDIC_INT = 2;
+	IAHALJHHDIC_BOOL = 3;
+	IAHALJHHDIC_FLOAT = 4;
+	IAHALJHHDIC_STRING = 5;
+	IAHALJHHDIC_ENUM = 6;
+	IAHALJHHDIC_VECTOR = 7;
+	IAHALJHHDIC_GENERICS = 10000;
+	IAHALJHHDIC_STRUCT = 10001;
+	IAHALJHHDIC_LIST = 10002;
+	IAHALJHHDIC_SERVER_PARAM_DICTIONARY = 10003;
+	IAHALJHHDIC_GENERICS_STRUCT = 10004;
+	IAHALJHHDIC_GENERICS_STRUCT_LIST = 10005;
+	IAHALJHHDIC_GENERICS_SERVER_PARAM_DICTIONARY = 10006;
+	IAHALJHHDIC_SERVER_PARAM_KV_PAIR = 10007;
+}
+
+
+message StepCreateCompoundConnection { /*[NKGEMGPAOGE->StepCreateCompoundConnection]*/
+	PinName CKFHAMAMMKA = 3; /*[KGKFKBPGIOK->PinName]*/
+	PinName HMOJLCNJBDE = 2; /*[KGKFKBPGIOK->PinName]*/
+	uint32 DIKNNMCOHLM = 1;
+}
+
+
+message IEPDCJJMIND {
+	LFGLDPNCABE value = 1; /*[GONNLMLACCM->value]*/
+}
+
+
+message NLNMIADEHLK {
+	JNICKGNFOND LGDDOFNCFLE = 5;
+	DEHJDOAANPI HIBMPFIICMN = 1;
+	DEHJDOAANPI FLHHOHLHKFN = 506;
+	float radius = 12; /*[FLNKEHMENOB->radius]*/
+	float FNBBDLCHGCA = 2;
+	float speed = 4; /*[CLIHNHFJFJD->speed]*/
+	float JIIKJNHKHIG = 3;
+	bool CBKPFJLBBLI = 11;
+	bool CGIOJLNPILN = 6;
+	bool PJFMEIGAHLP = 508;
+	bool DBAHEGICDFK = 7;
+	bool MIDJCGACNPA = 8;
+	bool BAPODEMFNAK = 507;
+	bool IKNOBMBNAPM = 9;
+	bool AFFJLEAIOBN = 10;
+	bool JHGLBCBEAJH = 13;
+}
+
+
+message MDEKEBEAPEE {
+	CBPJDDGOFDH score = 502; /*[AOPMDPLGBFB->score]*/
+	uint32 LOLGGCHJICB = 501;
+}
+
+
+message IHMFEGHAODL {
+	DEHJDOAANPI offset = 1; /*[ODKPNPEDGFA->offset]*/
+	float MBKHEPAEIEM = 3;
+	float OFEMJEGIBOJ = 2;
+}
+
+
+message ELDMHNFNCBF {
+	repeated uint32 IEIGDHILPCA = 3;
+	uint32 LMODMOFGCNL = 4;
+	bool LEALLEGLIOB = 2;
+	bool is_active = 1; /*[PPLMDHPODMN->is_active]*/
+}
+
+
+message JFHCHLDAOLL {
+	repeated CIDDEMPFGMP CMNOCHJDELD = 1;
+}
+
+
+message DFPNHEJDFDN {
+	EAPKIALFJKI JIJPMHMKJOI = 6;
+	repeated FNNJHLIDDGO PEIMNLAFAKJ = 501;
+	float PNLCBEPKOKF = 7;
+	uint32 level = 5; /*[KAIEIHHCCAA->level]*/
+	float MLEEHKHIGHO = 14;
+	float JLMIMMOKIKE = 1;
+	bool LLAOOJANCAA = 4;
+	float BGABLAMMLIC = 12;
+	float KNPMJOLOGME = 3;
+	float JCDIDBKOFDO = 9;
+	float DFNIPKHIPPP = 15;
+	float PECBBHHELHE = 2;
+	float HCNKECLNOGK = 11;
+	float FANLEBPJNEL = 8;
+	float KJJLNLKOIOE = 13;
+	float CKODFKDFDMI = 10;
+}
+
+
+message HIOBGKJDKCO {
+	LECCOGJBAPL OFHMMCDBKEJ = 1;
+}
+
+
+message GenericsServerParamDictionaryInfo { /*[OOFCLLNNBJB->GenericsServerParamDictionaryInfo]*/
+	uint32 MPJJFKOJHNN = 1;
+	bool DJFBLKKKDEP = 4;
+	uint32 AMMJGJMLMLL = 2;
+	uint32 FMINBCJDHAE = 3;
+	BANMCEGHLKO ABGKPOMBKHG = 5;
+}
+
+
+message HEPDOAGGNMP {
+	uint32 DMNCFEHALMN = 504;
+	uint32 FMINBCJDHAE = 2;
+	OJJEPCGMLDD FPLOFIPIHAL = 1;
+	CHJLDBPFIAF FIAFBCEAAKK = 503;
+	CHJLDBPFIAF DICALCBBNKP = 502;
+}
+
+
+message EPOKBPCPNOC {
+	repeated uint32 INILOFNNLEE = 3;
+	repeated NONLEPGPJDI data_list = 1; /*[KFJFKBDDOOM->data_list]*/
+	uint32 HAGMHONKGEN = 2;
+}
+
+
+message ICHAJJEDONJ {
+	string NHPFCGOGEOB = 502;
+	repeated DGDOCDECOKO MBLLPKHBKLK = 3;
+	bool is_active = 2; /*[PPLMDHPODMN->is_active]*/
+	int32 id = 1; /*[PCPENLLKDLK->id]*/
+}
+
+
+message BJCPMPKIIAK {
+	repeated uint32 value_list = 1; /*[NEBBKBNEHLL->value_list]*/
+}
+
+
+message EABPIMCBNCE {
+	BANMCEGHLKO ABGKPOMBKHG = 5;
+	uint32 AMMJGJMLMLL = 2;
+	uint32 JNPPEBGNDNB = 3;
+	uint32 MPJJFKOJHNN = 1;
+	bool DJFBLKKKDEP = 4;
+}
+
+
+message ValueUint { /*[HPPAAOMBALH->ValueUint]*/
+	uint32 value = 1; /*[GONNLMLACCM->value]*/
+}
+
+
+message DCDOEKEEPGD {
+	string key = 2; /*[EFGFLCKJPHM->key]*/
+	NCNLIEFBLMN FBDLKPBKHBF = 4;
+	uint32 FMINBCJDHAE = 6;
+	uint32 NOPCIPFOINH = 7;
+	bool EIHCNGCDAHG = 5;
+	uint32 BIOAHEGDICK = 3;
+	uint32 EDJHMBGIMAG = 8;
+	uint32 JNPPEBGNDNB = 9;
+	uint32 config_id = 1; /*[KAHMADIKBNG->config_id]*/
+}
+
+
+message OLJCIJMJANO {
+	KONPJEFKEIK OLLFKENIIBF = 2;
+	HKCIIBFNJBG MKIHDNKIFCC = 3;
+	repeated IPMICGNINDB EIAEPIHHNBD = 1;
+}
+
+
+message CFLLHKBPLLJ {
+	repeated OLGEOFIDHIM LJJHFIJJDNM = 3;
+	repeated DMNKHCFFNFK BAJAHFILJLN = 2;
+}
+
+
+message NBMLDMOPLKP {
+}
+
+
+message MFJDKBCFEHG {
+	DEHJDOAANPI AGJBDAJNCIM = 1;
+}
+
+
+message GLHOAEJONKC {
+	NLIAOHNJPIC data = 1; /*[GGEBNBICIKB->data]*/
+}
+
+
+enum EJINICKGCEJ {
+	EJINICKGCEJ_NONE = 0;
+	EJINICKGCEJ_CUSTOM = 1;
+	EJINICKGCEJ_TIER = 2;
+	EJINICKGCEJ_ACHIEVEMENT = 3;
+	EJINICKGCEJ_DLC = 4;
+}
+
+
+enum EHPEMBKFAEA {
+	EHPEMBKFAEA_BEYOND_FOG_COLOR_DEFAULT = 0;
+	EHPEMBKFAEA_BEYOND_FOG_COLOR_WHITE = 1;
+	EHPEMBKFAEA_BEYOND_FOG_COLOR_GREEN = 2;
+	EHPEMBKFAEA_BEYOND_FOG_COLOR_BLUE = 3;
+	EHPEMBKFAEA_BEYOND_FOG_COLOR_ORANGE = 4;
+	EHPEMBKFAEA_BEYOND_FOG_COLOR_RED = 5;
+}
+
+
+message DFHJELLNOEJ {
+	float y = 502; /*[APMPIPOAAHJ->y]*/
+	float x = 501; /*[OFLHBJCAIHD->x]*/
+}
+
+
+message HPMIEJANCHA {
+	EAPKIALFJKI JEPLPMILMJC = 4;
+	int32 talk_id = 1; /*[EBEEJDAAOEG->talk_id]*/
+	bool is_active = 3; /*[PPLMDHPODMN->is_active]*/
+	int32 BGINPNIJFOH = 2;
+}
+
+
+message KGAHHPLKAPN {
+}
+
+
+enum CMDKKHHDMII {
+	CMDKKHHDMII_SPHERE = 0;
+	CMDKKHHDMII_CONE = 1;
+}
+
+
+message LJCCNFOIHKA {
+	int32 HNLBECMJDIG = 502;
+	int32 GMNAHOCIGEK = 503;
+	uint32 AMDPHGFAKNE = 501;
+}
+
+
+message LBPNJHCCNAM {
+	bool GIJCGAEPEDO = 4;
+	bool PAEPGCFAOGJ = 502;
+	float IHOFMOINGMN = 5;
+	float accelerate_time = 501; /*[MMAGNCCECII->accelerate_time]*/
+	float EKOCNHJJDBB = 1;
+	float max_speed = 3; /*[HAKLDPKLGPB->max_speed]*/
+	float LLPDNHCPJFN = 2;
+}
+
+
+message ILPJILHCMKG {
+	int32 CLILOBKFBHO = 2;
+	bool ODBHPMNFMHE = 5;
+	bool ABFPELGLJIN = 6;
+	bool GFKMIMPNJMM = 4;
+	bool DNMICIEJLIA = 3;
+	int32 IGLCMGCBCHN = 7;
+	uint32 ANNCMAFALCA = 1;
+}
+
+
+message BMDFHFMIGBN {
+	MKKOBPPAEDP data = 2; /*[GGEBNBICIKB->data]*/
+	uint32 id = 1; /*[PCPENLLKDLK->id]*/
+}
+
+
+message HLMDCHIONNG {
+}
+
+
+message JDMJJDCHKBK {
+	float AGPBLDKNLIH = 1;
+	float value = 2; /*[GONNLMLACCM->value]*/
+}
+
+
+message IEMHBIIGKIK {
+	HLIOPFMILPO data = 1; /*[GGEBNBICIKB->data]*/
+}
+
+
+message StepModifyValue { /*[LNHBEPEIHBM->StepModifyValue]*/
+	PinName NPEECGOAINB = 2; /*[KGKFKBPGIOK->PinName]*/
+	NCNLIEFBLMN value = 3; /*[GONNLMLACCM->value]*/
+	uint32 IIPBMEDFECI = 1;
+}
+
+
+message AKHNFHHLNOB {
+	int32 DOJAAFDPJMB = 501;
+	oneof detail { /*[ENPDCINEPHH->detail]*/
+		HGFMHHAECEH edit_transform_comp = 12;
+		IPFFDPGCAHC read_transform_comp = 11;
+	}
+}
+
+
+enum IHKODBMGDNA {
+	IHKODBMGDNA_BEYOND_SKY_COLOR_DEFAULT = 0;
+	IHKODBMGDNA_BEYOND_SKY_COLOR_WHITE = 1;
+	IHKODBMGDNA_BEYOND_SKY_COLOR_GREEN = 2;
+	IHKODBMGDNA_BEYOND_SKY_COLOR_BLUE = 3;
+	IHKODBMGDNA_BEYOND_SKY_COLOR_ORANGE = 4;
+	IHKODBMGDNA_BEYOND_SKY_COLOR_RED = 5;
+}
+
+
+message EDFHEAMAHGF {
+	string AFEFFONCIBF = 1;
+}
+
+
+message DCCGCCLHFEM {
+	int32 key = 1; /*[EFGFLCKJPHM->key]*/
+	int32 value = 2; /*[GONNLMLACCM->value]*/
+}
+
+
+message BCADJAFJBCG {
+	ECMIIABHEJC OFHMMCDBKEJ = 1;
+}
+
+
+message NKOHBIGDAIP {
+	KBENGFIFMMK DKKFKNHJNOH = 1;
+}
+
+
+message BCLLOLBIHAK {
+	EAPKIALFJKI CNNGOEDFOHD = 1;
+	OFKCKGNDFDJ IOMFKKAFMJE = 3;
+}
+
+
+message PFMHPDBAGJM {
+	string GLHPMLCJIDC = 2;
+	uint32 BKIOCELLCIA = 1;
+}
+
+
+message CGEJMOFCJIC {
+	bool IFIFDFENOMM = 3;
+	bool EONGAHFGNAE = 2;
+	float NICJIODOLMO = 1;
+}
+
+
+message BNNKMNLELKH {
+	PGONMCOLFJK OAOMHLOHDAJ = 511;
+	PGONMCOLFJK FBPBMKHEINF = 513;
+	repeated PGONMCOLFJK BDPBJGNPIGD = 3;
+	PGONMCOLFJK DOBKIJIINIL = 512;
+	string name = 1; /*[PEMBNEOLEAN->name]*/
+	int32 id = 501; /*[PCPENLLKDLK->id]*/
+	bool CCKCFDOJMCC = 503;
+	bool FGGFNAMMKLG = 2;
+}
+
+
+message MKHMLMEGHJK {
+	IAHALJHHDIC IAIJDHIDNHJ = 1;
+	IAHALJHHDIC HCOJNPHDFKI = 2;
+	oneof detail { /*[ENPDCINEPHH->detail]*/
+		GenericsServerParamDictionaryInfo generics_server_param_dictionary_info = 103; /*[OOFCLLNNBJB->GenericsServerParamDictionaryInfo]*/
+		ServerParamDictionaryInfo server_param_dictionary_info = 102; /*[OGCBBMMHJFD->ServerParamDictionaryInfo]*/
+		StructListInfo struct_list_info = 101; /*[OGOJPOJFEFO->StructListInfo]*/
+		StructInfo struct_info = 100; /*[AOPDJKKIGLO->StructInfo]*/
+	}
+}
+
+
+message ODGJCPFFMOF {
+	DEHJDOAANPI center = 1; /*[BDOBKMBOOBB->center]*/
+	DEHJDOAANPI ILFLPCGKJLH = 3;
+	DEHJDOAANPI GNOFNBODIOJ = 2;
+}
+
+
+message EGMEOGJODHJ {
+	repeated HBGCEGJGLMB NPOCPCENHPL = 15;
+	DEHJDOAANPI center_pos = 6; /*[NBGIIENPBJN->center_pos]*/
+	repeated ABFJEPFIBEK FFBJDCANPOM = 2;
+	string MPFHIFAFGCJ = 13;
+	DEHJDOAANPI AGJBDAJNCIM = 7;
+	OLJCIJMJANO GKFMMHCEGDK = 12;
+	float PLAGIDACMEN = 10;
+	uint32 MHFNJCCPJAF = 14;
+	float OEHNCFIOIJB = 9;
+	uint32 LGOLIMIOPKH = 3;
+	float NBJGHLHJGBM = 11;
+	int32 DPKNBPCPDNF = 1;
+	bool LBPMIKINEBF = 16;
+	bool IBJBPEGOBGP = 4;
+	int32 MGENNLBPGCA = 5;
+}
+
+
+message CGMHDDCIDOL {
+}
+
+
+message MIJECGAAPKD {
+	int32 FACMGLHGFPP = 4;
+	float BDDDKPGFBHO = 1;
+	LFGLDPNCABE BBBGDECNIKG = 3;
+}
+
+
+message DINGHHMOBII {
+	PinName NPEECGOAINB = 2; /*[KGKFKBPGIOK->PinName]*/
+	PinName FICGNINAGEP = 3; /*[KGKFKBPGIOK->PinName]*/
+	uint32 IIPBMEDFECI = 1;
+}
+
+
+message EPDMPPJJFKD {
+	PKHFFBNHMEL OFHMMCDBKEJ = 1;
+}
+
+
+message InfoServerParamDictionary { /*[DELENICGLJI->InfoServerParamDictionary]*/
+	uint32 MPJJFKOJHNN = 1;
+	uint32 FMINBCJDHAE = 3;
+	uint32 AMMJGJMLMLL = 2;
+}
+
+
+message CEFHKJHFGEE {
+	uint32 height = 2; /*[IOFHOHOJOAP->height]*/
+	uint32 PLCBONGOHKF = 3;
+	uint32 JFHCGCMBCID = 6;
+	uint32 IOAMCHBOBCK = 4;
+	uint32 BFJAAOBEADE = 1;
+	uint32 HMLOOLCCNGB = 5;
+}
+
+
+message ODKAGKIDOEC {
+	bool LLHFAAHLGFJ = 2;
+	float speed = 1; /*[CLIHNHFJFJD->speed]*/
+}
+
+
+message KNHPMCHOLCA {
+	uint32 HCANOBPIKBE = 502;
+	int32 DKEBJDHGOHF = 501;
+}
+
+
+message ConfigPlaySoundEffect { /*[AMDMBCGBBNG->ConfigPlaySoundEffect]*/
+	int32 OMMEHPEBMDD = 5;
+	int32 AHIKLNCIELC = 6;
+	int32 NJIGAPGKALH = 1;
+	int32 ADEGFJOBNCL = 3;
+	int32 GNIJAAGKFMB = 7;
+	int32 JDADDDLMOLI = 8;
+	int32 ILGCBJEHFMP = 2;
+	int32 LDPCIEPAJBM = 4;
+}
+
+
+enum EONADBCNHLH {
+	EONADBCNHLH_NONE = 0;
+	EONADBCNHLH_VECTOR = 1;
+	EONADBCNHLH_PARABOLA = 2;
+	EONADBCNHLH_FOLLOW = 3;
+	EONADBCNHLH_SURROUND = 4;
+}
+
+
+message IPHIPAAPFLG {
+	ONJBMCGAPNK data = 1; /*[GGEBNBICIKB->data]*/
+}
+
+
+message IFHGMIIKMPG {
+	PinName ILGBEEHINMD = 2; /*[KGKFKBPGIOK->PinName]*/
+	PinName JBHHAIJOLNJ = 1; /*[KGKFKBPGIOK->PinName]*/
+}
+
+
+message JNLAFINDLAC {
+	string GHMHGBAPCFC = 501;
+	int32 GMNAHOCIGEK = 502;
+}
+
+
+message LKMDKIJEKAC {
+	uint32 IBGFAEICDNK = 502;
+	int32 JHPJMBLGING = 501;
+}
+
+
+message AEHHPHKCJDF {
+	MKKOBPPAEDP OFHMMCDBKEJ = 1;
+}
+
+
+message EBNGOGICKKH {
+	string GHMHGBAPCFC = 501;
+	int32 GMNAHOCIGEK = 502;
+}
+
+
+message DMCFNFNCDHL {
+	JFGJLOPBBHG HOFHLODFKCD = 1;
+	LHAFBPEEDJL LFCEEAOGEKH = 2;
+	LMOPFKCPLBJ NPFCMFFGLBA = 3;
+	repeated ICGLOMEFMLG PGHNNLPJNCG = 4;
+}
+
+
+message IACCJKHLDGM {
+	PinName index = 1; /*[KGKFKBPGIOK->PinName, BIJCOCHPGDN->index]*/
+	NCNLIEFBLMN value = 3; /*[GONNLMLACCM->value]*/
+	repeated CEFNKLANAHN PIDKCMJHCJH = 6;
+	repeated DINGHHMOBII DMEPNLKFIFE = 5;
+	PinName BGAFAPDCKOO = 2; /*[KGKFKBPGIOK->PinName]*/
+	uint32 BIOAHEGDICK = 4;
+	uint32 ABLBHCAGKHK = 7;
+}
+
+
+message HGEDEBIPPCF {
+	OCNCEIPLILC DEKKLPMBPMK = 1;
+}
+
+
+message DJDPHBNJNDG {
+	DEHJDOAANPI rot = 3; /*[PPOMCELLJLE->rot]*/
+	repeated int32 tag_list = 4; /*[OCHFAADBPIF->tag_list]*/
+	DEHJDOAANPI pos = 2; /*[CGOHAKJFKMH->pos]*/
+	string NOGAKFOECAA = 501;
+	int32 point_id = 1; /*[CCKIOMAHPNJ->point_id]*/
+	bool PNOKLHPGBIP = 502;
+}
+
+
+message COCMHCPHNPC {
+	LLDKFMKBHNJ action = 6; /*[OAMKACIKGCG->action]*/
+	LFGLDPNCABE speed_level = 2; /*[OGINCKABDNO->speed_level]*/
+	bool IIDGGHCBOBD = 5;
+	LFGLDPNCABE OKEAHMJNOKD = 3;
+	float LGHFFJKKDKF = 4;
+	int32 AGHGDCPDKIM = 1;
+}
+
+
+message BKCFBNCODJJ {
+	bool KBLEJBIBDBD = 4;
+	uint32 PHJNKNLKOKN = 2;
+	uint32 BLEEJDLCONE = 6;
+	uint32 KCNLJCAILDJ = 5;
+	float EFAAMOMINFG = 3;
+	int32 MOCJHGNMEJN = 1;
+}
+
+
+enum IMCFOJDCACI {
+	IMCFOJDCACI_NONE = 0;
+	IMCFOJDCACI_CREATE_NODE = 1;
+	IMCFOJDCACI_MODIFY_VALUE = 2;
+	IMCFOJDCACI_CREATE_CONNECTION = 3;
+	IMCFOJDCACI_CREATE_COMPOUND_CONNECTION = 4;
+}
+
+
+message OHMLEHLBJCP {
+}
+
+
+message BOJLFOAMEKC {
+	LFGLDPNCABE prop_type = 1; /*[ECMFFGJOAFA->prop_type]*/
+}
+
+
+message KMHNJHCHMEJ {
+	repeated BHLEHHMFGCF value_list = 1; /*[NEBBKBNEHLL->value_list]*/
+}
+
+
+message HLMNBDMKFGE {
+	string name = 1; /*[PEMBNEOLEAN->name]*/
+	uint32 BLEEJDLCONE = 6;
+	int32 type = 2; /*[KIFBBKDKNJI->type]*/
+	bool is_active = 3; /*[PPLMDHPODMN->is_active]*/
+	bool is_show = 4; /*[NNCHINGJDKO->is_show]*/
+	bool KBLEJBIBDBD = 5;
+}
+
+
+message DBKPKOHKAAC {
+	EAPKIALFJKI AHEFFDMLGPF = 1;
+	uint32 ENMDKGAFGOC = 2;
+}
+
+
+message FPHOKKFPPOD {
+	repeated MEDOBIOFKGM JDKGCMOMLFC = 2;
+	float DNEAJGPCECF = 4;
+	bool DBCJCAJFDOB = 3;
+	float GJFEANLLHDD = 1;
+}
+
+
+message PAOOEPAFIFM {
+	repeated int32 NODMLLLEJEN = 9;
+	OFKCKGNDFDJ IHIGHNBNGNJ = 7;
+	repeated DGDOCDECOKO MMPGLPOAFBN = 8;
+	LJGJDAMBIIA DPMJHLEBHKL = 3;
+	float PBKKBCGBAFI = 2;
+	bool KMBHPLLAGIB = 4;
+	int32 filter_type = 501; /*[CFIIDPABPCM->filter_type]*/
+	EGMELEIFODH PCJCJNPNKFL = 1;
+}
+
+
+message DDFFOFGKEPK {
+}
+
+
+message ConfigBreakStruct { /*[MIELBNMPEBE->ConfigBreakStruct]*/
+	uint32 FMINBCJDHAE = 1;
+}
+
+
+message NPBOLOGMENK {
+}
+
+
+message DJDGICLAAAN {
+	DEHJDOAANPI speed = 2; /*[CLIHNHFJFJD->speed]*/
+	DEHJDOAANPI DDBPFDEENEP = 501;
+	float time = 1; /*[HGPLMCPPPPC->time]*/
+}
+
+
+message OBLILFNIJBN {
+	DEHJDOAANPI FDHMBALOCKB = 3;
+	DEHJDOAANPI HHOPHIFHMLM = 1;
+	int32 NJKOLPOHAMF = 502;
+	float DIONGKNEJAF = 506;
+	float DEJLGEMCGBF = 8;
+	bool PIDLFAPBFPK = 4;
+	int32 FLIFPJGKOLL = 503;
+	LFGLDPNCABE PBNHPAEEBAJ = 2;
+	float AMCODHLLBPD = 7;
+	float MFGMOJCELGL = 5;
+	int32 MKOGFKMDNOM = 501;
+	int32 JKPNPLCNAII = 504;
+	float KGNKBLHICHL = 6;
+	LFGLDPNCABE ABHOGGAABNH = 507;
+	float IKCBCJDGNIB = 505;
+}
+
+
+message HPPLDKBAIOG {
+	repeated NOGGFECJMFP OCGGCNIEKMJ = 5;
+	repeated KLLHGCFEPJF FIKACKOJHGJ = 4;
+	uint32 guid = 1; /*[OIIGKJPGPBC->guid]*/
+}
+
+
+message AKECNEAPAMA {
+	uint32 LOLGGCHJICB = 501;
+	bool IKOHOMNEBIE = 502;
+	bool HDMAGCOFCOO = 503;
+}
+
+
+message GFKPPIJIPPL {
+	uint32 value = 1; /*[GONNLMLACCM->value]*/
+}
+
+
+message BOFPFPPJJPA {
+	bool AHEDIHEJBAC = 1;
+}
+
+
+message DAEKEDNFFIB {
+	int32 NLCLOKOPOFD = 1;
+}
+
+
+message NJDIKHNKHIO {
+}
+
+
+message EDHIBFHHHOF {
+	JGAIINAIHFO KGMOKDDBFED = 21;
+	string IGNMIPEEKON = 2;
+	float PMKOIPONHOF = 4;
+	float BIELHEKHAAN = 3;
+	uint32 NOLMFLFGJNL = 8;
+	int32 MOCJHGNMEJN = 1;
+	uint32 config_id = 5; /*[KAHMADIKBNG->config_id]*/
+	uint32 BLEEJDLCONE = 6;
+	uint32 FLPLBIECFIN = 7;
+}
+
+
+message FMOAPHCIPJF {
+	repeated CCNIOPHEHNH NMHGJMJCFHE = 1;
+}
+
+
+message MOJLHNAKJIP {
+	repeated IMHIMLKBFHN HKEODMHGOKE = 510;
+	repeated MDEKEBEAPEE OIFBFMBCPKI = 511;
+	bool NKBAKIAIALL = 508;
+	bool NDIOOGNEGCI = 505;
+	bool IGAAIKMFLOJ = 506;
+	bool DHKHKHCEGBA = 507;
+	int32 KIOBKOHGBDG = 502;
+	int32 KABOPNOENPA = 504;
+	int32 EGDFKJAICJN = 501;
+	bool DJJIEBEBJCB = 509;
+	int32 JMCFFKKMGOI = 503;
+}
+
+
+message MpActionId { /*[FBDEJGJHJPA->MpActionId]*/
+	uint32 config_id = 1; /*[KAHMADIKBNG->config_id]*/
+}
+
+
+message PGONMCOLFJK {
+	LDMOFJOJPIH JBBNFNLFMKC = 502;
+	FJGOICAKAPC EECCABLAFEM = 1;
+	oneof detail { /*[ENPDCINEPHH->detail]*/
+		DJDGICLAAAN vector_mover_data = 11;
+		OKEOMOPKBGL rotate_mover_data = 12;
+		FLABDCCIJJB fixed_pos_rot_mover_data = 15;
+		EOEFLFAELHO route_mover_data = 13;
+		KOAAMLEHMHO rotate_to_dir_mover_data = 14;
+	}
+}
+
+
+message CustomUiNode { /*[MLJDCMCJHBL->CustomUiNode]*/
+	FDCNGHHMCJO data = 1; /*[GGEBNBICIKB->data]*/
+}
+
+
+message DAHHBHHFOGC {
+}
+
+
+message PFEKEDPNJCJ {
+	repeated EAPKIALFJKI IFKAJPPIJBN = 1;
+}
+
+
+message OFKCKGNDFDJ {
+	repeated BPDBGJLEFFK KFKBLKOCINP = 1;
+}
+
+
+message DOBHCHACODC {
+	DEHJDOAANPI position = 1; /*[HOOCGKDDCPI->position]*/
+	DEHJDOAANPI rotation = 2; /*[BOKDCGBKKPE->rotation]*/
+	uint32 MMEPAFMHEIG = 3;
+}
+
+
+message MMNIENILKLK {
+	EAPKIALFJKI value = 1; /*[GONNLMLACCM->value]*/
+}
+
+
+message COAGIGLIHHH {
+	DEHJDOAANPI DDBPFDEENEP = 501;
+	DEHJDOAANPI speed = 2; /*[CLIHNHFJFJD->speed]*/
+	float time = 1; /*[HGPLMCPPPPC->time]*/
+}
+
+
+message PJLPNBGOLFD {
+	repeated PBOGIOIPPFF NBMEMOLKEDM = 501;
+}
+
+
+message ValueStruct { /*[NBIGOBBCEIN->ValueStruct]*/
+	repeated NCNLIEFBLMN value = 1; /*[GONNLMLACCM->value]*/
+}
+
+
+message LHGJJOMPBLK {
+	bool AHANKDIINOI = 1;
+	bool EFDAOEAMCGI = 3;
+	BOCBIICHEGO AHIJPNKNFFB = 2;
+	uint32 NDGAMCCIODM = 4;
+}
+
+
+message NHEEIGDEENP {
+	GGKHNKJEKAF data = 1; /*[GGEBNBICIKB->data]*/
+}
+
+
+message IIMMIFNEEFI {
+	DEHJDOAANPI FLHHOHLHKFN = 2;
+	uint32 MDNIAJAKDEN = 1;
+}
+
+
+message MDKOGFDHLGF {
+	MHLIPCHAKGC HFJLHAHMBCH = 1;
+}
+
+
+message MFPMJNGEOEJ {
+	repeated BKFOFFAJBLK FHMCEHOLMMF = 1;
+}
+
+
+message PLNKAHMFFGO {
+	float PECBBHHELHE = 2;
+	float KNPMJOLOGME = 3;
+	float JLMIMMOKIKE = 1;
+	bool ANGGJDNHEDM = 5;
+	uint32 HEBFIPELAMC = 4;
+}
+
+
+message KDIJEGBGCNO {
+	DOCPLLGANFF OFHMMCDBKEJ = 1;
+}
+
+
+message OAGBFMDEJPI {
+	bool OBFOHAEPNLP = 1;
+	MCBMIOKGALD type = 2; /*[KIFBBKDKNJI->type]*/
+	float ILHLOLBGKMD = 5;
+	float GMPIMEAEDDF = 3;
+}
+
+
+message LLNICMLAFBD {
+	string PCKLOHJONPB = 2;
+	NLHPHFEHBNJ JFCADOPNBFO = 3;
+	uint32 config_id = 1; /*[KAHMADIKBNG->config_id]*/
+	optional IBFJGFLEBPD config_beyond_guid = 100;
+}
+
+
+message CLAKMEMKOKK {
+	ELDMHNFNCBF OOIGKHIOILP = 11;
+	string FICNEDCNMCA = 2;
+	string HLENFFKPMLJ = 5;
+	repeated uint32 GJNDIDHINCC = 10;
+	repeated uint32 ABFEJABKDLC = 503;
+	string MPFDAMPBIND = 501;
+	HCEBJAMMMPF KPOKLIPMIMF = 4;
+	JPMLOOMDEHK MALHGIKAPBL = 9;
+	uint32 HKLPJFOJMHM = 12;
+	NGGAAPMMCGB MDMMJGNGLNN = 3;
+	uint32 KFBNJGBHLFP = 502;
+	bool HLBDNOHOIOG = 7;
+	bool BGOJGFPLNJI = 6;
+	uint32 CCCGMGBGMJD = 8;
+	uint32 IJBIDBNFDJP = 13;
+	uint32 BABNEPBOMPN = 1;
+}
+
+
+message JFGJLOPBBHG {
+	uint32 OIGMADGDGFM = 1;
+	GANACPJFEAM skill_type = 2; /*[LAFMGMOKNCC->skill_type]*/
+	uint32 FCFJNFBDEPC = 4;
+	uint32 BCLPLNIPJDM = 3;
+}
+
+
+message MIJINKLPNBB {
+}
+
+
+message FDJOOJEKHDO {
+	repeated float value_list = 1; /*[NEBBKBNEHLL->value_list]*/
+}
+
+
+message NAINILMMIAI {
+	FEOOOCMOMLB OFHMMCDBKEJ = 1;
+}
+
+
+message ValueBool { /*[OBLFHBAIGCB->ValueBool]*/
+	bool value = 1; /*[GONNLMLACCM->value]*/
+}
+
+
+message GFDLBKONHCL {
+}
+
+
+message JGIFEPJJKBO {
+	repeated uint32 value_list = 1; /*[NEBBKBNEHLL->value_list]*/
+}
+
+
+message OKOFOIFPOCL {
+	string ABLFIOKCBCF = 2;
+	uint32 language_type = 1; /*[KLCINLLOPGF->language_type]*/
+}
+
+
+message JPICJAGKKNA {
+	CGIMOGPJPON data = 1; /*[GGEBNBICIKB->data]*/
+}
+
+
+message DOGAJKEJEOD {
+	string name = 3; /*[PEMBNEOLEAN->name]*/
+	AAFODMPILFH FEMOCJCDPLI = 4;
+	IAHDCAEAFNB LACIKEIOIGD = 5;
+	HJCMJBPAGJL OMKLFOMABFG = 6;
+	bool is_active = 2; /*[PPLMDHPODMN->is_active]*/
+	uint32 id = 1; /*[PCPENLLKDLK->id]*/
+}
+
+
+message HMLLAHMPIDJ {
+	repeated COCMHCPHNPC route_points = 2; /*[ALPNKKEBCBK->route_points]*/
+	int32 route_id = 1; /*[CHEHNFFEJEF->route_id]*/
+}
+
+
+message HLJLIIKHOAJ {
+	DEHJDOAANPI pos = 1; /*[CGOHAKJFKMH->pos]*/
+	DEHJDOAANPI GNOFNBODIOJ = 3;
+	DEHJDOAANPI rot = 2; /*[PPOMCELLJLE->rot]*/
+	uint32 MOIGKBEHADF = 501;
+}
+
+
+message HBCKONLGPKG {
+	bool NPJKAPCDEIB = 501;
+	bool CFJMELIFAKH = 2;
+	bool is_active = 1; /*[PPLMDHPODMN->is_active]*/
+}
+
+
+message PKCEACNCEOA {
+}
+
+
+message EIIIADPKOJN {
+	repeated string MEEIONGKBHB = 2;
+	float KHOPHGMMDLH = 1;
+	float FJKDDBAMMPE = 6;
+	float EBBPHLPBHBP = 5;
+	bool OHEPJMMCOBK = 3;
+}
+
+
+message OHJHBFDMJHE {
+	MFJDKBCFEHG CGMMHOEAIHJ = 11;
+	BCBAGIKHBAN DLANODBEHED = 12;
+	PCNHHFPAMEK JHJPLBBHPBH = 13;
+	LFGLDPNCABE PDHCNAHCFOE = 1;
+}
+
+
+message CPEHEDAOBDH {
+	int32 GMNAHOCIGEK = 502;
+	int32 PJDLLGHPANE = 501;
+	float FBNJGEBCKJO = 503;
+}
+
+
+message HNDEBDMEIPF {
+}
+
+
+message MDLBOACOBHI {
+	int32 AAAOFCIAOFM = 501;
+}
+
+
+message ECCHLFGLIGG {
+	string DCJJELCENIL = 5;
+	uint32 IIBMFCAJOCO = 4;
+	float DMHNCFDBJOM = 3;
+	bool GKIAGGNAGHB = 1;
+	float radius = 2; /*[FLNKEHMENOB->radius]*/
+}
+
+
+message MHLIPCHAKGC {
+	repeated HKHENMFJIGK LBPDLEGJPFP = 3;
+	bool BFMCDGGDINN = 502;
+	bool CIKNGPCMEKI = 501;
+	int32 OIBNLPNLJNB = 1;
+}
+
+
+message IMBEOBECFGE {
+	DFHJELLNOEJ offset = 501; /*[ODKPNPEDGFA->offset]*/
+	DFHJELLNOEJ AGJBDAJNCIM = 502;
+	int32 OHOCKANMLAK = 504;
+	int32 OGAHNCAJMBL = 503;
+}
+
+
+message OFDIDLEDMDN {
+}
+
+
+message EIKIPEMGOJF {
+	repeated int32 value_list = 1; /*[NEBBKBNEHLL->value_list]*/
+}
+
+
+message BOCCBBCNJOD {
+	OHDAMLAGNFL BCHFDFIDNOK = 1;
+	repeated IFHGMIIKMPG OEPGPIADPIN = 2;
+}
+
+
+message FNNCCMIDJNC {
+	string BGFNOHHEGNC = 1;
+}
+
+
+enum MFBJIKFGBFA {
+	MFBJIKFGBFA_BEYOND_COMP_TYPE_NONE = 0;
+	MFBJIKFGBFA_BEYOND_COMP_TYPE_CUSTOM_VALUE = 1;
+	MFBJIKFGBFA_BEYOND_COMP_TYPE_TIMER = 3;
+	MFBJIKFGBFA_BEYOND_COMP_TYPE_MOVER = 4;
+	MFBJIKFGBFA_BEYOND_COMP_TYPE_CLIENT_TRIGGER = 5;
+	MFBJIKFGBFA_BEYOND_COMP_TYPE_EFFECT = 6;
+	MFBJIKFGBFA_BEYOND_COMP_TYPE_BORN_POINT = 7;
+	MFBJIKFGBFA_BEYOND_COMP_TYPE_COLLISION = 8;
+	MFBJIKFGBFA_BEYOND_COMP_TYPE_FOLLOW_MOVE = 9;
+	MFBJIKFGBFA_BEYOND_COMP_TYPE_BULLET_MOVE = 11;
+	MFBJIKFGBFA_BEYOND_COMP_TYPE_HIT_DETECTION = 12;
+	MFBJIKFGBFA_BEYOND_COMP_TYPE_CAMERA = 13;
+	MFBJIKFGBFA_BEYOND_COMP_TYPE_ROLE_STATUS = 14;
+	MFBJIKFGBFA_BEYOND_COMP_TYPE_AVATAR_DISTURBER = 15;
+	MFBJIKFGBFA_BEYOND_COMP_TYPE_COUNT_DOWN = 16;
+	MFBJIKFGBFA_BEYOND_COMP_TYPE_OPTION = 17;
+	MFBJIKFGBFA_BEYOND_COMP_TYPE_COMBAT = 18;
+	MFBJIKFGBFA_BEYOND_COMP_TYPE_HITBOX = 19;
+	MFBJIKFGBFA_BEYOND_COMP_TYPE_BULLET_PATTERN = 20;
+	MFBJIKFGBFA_BEYOND_COMP_TYPE_TEMP_ATTACH_POINT = 21;
+	MFBJIKFGBFA_BEYOND_COMP_TYPE_CUSTOM_SKILL = 22;
+	MFBJIKFGBFA_BEYOND_COMP_TYPE_INTEE = 23;
+	MFBJIKFGBFA_BEYOND_COMP_TYPE_MP_ACTION = 24;
+	MFBJIKFGBFA_BEYOND_COMP_TYPE_TAG = 25;
+	MFBJIKFGBFA_BEYOND_COMP_TYPE_ENMITY = 26;
+	MFBJIKFGBFA_BEYOND_COMP_TYPE_NAMEPLATE = 27;
+	MFBJIKFGBFA_BEYOND_COMP_TYPE_TALK = 28;
+	MFBJIKFGBFA_BEYOND_COMP_TYPE_SOUND_EFFECT = 29;
+	MFBJIKFGBFA_BEYOND_COMP_TYPE_MONSTER_PATROL = 30;
+	MFBJIKFGBFA_BEYOND_COMP_TYPE_LEVEL_STATE_MACHINE = 31;
+	MFBJIKFGBFA_BEYOND_COMP_TYPE_MINIMAP_MARK = 32;
+	MFBJIKFGBFA_BEYOND_COMP_TYPE_STUFF_BAG = 33;
+	MFBJIKFGBFA_BEYOND_COMP_TYPE_EQUIP_STUFF_BAG = 34;
+	MFBJIKFGBFA_BEYOND_COMP_TYPE_SHOP = 35;
+	MFBJIKFGBFA_BEYOND_COMP_TYPE_DROP_GATHER = 36;
+	MFBJIKFGBFA_BEYOND_COMP_TYPE_DROP_STUFF = 37;
+	MFBJIKFGBFA_BEYOND_COMP_TYPE_LIGHT_GROUP = 38;
+	MFBJIKFGBFA_BEYOND_COMP_TYPE_SCAN_ENTITY = 39;
+	MFBJIKFGBFA_BEYOND_COMP_TYPE_POP_UP = 40;
+	MFBJIKFGBFA_BEYOND_COMP_TYPE_OBSTACLE = 41;
+	MFBJIKFGBFA_BEYOND_COMP_TYPE_MONSTER_AI_COMP = 42;
+	MFBJIKFGBFA_BEYOND_COMP_TYPE_ARRAYSIZE = 43;
+}
+
+
+message BPPPDAMHENI {
+	string MENFNGOLOHD = 2;
+	IDOAJPHMGFO OIMHJFPBABJ = 3;
+	uint32 ANIOCEAJGDN = 1;
+	optional DCGPKLCFPFL fog_config = 51;
+}
+
+
+message DHIHNMDGEEN {
+	string FIDODKJLNFJ = 501;
+}
+
+
+message DGMDJBLACMJ {
+}
+
+
+message HKHENMFJIGK {
+	DEHJDOAANPI rot = 3; /*[PPOMCELLJLE->rot]*/
+	DEHJDOAANPI pos = 2; /*[CGOHAKJFKMH->pos]*/
+	int32 POHIBJMEMHJ = 501;
+	int32 AGHGDCPDKIM = 1;
+}
+
+
+enum LDIOAKEFJBD {
+	LDIOAKEFJBD_OBTAIN = 0;
+	LDIOAKEFJBD_WEAR = 1;
+}
+
+
+message HGKEIFGDMDA {
+	HJCLNBFEIEP GLPKBGPMAOK = 1;
+	float EMCOBHFCBLM = 3;
+	float AMFOOJNPKCM = 2;
+}
+
+
+message NCLMFEPEOHM {
+	repeated LMANHLJDOED group_list = 1; /*[LCDGGFPADHM->group_list]*/
+}
+
+
+message MIPGHCPBEEE {
+	EAPKIALFJKI APIKEKJBEAI = 1;
+	repeated LOGMGKKLMDL ONBPHKAEMIB = 4;
+	bool DJIDICAPPKC = 3;
+	uint32 BKIOCELLCIA = 5;
+	uint32 DALAEMAPGJP = 2;
+}
+
+
+message KECPCAEPDDK {
+	AFKDCLGKHNH OFHMMCDBKEJ = 1;
+}
+
+
+message ICDGOCLOAHE {
+	uint32 id = 1; /*[PCPENLLKDLK->id]*/
+	EJINICKGCEJ CMLNNGNBGFK = 2;
+	oneof detail { /*[ENPDCINEPHH->detail]*/
+		DlcData dlc_data = 103; /*[INJCIDNEOCE->DlcData]*/
+		TierData tier_data = 101; /*[FENDMCKCEOO->TierData]*/
+		CustomData custom_data = 100; /*[IKCAGHFCNAA->CustomData]*/
+		AchievementData achievement_data = 102; /*[BCNODHDDOIK->AchievementData]*/
+	}
+}
+
+
+message KIOMJAOMEMH {
+	string NNBDHFCCMNN = 5;
+	repeated EAPKIALFJKI FLPOCHKPNEJ = 4;
+	uint32 OALJLGNKMKC = 3;
+}
+
+
+message CameraData { /*[CHCJFGFMAKP->CameraData]*/
+	FENFEGEKNID data = 1; /*[GGEBNBICIKB->data]*/
+}
+
+
+enum KOJDJPBNMPB {
+	KOJDJPBNMPB_NONE = 0;
+	KOJDJPBNMPB_IG = 10000;
+	KOJDJPBNMPB_NODE_CONFIG = 10001;
+	KOJDJPBNMPB_NODE_CONFIG_SUMMARY = 10002;
+	KOJDJPBNMPB_BEYOND_OBJECT = 10003;
+	KOJDJPBNMPB_GUID_0_STATIC_CONFIG_OBJECT = 10004;
+	KOJDJPBNMPB_GUID_0_LEVEL_DATA = 10005;
+	KOJDJPBNMPB_GUID_0_STRUCT = 10006;
+	KOJDJPBNMPB_GUID_0_RAW_BEYOND_OBJECT = 10007;
+	KOJDJPBNMPB_IG_CATEGORY_SERVER = 20000;
+	KOJDJPBNMPB_IG_CATEGORY_FILTER = 20001;
+	KOJDJPBNMPB_IG_CATEGORY_MP_ACTION = 20002;
+	KOJDJPBNMPB_IG_CATEGORY_BUFF = 20003;
+	KOJDJPBNMPB_IG_CATEGORY_DUTY = 20004;
+	KOJDJPBNMPB_IG_CATEGORY_STUFF = 20005;
+	KOJDJPBNMPB_IG_CATEGORY_FILTER_INT = 20006;
+	KOJDJPBNMPB_IG_CATEGORY_AI = 20007;
+	KOJDJPBNMPB_IG_CATEGORY_MONSTER_SKILL = 20008;
+	KOJDJPBNMPB_IG_CATEGORY_AI_STATE = 20009;
+	KOJDJPBNMPB_IG_FUNC_TYPE = 20100;
+	KOJDJPBNMPB_IG_FUNC_TYPE_SERVER = 20101;
+	KOJDJPBNMPB_IG_FUNC_TYPE_CLIENT = 20102;
+	KOJDJPBNMPB_IG_FUNC_TYPE_CUSTOM = 20103;
+	KOJDJPBNMPB_IG_GRAPH_TYPE_OFFICIAL = 21000;
+	KOJDJPBNMPB_IG_GRAPH_TYPE_CUSTOM_IN_LEVEL = 21001;
+	KOJDJPBNMPB_IG_GRAPH_TYPE_SUB_GRAPH = 21002;
+	KOJDJPBNMPB_IG_GRAPH_TYPE_IN_HOUSE = 21003;
+	KOJDJPBNMPB_IG_GRAPH_TYPE_EDIT = 21004;
+	KOJDJPBNMPB_IG_GRAPH_TYPE_CONTAINER = 21005;
+	KOJDJPBNMPB_IG_NODE_TYPE_OFFICIAL = 22000;
+	KOJDJPBNMPB_IG_NODE_TYPE_CUSTOM_IN_LEVEL = 22001;
+	KOJDJPBNMPB_IG_NODE_TYPE_EDIT = 22002;
+	KOJDJPBNMPB_TAG_NODE_CONFIG = 23000;
+	KOJDJPBNMPB_TAG_NODE_CONFIG_IN_LEVEL_COMPOUND = 23001;
+	KOJDJPBNMPB_TAG_NODE_CONFIG_IN_LEVEL_FIRE_SIGNAL = 23002;
+	KOJDJPBNMPB_TAG_NODE_CONFIG_IN_LEVEL_SIGNAL_EVENT = 23003;
+	KOJDJPBNMPB_TAG_NODE_CONFIG_IN_LEVEL_MAKE_STRUCT = 23004;
+	KOJDJPBNMPB_TAG_NODE_CONFIG_IN_LEVEL_BREAK_STRUCT = 23005;
+	KOJDJPBNMPB_TAG_NODE_CONFIG_IN_LEVEL_SET_STRUCT_MEMBER = 23006;
+	KOJDJPBNMPB_TAG_NODE_CONFIG_IN_LEVEL_FROG_FIRE_SIGNAL = 23007;
+	KOJDJPBNMPB_TAG_NODE_CONFIG_IN_LEVEL_FROG_SIGNAL_EVENT = 23008;
+	KOJDJPBNMPB_TAG_BEYOND_OBJECT_CATEGORY = 30000;
+	KOJDJPBNMPB_TAG_BEYOND_OBJECT_CATEGORY_EDIT_OBJECT = 30001;
+	KOJDJPBNMPB_TAG_ENTITY_TYPE_LEVEL = 30200;
+	KOJDJPBNMPB_TAG_ENTITY_TYPE_GADGET = 30201;
+	KOJDJPBNMPB_TAG_ENTITY_TYPE_AVATAR = 30202;
+	KOJDJPBNMPB_TAG_ENTITY_TYPE_PLAYER = 30203;
+	KOJDJPBNMPB_TAG_ENTITY_TYPE_MONSTER = 30204;
+	KOJDJPBNMPB_RESOURCE_TAG = 40000;
+	KOJDJPBNMPB_RESOURCE_TAG_CATEGORY = 40001;
+	KOJDJPBNMPB_RESOURCE_TAG_FILE = 40002;
+	KOJDJPBNMPB_RESOURCE_TAG_COLLECTION = 40003;
+	KOJDJPBNMPB_RESOURCE_TAG_ROOT = 40004;
+	KOJDJPBNMPB_RESOURCE_TAG_DEFAULT = 40005;
+	KOJDJPBNMPB_RESOURCE_TAG_SUPER_ROOT = 40006;
+	KOJDJPBNMPB_RESOURCE_TAG_COLLECTION_PLAYER_CUSTOM = 41000;
+	KOJDJPBNMPB_RESOURCE_TAG_COLLECTION_OFFICIAL = 41100;
+	KOJDJPBNMPB_RESOURCE_TAG_COLLECTION_OFFICIAL_SPACE_LEVEL = 41101;
+	KOJDJPBNMPB_RESOURCE_TAG_COLLECTION_OFFICIAL_SPACE_PREFAB = 41102;
+	KOJDJPBNMPB_RESOURCE_TAG_COLLECTION_OFFICIAL_PREFAB = 41103;
+	KOJDJPBNMPB_RESOURCE_TAG_COLLECTION_OFFICIAL_PREFAB_DYNAMIC = 41104;
+	KOJDJPBNMPB_RESOURCE_TAG_COLLECTION_OFFICIAL_PREFAB_STATIC = 41105;
+	KOJDJPBNMPB_RESOURCE_TAG_COLLECTION_OFFICIAL_PREFAB_MONSTER = 41106;
+	KOJDJPBNMPB_RESOURCE_TAG_COLLECTION_OFFICIAL_PREFAB_DROP_GATHER = 41107;
+	KOJDJPBNMPB_RESOURCE_TAG_COLLECTION_IG_SERVER_ROOT = 42000;
+	KOJDJPBNMPB_RESOURCE_TAG_COLLECTION_IG_SERVER = 42001;
+	KOJDJPBNMPB_RESOURCE_TAG_COLLECTION_IG_BUFF = 42002;
+	KOJDJPBNMPB_RESOURCE_TAG_COLLECTION_IG_DUTY = 42003;
+	KOJDJPBNMPB_RESOURCE_TAG_COLLECTION_IG_SERVER_IMPORT_FOLDER = 42004;
+	KOJDJPBNMPB_RESOURCE_TAG_COLLECTION_IG_STUFF = 42005;
+	KOJDJPBNMPB_RESOURCE_TAG_COLLECTION_ATTACH_TARGET_IG_SERVER = 42100;
+	KOJDJPBNMPB_RESOURCE_TAG_COLLECTION_ATTACH_TARGET_IG_SERVER_PREFAB_DYNAMIC = 42101;
+	KOJDJPBNMPB_RESOURCE_TAG_COLLECTION_ATTACH_TARGET_IG_SERVER_SPACE_PREFAB = 42102;
+	KOJDJPBNMPB_RESOURCE_TAG_COLLECTION_ATTACH_TARGET_IG_SERVER_SPACE_LEVEL = 42103;
+	KOJDJPBNMPB_RESOURCE_TAG_COLLECTION_ATTACH_TARGET_IG_BUFF = 42104;
+	KOJDJPBNMPB_RESOURCE_TAG_COLLECTION_ATTACH_TARGET_IG_DUTY = 42105;
+	KOJDJPBNMPB_RESOURCE_TAG_COLLECTION_ATTACH_TARGET_IG_SERVER_PREFAB_MONSTER = 42106;
+	KOJDJPBNMPB_RESOURCE_TAG_COLLECTION_IG_CLIENT_ROOT = 43000;
+	KOJDJPBNMPB_RESOURCE_TAG_COLLECTION_IG_FILTER = 43001;
+	KOJDJPBNMPB_RESOURCE_TAG_COLLECTION_IGMP_ACTION = 43002;
+	KOJDJPBNMPB_RESOURCE_TAG_COLLECTION_IG_FILTER_IMPORT_FOLDER = 43003;
+	KOJDJPBNMPB_RESOURCE_TAG_COLLECTION_IGMP_ACTION_IMPORT_FOLDER = 43004;
+	KOJDJPBNMPB_RESOURCE_TAG_COLLECTION_IG_FILTER_INT = 43005;
+	KOJDJPBNMPB_RESOURCE_TAG_COLLECTION_IGAI = 43006;
+	KOJDJPBNMPB_RESOURCE_TAG_COLLECTION_IG_MONSTER_SKILL = 43007;
+	KOJDJPBNMPB_RESOURCE_TAG_COLLECTION_IGAI_STATE = 43008;
+	KOJDJPBNMPB_RESOURCE_TAG_COLLECTION_NODE_CONFIG_SERVER_OFFICIAL = 44100;
+	KOJDJPBNMPB_RESOURCE_TAG_COLLECTION_NODE_CONFIG_SERVER_CUSTOM = 44101;
+	KOJDJPBNMPB_RESOURCE_TAG_COLLECTION_NODE_CONFIG_FILTER_OFFICIAL = 44400;
+	KOJDJPBNMPB_RESOURCE_TAG_COLLECTION_NODE_CONFIG_MP_ACTION_OFFICIAL = 44500;
+	KOJDJPBNMPB_RESOURCE_TAG_COLLECTION_NODE_CONFIG_AI_OFFICIAL = 44501;
+	KOJDJPBNMPB_RESOURCE_TAG_COLLECTION_NODE_CONFIG_MONSTER_SKILL_OFFICIAL = 44502;
+	KOJDJPBNMPB_RESOURCE_TAG_COLLECTION_NODE_CONFIG_AI_STATE_OFFICIAL = 44503;
+	KOJDJPBNMPB_RESOURCE_TAG_COLLECTION_NODE_CONFIG_IMPORT_FOLDER = 44600;
+	KOJDJPBNMPB_RESOURCE_TAG_COLLECTION_NODE_CONFIG_SERVER_OFFICIAL_CLASSIC_MODE = 44700;
+	KOJDJPBNMPB_RESOURCE_TAG_COLLECTION_NODE_CONFIG_FILTER_OFFICIAL_CLASSIC_MODE = 44701;
+	KOJDJPBNMPB_RESOURCE_TAG_COLLECTION_NODE_CONFIG_MP_ACTION_OFFICIAL_CLASSIC_MODE = 44702;
+	KOJDJPBNMPB_RESOURCE_TAG_COLLECTION_NODE_CONFIG_AI_OFFICIAL_CLASSIC_MODE = 44703;
+	KOJDJPBNMPB_RESOURCE_TAG_COLLECTION_NODE_CONFIG_MONSTER_SKILL_OFFICIAL_CLASSIC_MODE = 44704;
+	KOJDJPBNMPB_RESOURCE_TAG_COLLECTION_NODE_CONFIG_AI_STATE_OFFICIAL_CLASSIC_MODE = 44705;
+	KOJDJPBNMPB_BO_PREFAB = 50000;
+	KOJDJPBNMPB_BO_EDIT_OBJ = 50001;
+	KOJDJPBNMPB_BO_STATIC_EDIT_OBJ = 50002;
+	KOJDJPBNMPB_BO_TILEMAP = 50003;
+	KOJDJPBNMPB_BO_BUFF = 50004;
+	KOJDJPBNMPB_BO_EFFECT = 50005;
+	KOJDJPBNMPB_BO_DUMMY_POINT = 50006;
+	KOJDJPBNMPB_BO_UI_MAIN_SCREEN = 50007;
+	KOJDJPBNMPB_BO_UI_CUSTOM = 50008;
+	KOJDJPBNMPB_BO_CAMERA_TEMPLATE = 50009;
+	KOJDJPBNMPB_BO_TIMER = 50010;
+	KOJDJPBNMPB_BO_LEVEL_CONFIG = 50011;
+	KOJDJPBNMPB_BO_SUITE = 50012;
+	KOJDJPBNMPB_BO_TAG = 50013;
+	KOJDJPBNMPB_BO_OFFICIAL = 51000;
+	KOJDJPBNMPB_BO_CUSTOM = 51001;
+	KOJDJPBNMPB_BO_EDIT_OBJ_GADGET = 52000;
+	KOJDJPBNMPB_BO_EDIT_OBJ_MONSTER = 52001;
+	KOJDJPBNMPB_BO_EDIT_OBJ_AVATAR = 52002;
+	KOJDJPBNMPB_BO_EDIT_OBJ_PLAYER = 52003;
+	KOJDJPBNMPB_BO_EDIT_OBJ_LEVEL = 52004;
+	KOJDJPBNMPB_BO_EFFECT_LOOP = 52100;
+	KOJDJPBNMPB_BO_EFFECT_NON_LOOP = 52101;
+	KOJDJPBNMPB_BO_UI_CUSTOM_LAYOUT = 52200;
+	KOJDJPBNMPB_BO_UI_CUSTOM_PROTOTYPE = 52201;
+	KOJDJPBNMPB_BO_UI_CUSTOM_CONTROL = 52202;
+	KOJDJPBNMPB_GUID_1_STATIC_CONFIG_OBJECT_SOUND_EFFECT = 53000;
+	KOJDJPBNMPB_GUID_1_STATIC_CONFIG_OBJECT_MUSIC = 53001;
+	KOJDJPBNMPB_GUID_1_STATIC_CONFIG_OBJECT_SOUND_EFFECT_CATEGORY = 53002;
+	KOJDJPBNMPB_GUID_1_STATIC_CONFIG_OBJECT_MUSIC_CATEGORY = 53003;
+	KOJDJPBNMPB_GUID_1_LEVEL_SINGLETON_DATA_CONTAINER = 53100;
+	KOJDJPBNMPB_TAG_UI = 60000;
+	KOJDJPBNMPB_TAG_UI_PROTOTYPE_AND_CONTROL = 60001;
+	KOJDJPBNMPB_IG_STATUS_NORMAL = 70000;
+	KOJDJPBNMPB_IG_STATUS_WARNING = 70001;
+	KOJDJPBNMPB_IG_STATUS_ERROR = 70002;
+	KOJDJPBNMPB_ID_ALLOCATOR = 100000;
+	KOJDJPBNMPB_ID_ALLOCATOR_NODE_CONFIG = 100001;
+	KOJDJPBNMPB_ID_ALLOCATOR_NODE_CONFIG_EDIT = 100002;
+	KOJDJPBNMPB_ID_ALLOCATOR_SUB_GRAPH = 100003;
+	KOJDJPBNMPB_ID_ALLOCATOR_CONTAINER_GRAPH = 100004;
+}
+
+
+message PPKCGJMANKG {
+	ILPJILHCMKG OFHMMCDBKEJ = 1;
+}
+
+
+message CustomData { /*[IKCAGHFCNAA->CustomData]*/
+	MHAOOLMICBL data = 1; /*[GGEBNBICIKB->data]*/
+}
+
+
+message OOFGNICKHKO {
+	DEHJDOAANPI ILFLPCGKJLH = 4;
+	DEHJDOAANPI center = 1; /*[BDOBKMBOOBB->center]*/
+	float radius = 2; /*[FLNKEHMENOB->radius]*/
+	float height = 3; /*[IOFHOHOJOAP->height]*/
+}
+
+
+message NLIAOHNJPIC {
+	OCGLKMADOGM DFNLDOCLAIO = 2;
+	repeated CEFHKJHFGEE AFFJKEPPNDG = 4;
+	DOBHCHACODC JCBOKNAPBGJ = 3;
+	uint32 FHELNJMPAHB = 1;
+}
+
+
+message BPHBDIMGPFP {
+	HCDLIFIHLIK data = 1; /*[GGEBNBICIKB->data]*/
+	LFGLDPNCABE NLEBIIIGGBK = 2;
+	MEBCFBBHKEE AFCEGLGKNNP = 3;
+	uint32 DHDIDFHDDAH = 4;
+}
+
+
+message HNACGFBKDJK {
+	int32 value = 1; /*[GONNLMLACCM->value]*/
+}
+
+
+message HGIALENBKJJ {
+	string HKFLJNKFEBH = 6;
+	string MBNAHJBPEDI = 3;
+	IBONIGMPLLD DKLHOLHHGHI = 4;
+	string ICAKJBKJPMJ = 2;
+	int32 KKOHEMJCKMF = 5;
+}
+
+
+message JNICKGNFOND {
+	EKFDFLIMMLI PIEJEGELCEA = 1;
+	oneof detail { /*[ENPDCINEPHH->detail]*/
+		JABHFCELELK beyond_avatar_disturber_drag_param_local_pos = 11;
+		IFKHMIBFCKP beyond_avatar_disturber_drag_param_world_pos = 12;
+		IIMMIFNEEFI beyond_avatar_disturber_drag_param_gadget = 13;
+	}
+}
+
+
+enum OJJEPCGMLDD {
+	OJJEPCGMLDD_OFFICIAL = 0;
+	OJJEPCGMLDD_CUSTOM = 1;
+	OJJEPCGMLDD_SUB_BLUEPRINT = 2;
+}
+
+
+enum KNFGNMFPCJF {
+	KNFGNMFPCJF_NONE = 0;
+	KNFGNMFPCJF_ENUM = 1;
+	KNFGNMFPCJF_UINT = 2;
+	KNFGNMFPCJF_INT = 3;
+	KNFGNMFPCJF_FLOAT = 4;
+	KNFGNMFPCJF_BOOL = 5;
+	KNFGNMFPCJF_STRING = 6;
+	KNFGNMFPCJF_VECTOR_3 = 7;
+	KNFGNMFPCJF_BEYOND_ENUM_LIST = 8;
+	KNFGNMFPCJF_STRING_LIST = 9;
+	KNFGNMFPCJF_CONFIG_REFERENCE = 10;
+	KNFGNMFPCJF_DYNAMIC_FLOAT = 11;
+	KNFGNMFPCJF_INT_LIST = 12;
+}
+
+
+message BGJANDDIMDL {
+	repeated IOINDHOAOJM ICDDINBKBMJ = 509;
+	string MBNAHJBPEDI = 503;
+	EAPKIALFJKI MJFPJFOOBGH = 603;
+	EAPKIALFJKI KAKEPIFMIEA = 504;
+	string POGMAMHDNFA = 601;
+	DFHJELLNOEJ offset = 506; /*[ODKPNPEDGFA->offset]*/
+	repeated int32 NODMLLLEJEN = 512;
+	int32 index = 501; /*[BIJCOCHPGDN->index]*/
+	float BIGAJEHFENA = 505;
+	int32 FNHPJCHECDJ = 510;
+	int32 PFNNPKANGNO = 511;
+	bool MBGMHBFHMPG = 507;
+	bool MFGAIIFCAAK = 508;
+	bool is_active = 502; /*[PPLMDHPODMN->is_active]*/
+	int32 filter_type = 605; /*[CFIIDPABPCM->filter_type]*/
+	uint32 MOIGKBEHADF = 602;
+}
+
+
+message ICGLOMEFMLG {
+	uint32 EGOFKMKKGNO = 1;
+	uint32 BLEEJDLCONE = 2;
+}
+
+
+message PFPCGLDPDJD {
+	AAFODMPILFH FEMOCJCDPLI = 1;
+}
+
+
+enum FJGOICAKAPC {
+	FJGOICAKAPC_BEYOND_MOVER_VECTOR = 0;
+	FJGOICAKAPC_BEYOND_MOVER_ROTATE = 1;
+	FJGOICAKAPC_BEYOND_MOVER_ROUTE = 2;
+	FJGOICAKAPC_BEYOND_MOVER_ROTATE_TO_DIR = 3;
+	FJGOICAKAPC_BEYOND_MOVER_FIXED_POS_ROT = 4;
+}
+
+
+message HHLEIOLKJNP {
+	DEHJDOAANPI pos = 3; /*[CGOHAKJFKMH->pos]*/
+	string DADGFLIEDCN = 1;
+	DEHJDOAANPI rot = 4; /*[PPOMCELLJLE->rot]*/
+	int32 GGKBFHMGNPC = 2;
+}
+
+
+message APNONMNPGJP {
+	string name = 505; /*[PEMBNEOLEAN->name]*/
+	DFHJELLNOEJ offset = 506; /*[ODKPNPEDGFA->offset]*/
+	string ELEKFBPJNEC = 503;
+	int32 PKOBLBBLIBG = 504;
+	int32 LBHAMFAKHJF = 501;
+	float CBIHHADGFED = 502;
+}
+
+
+message LKBJHADGCGJ {
+	CPKKBMFEPJK OFHMMCDBKEJ = 1;
+}
+
+
+message ConfigTagSearch { /*[FMMDOODMEOG->ConfigTagSearch]*/
+	uint32 config_id = 1; /*[KAHMADIKBNG->config_id]*/
+}
+
+
+message OBEIPHLLOMO {
+	PIJKFLBDNLB OFHMMCDBKEJ = 1;
+	PIJKFLBDNLB FGJKJOCNBMD = 2;
+}
+
+
+message CFNLCBCADLH {
+	repeated BBBHLJMHEPB CLEDPDFDBFH = 2;
+	string HDFDPEHKCOG = 501;
+	bool NJFPIHNODGL = 1;
+	bool OHAIOCPPAJA = 505;
+	bool CBKAADPLJCE = 502;
+	uint32 ANKIDDHDEPF = 504;
+	uint32 KOAJIOMCOBI = 503;
+}
+
+
+message ECPLONBCKEE {
+	bool CHEHFJGKGME = 1;
+}
+
+
+message OCDKEEEANDG {
+}
+
+
+message KLGAKGLDCOH {
+	repeated GBGAIKJJCMP route_points = 2; /*[ALPNKKEBCBK->route_points]*/
+	int32 route_id = 1; /*[CHEHNFFEJEF->route_id]*/
+}
+
+
+message MEDOBIOFKGM {
+	float JHKIILFBBPE = 3;
+	uint32 AJPCKIKCBDJ = 1;
+	float HOMABOEJMCO = 2;
+}
+
+
+message HJCMJBPAGJL {
+	int32 GIOJABBHHFE = 1;
+	float AADCFCPMJDH = 3;
+	float JODLGCENLOP = 2;
+	bool GPJNIPIEPIO = 5;
+	bool NFGMACKADEM = 4;
+	float BNDJJJPKJLJ = 6;
+}
+
+
+message NOGGFECJMFP {
+	OJKAPCAPGPP DKEBJDHGOHF = 1;
+	oneof detail { /*[ENPDCINEPHH->detail]*/
+		CEDCDIBGLHJ default_defined_state_property = 12;
+		HLJLIIKHOAJ deployment_property = 11;
+		DAEKEDNFFIB tier_property = 25;
+		BHKGKKKCPJC attach_point_property = 21;
+		PCCDIBLOKFA sound_effect_property = 29;
+		CGIMONDFCIE monster_defined_state_property = 31;
+		IAPNFNFAGEO vision_param_property = 22;
+		ILDOGELCDJD entity_tag_property = 27;
+		IGPOHIALCGI mode_visibility_property = 18;
+		EJAFGENFKKG army_property = 16;
+		JHLDEJOCGKE blueprint_reference_property = 13;
+		HBCKONLGPKG collision_property = 15;
+		DFPNHEJDFDN combat_property = 17;
+		ECPLONBCKEE client_optimization_param_property = 30;
+		ELNGKPJCKOF bind_param_property = 26;
+		BOFPFPPJJPA default_born_property = 14;
+	}
+}
+
+
+message DOCPLLGANFF {
+	LENOCJNAIBN MHIHABGCIFB = 2;
+	repeated LFGLDPNCABE IMBEOPLPHKP = 10;
+	repeated string CDCKBJGDNCA = 9;
+	LENOCJNAIBN LAJHJHBCPBI = 4;
+	LENOCJNAIBN JLFHJBIIGCN = 1;
+	uint32 JGEHFEAHODL = 12;
+	int32 CBHAOENALDJ = 501;
+	int32 DNOKAMCIPPB = 6;
+	bool LCJJHPGFNPC = 3;
+	bool EOLDLAODDOK = 5;
+	bool AAJHFIEKIOF = 8;
+	bool OJFAOKOLMME = 7;
+	bool BCKONGNFGIE = 11;
+	bool IELNGLJOIIB = 13;
+}
+
+
+message NBOCECHCDMM {
+	repeated BDKAMPOALFO MMONMEAMKCK = 6;
+	uint32 KIGDKGEEGAL = 1;
+	uint32 AKAALMAOMFD = 2;
+	uint32 DFJPHKNNOBL = 5;
+	int32 KEKHIBPMMOO = 3;
+	uint32 MFKGPLNFONG = 4;
+}
+
+
+message ConfigMakeStruct { /*[EFDBNCNEFMA->ConfigMakeStruct]*/
+	uint32 FMINBCJDHAE = 1;
+}
+
+
+message AAFODMPILFH {
+	repeated int32 OFNPOELMPNH = 1;
+	float FKGGDAKNLOF = 5;
+	CMDKKHHDMII DOAALBNIAID = 3;
+	bool NCKGAOBINAI = 11;
+	bool CIKHBONOJNJ = 12;
+	float JOIDCHIHIOL = 2;
+	float OGCMBKDCJAG = 4;
+	bool GEOKKLCCAKP = 13;
+	bool JCJBMOLEAEP = 10;
+	bool MPMOODCHLDO = 7;
+}
+
+
+message PCAOFKIHJHC {
+	EAPKIALFJKI APIKEKJBEAI = 1;
+	repeated LOGMGKKLMDL LMEKGJPCBAC = 4;
+	uint32 DALAEMAPGJP = 2;
+	bool PPNEGDACLMJ = 3;
+}
+
+
+message DMLHHKJJKAG {
+	HJCMJBPAGJL OMKLFOMABFG = 1;
+}
+
+
+enum EGMELEIFODH {
+	EGMELEIFODH_AUTO = 0;
+	EGMELEIFODH_INTERACT = 1;
+	EGMELEIFODH_OPEN_INTERACT_UI = 2;
+	EGMELEIFODH_ADHESIVE = 3;
+}
+
+
+enum AFNLKHMLOFE {
+	AFNLKHMLOFE_INDIVIDUAL = 0;
+	AFNLKHMLOFE_GROUP = 1;
+}
+
+
+message ServerParamTypeInfo { /*[LKGLHAMNOEP->ServerParamTypeInfo]*/
+	LAAPGDENHHI GCAFHEDCJIP = 2;
+	uint32 BIOAHEGDICK = 1;
+	oneof MBDFGCJAKEJ {
+		PLCJMJDPONH ref_struct_id = 100;
+		EABPIMCBNCE ref_kv_pair = 101;
+	}
+}
+
+
+message HCDEGEONHKD {
+}
+
+
+message OCNCEIPLILC {
+	repeated FBJONAFBFOL PBFIEDGPCJE = 2;
+	int32 FLLPEJPHBJD = 1;
+}
+
+
+message JDBGNANDAOP {
+}
+
+
+message MAFFMOFGEGH {
+	HHLEIOLKJNP OFHMMCDBKEJ = 1;
+}
+
+
+message EGADDCFOKHJ {
+	PIJKFLBDNLB OOCAPMKEGLM = 1;
+	PIJKFLBDNLB CHNEJFFBHGM = 2;
+	uint32 KKEEBGFMLND = 4;
+	bool PKIHLOCJCKL = 5;
+	uint32 KBMFOEHHDLO = 3;
+}
+
+
+message NIHJCOOFMNP {
+	uint32 BABNEPBOMPN = 1;
+	OKHCAMLJAEC IDDGCJDOJBH = 3;
+	uint32 OMMBFKJADON = 2;
+}
+
+
+message KHEPDACEPBD {
+	JGAIINAIHFO KGMOKDDBFED = 21;
+	float GJJIDJEOMCC = 5;
+	uint32 FLPLBIECFIN = 3;
+	uint32 BLEEJDLCONE = 1;
+	uint32 config_id = 2; /*[KAHMADIKBNG->config_id]*/
+	uint32 NOLMFLFGJNL = 4;
+	float EDPLOFEPHPN = 6;
+}
+
+
+message KKIMBLLPCBD {
+	string HDFDPEHKCOG = 501;
+	uint32 CCBAFCFDAHC = 1;
+	uint32 AKDABGAFGPL = 502;
+	bool CBKAADPLJCE = 503;
+	bool OHAIOCPPAJA = 506;
+	uint32 KJMNDADKPDH = 2;
+	uint32 MGAMCAIIECC = 4;
+	uint32 KOAJIOMCOBI = 504;
+	uint32 ANKIDDHDEPF = 505;
+	uint32 HOLBDPEFPDI = 3;
+}
+
+
+message MOBJCJGLFJK {
+	DGDOCDECOKO BCHCMBEJDMF = 501;
+}
+
+
+message LNGNMHADJJE {
+	repeated MOBJCJGLFJK FKDDDIFDBHL = 502;
+	bool is_active = 2; /*[PPLMDHPODMN->is_active]*/
+	int32 DOPEBCDHNIA = 1;
+}
+
+
+message KNCCMKOEPHH {
+	repeated FFBGAHDAKJA option_list = 2; /*[ICFJFLAKOCJ->option_list]*/
+	repeated DGDOCDECOKO ENAPANNFDEC = 1;
+}
+
+
+enum JPMLOOMDEHK {
+	JPMLOOMDEHK_NONE = 0;
+	JPMLOOMDEHK_RANK_LIST = 1;
+	JPMLOOMDEHK_TIER = 2;
+	JPMLOOMDEHK_PLATINUM_ACHIEVEMENT = 3;
+}
+
+
+message LMANHLJDOED {
+	repeated KBNBBOOPFKB NMIDLHBDPGL = 1;
+	string JJANBOBNIGL = 3;
+}
+
+
+message ConfigEnableEditList { /*[EILNMJCNOAJ->ConfigEnableEditList]*/
+	uint32 ANCBINEPPGH = 1;
+}
+
+
+message FMNDBFKDCCA {
+}
+
+
+message FIPHHGDCCFD {
+	repeated BNNKMNLELKH OGCEALKPLIL = 3;
+	repeated DKPJKIJDFOE EENDILPPJMF = 1;
+	repeated LDMOFJOJPIH GLAGAOAJFDD = 2;
+	bool FNLBDBBOHAO = 505;
+	bool OLLFGFDCAJI = 4;
+}
+
+
+message BLMCLHJNDPA {
+	GJFPDGEEBEG BMIGMAJHIPC = 1;
+	EONADBCNHLH HIDPALAHAGH = 501;
+}
+
+
+message LCANFBDHIFN {
+	uint32 FMINBCJDHAE = 5;
+	uint32 AMMJGJMLMLL = 4;
+	BANMCEGHLKO ABGKPOMBKHG = 7;
+	uint32 MPJJFKOJHNN = 3;
+	bool DJFBLKKKDEP = 6;
+}
+
+
+message CGIMOGPJPON {
+	KGEKNHCGDJL data = 1; /*[GGEBNBICIKB->data]*/
+}
+
+
+message GLLCAINELOJ {
+	string key = 501; /*[EFGFLCKJPHM->key]*/
+	JBOCGMPLJBN DEJCJOGFDKL = 2;
+	CHJLDBPFIAF EJFADAFFFLB = 1;
+	oneof detail { /*[ENPDCINEPHH->detail]*/
+		MICHNOHFNIG beyond_param_value_bool_list = 19;
+		JGIFEPJJKBO beyond_param_value_guid_list = 17;
+		MMNIENILKLK beyond_param_value_config_reference = 30;
+		HKGIPCEPMLN beyond_param_value_string = 16;
+		BJCPMPKIIAK beyond_param_value_entity_list = 23;
+		PKANIJIMAFN beyond_param_value_category_type = 29;
+		KJNAEPMPBIF beyond_param_value_dict_const = 37;
+		OMCCCJGJPAH beyond_param_value_comp_type = 28;
+		CPEIBIGCGJJ beyond_param_value_variable = 26;
+		DMAJFOHGLOJ beyond_param_value_vector_3 = 22;
+		NPLGHCHDMMA beyond_param_value_vector_3_list = 25;
+		ECPCONHGJBP beyond_param_value_string_list = 21;
+		JHOBJEEFEIN beyond_param_value_enum_list = 39;
+		JLAABGDCBFJ beyond_param_value_config_reference_list = 32;
+		JJCAMGFOBJJ beyond_param_value_army = 27;
+		OGDINOCFBGP beyond_param_value_custom_value_snapshot = 38;
+		FDJOOJEKHDO beyond_param_value_float_list = 20;
+		GFKPPIJIPPL beyond_param_value_guid = 12;
+		IEPDCJJMIND beyond_param_value_enum = 24;
+		OCOEBMLIMCB beyond_param_value_struct_const = 35;
+		LJLDJEDLJLH beyond_param_value_entity_reference = 31;
+		HNACGFBKDJK beyond_param_value_int = 13;
+		GEMPGILLLBB beyond_param_value_army_list = 34;
+		EIKIPEMGOJF beyond_param_value_int_list = 18;
+		AHPHCMAPEEL beyond_param_value_bool = 14;
+		KMHNJHCHMEJ beyond_param_value_entity_reference_list = 33;
+		BFFNKGMDOAG beyond_param_value_entity = 11;
+		HICCFDEGMDD beyond_param_value_float = 15;
+		FGGNAJLHECB beyond_param_value_struct_list_const = 36;
+	}
+}
+
+
+message BBBHLJMHEPB {
+	uint32 progress = 3; /*[FIKPEGJIJII->progress]*/
+	int32 EOAHPKIGBOE = 1;
+	bool is_finished = 2; /*[NKAAFECIACK->is_finished]*/
+}
+
+
+message HAHOHFLOAPM {
+	repeated IGOKJDMCLOD DDCBLALDHCO = 2;
+}
+
+
+message PMJNDNOBBCD {
+	string PCKHMOLIOLB = 1;
+	float y = 3; /*[APMPIPOAAHJ->y]*/
+	float x = 2; /*[OFLHBJCAIHD->x]*/
+}
+
+
+message CGIMONDFCIE {
+	repeated LBIMLIEIHFC CABMNGIJIKB = 1;
+}
+
+
+message KPAJLDKMAGF {
+	repeated FJGEOHDCGPN AFOKMHDKADJ = 1;
+}
+
+
+message LJGJDAMBIIA {
+	int32 GEFOEPGHJDJ = 501;
+	OJJEPCGMLDD FPLOFIPIHAL = 1;
+	uint32 KBEDIHMIEBM = 2;
+}
+
+
+message ConfigRef { /*[COJCJKCMFHP->ConfigRef]*/
+	bool AHLGNGFFEOE = 2;
+	KOJDJPBNMPB tag = 1; /*[AANPFGLBGFH->tag]*/
+}
+
+
+message EKJLJCCIAPC {
+	IHHOJOIIONE type = 1; /*[KIFBBKDKNJI->type]*/
+	oneof detail { /*[ENPDCINEPHH->detail]*/
+		DDFFOFGKEPK none_data = 11;
+		FDGNAKNIIPK by_time_data = 12;
+		LBPNJHCCNAM by_speed_data = 13;
+	}
+}
+
+
+message OKBNCDDIENI {
+	string IONKONHGGDJ = 501;
+	repeated NPJBFJPHAJH JONMGIKINBI = 502;
+}
+
+
+message NNNLADGJFLC {
+	repeated uint32 FDBFMCJPJFC = 502;
+	repeated AKECNEAPAMA OEKOGJPOMHH = 504;
+	int32 JMCFFKKMGOI = 503;
+	bool ENOLDCFGKKD = 501;
+}
+
+
+message FBJONAFBFOL {
+	JGMJLNIABEN BIAJNLJOMEB = 3;
+	HMLLAHMPIDJ DIFFIPBPLFG = 4;
+	string IHMAGAMKIPP = 2;
+	int32 index = 1; /*[BIJCOCHPGDN->index]*/
+}
+
+
+message JLAABGDCBFJ {
+	repeated EAPKIALFJKI value_list = 1; /*[NEBBKBNEHLL->value_list]*/
+}
+
+
+enum MFEOBJLDMIG {
+	MFEOBJLDMIG_NONE = 0;
+	MFEOBJLDMIG_STRUCT_INSTANCE_ID = 1;
+}
+
+
+message NDMGLAKHCMH {
+	repeated DLJMDCBCBCI AJJCFCOIKAF = 1;
+}
+
+
+message FJGEOHDCGPN {
+	EAPKIALFJKI MMDGCDJBKIB = 1;
+	uint32 count = 2; /*[MPJIJHKIGBK->count]*/
+}
+
+
+enum LJBNJNJGNKN {
+	LJBNJNJGNKN_NONE = 0;
+	LJBNJNJGNKN_SERVER_PARAM = 1;
+	LJBNJNJGNKN_FROG = 2;
+}
+
+
+message ValueString { /*[MIPBKACDJJI->ValueString]*/
+	string value = 1; /*[GONNLMLACCM->value]*/
+}
+
+
+message DIMJJJMONEH {
+}
+
+
+message DMAJFOHGLOJ {
+	DEHJDOAANPI value = 1; /*[GONNLMLACCM->value]*/
+}
+
+
+message FDGNAKNIIPK {
+	float GEINDFHEJFP = 1;
+}
+
+
+message FNNJHLIDDGO {
+	uint32 level = 1; /*[KAIEIHHCCAA->level]*/
+	float BPDAGPDADNI = 2;
+	float GHEPJPJIAEF = 4;
+	float LHFFOAKJLBO = 3;
+}
+
+
+message KJNAEPMPBIF {
+	repeated GLLCAINELOJ EIBEPPMCOAE = 1;
+	repeated GLLCAINELOJ PBECFINNMJE = 501;
+	repeated GLLCAINELOJ value_list = 502; /*[NEBBKBNEHLL->value_list]*/
+	CHJLDBPFIAF DICALCBBNKP = 503;
+	CHJLDBPFIAF FIAFBCEAAKK = 504;
+	uint32 JNPPEBGNDNB = 505;
+}
+
+
+message NGAIEPMAAPL {
+	bool OKAGAHBEBGO = 502;
+	bool OJBCMHKOGBA = 503;
+	bool EFLPJNOBLJH = 504;
+}
+
+
+message AchievementData { /*[BCNODHDDOIK->AchievementData]*/
+	CFNLCBCADLH data = 1; /*[GGEBNBICIKB->data]*/
+}
+
+
+message HGFMHHAECEH {
+}
+
+
+message ValueGenerics { /*[KMFKNFLLING->ValueGenerics]*/
+	MHHNJFNAPPE PPCKGHFEJNJ = 5;
+	NCNLIEFBLMN value = 2; /*[GONNLMLACCM->value]*/
+	int32 ODIJGDINNFJ = 1;
+}
+
+
+message GNEFJDDKHPK {
+	HJCLNBFEIEP GLPKBGPMAOK = 1;
+	float AMFOOJNPKCM = 2;
+	float AHILHNLMNPI = 3;
+	float EMCOBHFCBLM = 4;
+}
+
+
+message HICBCGMJOHM {
+	EIIEKGPEGCF LFCEEAOGEKH = 2;
+	EKDLNJOAJIF HOFHLODFKCD = 1;
+	JCFMDDJELKE BCODNAEBNNC = 6;
+	repeated ICGLOMEFMLG PGHNNLPJNCG = 5;
+	LHGHEHJDFFJ NPFCMFFGLBA = 3;
+	PINBMEPFGKG PFIHOGECCJC = 4;
+	AIIOEHBKENF KEIHDDALOHL = 7;
+}
+
+
+message PNEGLBJOPAJ {
+	PKJBEFGBABM OFHMMCDBKEJ = 1;
+}
+
+
+message EPMJEKFCDEA {
+	CBPJDDGOFDH PJLPKFLBLHM = 501;
+}
+
+
+message EIIEKGPEGCF {
+	string BNIFBHADKMI = 4;
+	bool HJCKBLDFHFP = 1;
+	bool KDDNECNOAIK = 5;
+	bool EOBFOPLOCLB = 3;
+	bool NLMGNKOMCIA = 2;
+}
+
+
+message AMGFNNPBMHA {
+	JGAIINAIHFO KGMOKDDBFED = 21;
+}
+
+
+message EAEFOGGAEAG {
+	JHKPFFOIDJN MIEPBNFKGPJ = 2;
+	float PKMEOLEMFOH = 1;
+}
+
+
+message OCOEBMLIMCB {
+	KONPJEFKEIK MOFBHBPGNGC = 502;
+	repeated GLLCAINELOJ member_list = 1; /*[GCIOIOPJBJJ->member_list]*/
+	uint32 FMINBCJDHAE = 501;
+}
+
+
+message IMCMNMIEFPJ {
+	string LFLDAGFKBEM = 506;
+	EAPKIALFJKI KBNBBEADIPP = 501;
+	repeated int32 NODMLLLEJEN = 511;
+	IDHCBGIOGKF MOEMHIGMGGH = 507;
+	string JPKILGENNMA = 503;
+	string MNBBDGAMNIA = 508;
+	bool POFDOBMIFBD = 510;
+	bool ABKCODCBDCF = 505;
+	int32 filter_type = 512; /*[CFIIDPABPCM->filter_type]*/
+	bool DEKFIDBKCJN = 502;
+	bool ABJMGDKDOBG = 504;
+	bool MDMBLDAHOCB = 509;
+}
+
+
+message PMJBJAOCGNI {
+}
+
+
+message MHCGBKCNIAK {
+	DEHJDOAANPI rotation = 4; /*[BOKDCGBKKPE->rotation]*/
+	DEHJDOAANPI offset = 3; /*[ODKPNPEDGFA->offset]*/
+	string MKCLHFEHIGJ = 2;
+	EAPKIALFJKI HODICCKFDLA = 8;
+	bool NHHIGAFMAHD = 6;
+	bool AEJFEIBLDAM = 7;
+	bool ADHPMOJKMIF = 9;
+	int32 FIPDGLMDJNE = 1;
+	float GNOFNBODIOJ = 5;
+}
+
+
+message GPMILKINANF {
+}
+
+
+message IAPPECHJNAN {
+	repeated EAPKIALFJKI GFDIHOHECML = 1;
+}
+
+
+message StructListInfo { /*[OGOJPOJFEFO->StructListInfo]*/
+	uint32 FMINBCJDHAE = 1;
+}
+
+
+message JEOJBHOGADH {
+	IBONIGMPLLD DKLHOLHHGHI = 1;
+	bool DBBBINLNCFL = 2;
+}
+
+
+enum DAMCDDPNPCH {
+	DAMCDDPNPCH_NONE = 0;
+	DAMCDDPNPCH_PAIR = 1;
+	DAMCDDPNPCH_CHIP = 2;
+}
+
+
+message StepCreateConnection { /*[JODAJIFJJLA->StepCreateConnection]*/
+	PinName MMNFKBPCOKI = 4; /*[KGKFKBPGIOK->PinName]*/
+	PinName EGAJFGFJIOA = 2; /*[KGKFKBPGIOK->PinName]*/
+	uint32 NNBKECKPAHF = 1;
+	uint32 DFIDNPGCJME = 3;
+}
+
+
+enum PALOMGDJFCH {
+	PALOMGDJFCH_BAG = 0;
+	PALOMGDJFCH_CUSTOM = 1;
+}
+
+
+message BNIEDJPNMBB {
+	repeated EAPKIALFJKI GFDIHOHECML = 1;
+}
+
+
+message BOMINHBPFKG {
+	ICNPKDJDFKK LEGFINLGDGG = 7;
+	PAKJECOJFOE OMKMBDMJEIP = 5;
+	repeated PFMHPDBAGJM PHPDLDHNPIH = 9;
+	NDMGLAKHCMH DLCLLFMHOIH = 6;
+	bool KBBHGEIPEPE = 10;
+	DAOHLICBIHA MKHDCOOFDBH = 2;
+	GJMKKFEGOHN OPFAPEHKDID = 4;
+	PALOMGDJFCH EKJJDOEAABI = 1;
+	GMOCJMKHOFD JODFODJLDGI = 11;
+}
+
+
+message KPADBBCLLKG {
+	EBMMIOBHFOL JCKICJHBDGI = 1;
+	oneof detail { /*[ENPDCINEPHH->detail]*/
+		BOJLFOAMEKC base_prop = 51;
+		PAEMPOIKPDA custom = 52;
+		HHJJLOABEEB role_status = 53;
+	}
+}
+
+
+message BNMPFOOBEHN {
+	uint32 OPHLFGNOBAE = 1;
+}
+
+
+message PPNGHALBPCO {
+	string ELEKFBPJNEC = 503;
+	int32 PKOBLBBLIBG = 504;
+	float CBIHHADGFED = 502;
+	int32 LBHAMFAKHJF = 501;
+}
+
+
+enum CGPAKHLMKBL {
+	CGPAKHLMKBL_NONE = 0;
+	CGPAKHLMKBL_ADD = 1;
+	CGPAKHLMKBL_SUB = 2;
+	CGPAKHLMKBL_MUL = 3;
+	CGPAKHLMKBL_DIV = 4;
+	CGPAKHLMKBL_MOD = 5;
+	CGPAKHLMKBL_LESS = 6;
+	CGPAKHLMKBL_LESS_OR_EQUAL = 7;
+	CGPAKHLMKBL_GREATER = 8;
+	CGPAKHLMKBL_GREATER_OR_EQUAL = 9;
+	CGPAKHLMKBL_EQUAL = 10;
+}
+
+
+message LDHHOHBJEJD {
+	DFHJELLNOEJ offset = 505; /*[ODKPNPEDGFA->offset]*/
+	OKBNCDDIENI content = 504; /*[AGAJKAMMHID->content]*/
+	DFHJELLNOEJ AGJBDAJNCIM = 503;
+	string name = 501; /*[PEMBNEOLEAN->name]*/
+	int32 EEFGIMGIEMF = 508;
+	bool AJJAFNDMGPE = 509;
+	int32 FHMJIEBHFCJ = 506;
+	int32 PFNNPKANGNO = 502;
+	int32 ELNGKNMDJFK = 507;
+	int32 MDGJMKILIKB = 510;
+}
+
+
+message OGMOMAGDJFM {
+	DEHJDOAANPI GBMEKHCCEOL = 5;
+	DEHJDOAANPI IMDEGJPLGMA = 6;
+	string name = 11; /*[PEMBNEOLEAN->name]*/
+	DEHJDOAANPI GGEJKGKDHEI = 3;
+	DEHJDOAANPI OBBHKOONGKA = 4;
+	DEHJDOAANPI HHOAEBBDHDN = 8;
+	DEHJDOAANPI GILNIGBCAGD = 7;
+	float EHIDEBIJIPE = 9;
+	float BPBEEGIIHID = 2;
+	float MKDOBFCBLEL = 10;
+	float PGIMEAHEAJA = 12;
+	uint32 FNHPJCHECDJ = 1;
+}
+
+
+message AbsoluteRoute { /*[BPHABEJMMCI->AbsoluteRoute]*/
+	HPPLDKBAIOG data = 1; /*[GGEBNBICIKB->data]*/
+}
+
+
+message JHOBJEEFEIN {
+	repeated LFGLDPNCABE value_list = 1; /*[NEBBKBNEHLL->value_list]*/
+}
+
+
+message FDCNGHHMCJO {
+	repeated int32 KCEKANAMFBN = 503;
+	repeated OKNCEKLPNIF GKPPNCHBGLO = 505;
+	repeated JPPBDGJDANG OCLFOLDOGNP = 502;
+	int32 BNGAJEJDMIM = 504;
+	int32 AAAOFCIAOFM = 501;
+}
+
+
+message CPEIBIGCGJJ {
+	uint32 value = 1; /*[GONNLMLACCM->value]*/
+}
+
+
+message AFEFLEDFFPC {
+	float KAGHDINHHEH = 7;
+	float KDLIALGIICL = 3;
+	float cd = 2; /*[PLEEPADNLJJ->cd]*/
+	bool ECNIDDODIMK = 4;
+	uint32 group_id = 1; /*[FKMOCFEPLDG->group_id]*/
+	uint32 skill_type = 5; /*[LAFMGMOKNCC->skill_type]*/
+	float HHNMDIDODOP = 6;
+}
+
+
+enum BGELAGPJGLM {
+	BGELAGPJGLM_NONE = 0;
+	BGELAGPJGLM_SEARCH_TAG = 1;
+	BGELAGPJGLM_SEARCH_INSTRUCTION_VARIABLE = 2;
+	BGELAGPJGLM_REF = 3;
+	BGELAGPJGLM_SEARCH_SIGNAL = 4;
+	BGELAGPJGLM_REPAIR_ON_IMPORT = 5;
+	BGELAGPJGLM_FUNCTION = 6;
+	BGELAGPJGLM_GENERICS_DICTIONARY_OPTIONAL_TYPES = 7;
+	BGELAGPJGLM_SEARCH_MUSIC = 8;
+	BGELAGPJGLM_SEARCH_SOUND_EFFECT = 9;
+	BGELAGPJGLM_ENABLE_LIST_EDIT = 10;
+	BGELAGPJGLM_SEARCH_RESOURCE_COLLECTION = 11;
+	BGELAGPJGLM_BEYOND_GUID_REFERENCE_ON_EXPORT = 12;
+}
+
+
+message IAJJMLMIPKE {
+	HDIHBDHKACI OFHMMCDBKEJ = 1;
+}
+
+
+message FGGNAJLHECB {
+	repeated GLLCAINELOJ BMIHCOOMLEM = 1;
+	uint32 FMINBCJDHAE = 501;
+}
+
+
+message StepCreateNode { /*[OJMDALMIILK->StepCreateNode]*/
+	OHDAMLAGNFL MDICJANGKNI = 1;
+	uint32 OGMDNNOCCLH = 3;
+	uint32 id = 2; /*[PCPENLLKDLK->id]*/
+}
+
+
+message IFGFJADNOID {
+	PinName NPEECGOAINB = 1; /*[KGKFKBPGIOK->PinName]*/
+	int32 GIGEAHMMKLH = 2;
+	CLIEHJMGOOG match_type = 3; /*[CJAGHCPBOIC->match_type]*/
+	optional CBENBMIKBPL match_info_generics_server_param_dict = 100;
+}
+
+
+message BGCGKEBKAGJ {
+	uint32 FLPLBIECFIN = 4;
+	int32 MOCJHGNMEJN = 2;
+	uint32 BLEEJDLCONE = 3;
+	uint32 EGOFKMKKGNO = 1;
+}
+
+
+message FHICCFABAAJ {
+	repeated LFPOGHOHENK action_list = 2; /*[IBOKPHJLOCH->action_list]*/
+	NCNLIEFBLMN value = 1; /*[GONNLMLACCM->value]*/
+}
+
+
+message BFFNKGMDOAG {
+	uint32 value = 1; /*[GONNLMLACCM->value]*/
+}
+
+
+enum MDPPOPKHONN {
+	MDPPOPKHONN_BEYOND_ENVIRONMENT_LIGHT_COLOR_DEFAULT = 0;
+	MDPPOPKHONN_BEYOND_ENVIRONMENT_LIGHT_COLOR_WHITE = 1;
+	MDPPOPKHONN_BEYOND_ENVIRONMENT_LIGHT_COLOR_GREEN = 2;
+	MDPPOPKHONN_BEYOND_ENVIRONMENT_LIGHT_COLOR_BLUE = 3;
+	MDPPOPKHONN_BEYOND_ENVIRONMENT_LIGHT_COLOR_ORANGE = 4;
+	MDPPOPKHONN_BEYOND_ENVIRONMENT_LIGHT_COLOR_RED = 5;
+}
+
+
+enum EKFDFLIMMLI {
+	EKFDFLIMMLI_NONE = 0;
+	EKFDFLIMMLI_LOCAL_POS = 1;
+	EKFDFLIMMLI_WORLD_POS = 2;
+	EKFDFLIMMLI_GADGET = 3;
+}
+
+
+message EMMJEBPEOLI {
+	float KHOPHGMMDLH = 4;
+	float EBBPHLPBHBP = 3;
+	float FJKDDBAMMPE = 5;
+	bool FEECGGGJDLF = 1;
+	float PMEHDOBKOAB = 2;
+}
+
+
+message BHLEHHMFGCF {
+	OJJEPCGMLDD FPLOFIPIHAL = 1;
+	uint32 FNHPJCHECDJ = 2;
+}
+
+
+message JBOCGMPLJBN {
+	HEPDOAGGNMP EGKOLMDDEJP = 2;
+	CHJLDBPFIAF EJFADAFFFLB = 1;
+}
+
+
+message FIHIPCNNBJM {
+	IAHDCAEAFNB LACIKEIOIGD = 1;
+}
+
+
+message GPIHKNNJBHE {
+	repeated EAPKIALFJKI EAJAJFDDAJN = 8;
+	float NBMFBFAFABF = 6;
+	float OKIMHMFDAMN = 7;
+	bool CIGNOPNFADO = 1;
+	bool IDKEOACNFBM = 5;
+	bool JBDNBELIMMA = 2;
+	bool DAPKHIOOEPP = 3;
+	bool OLLIJPKGOJE = 4;
+}
+
+
+enum MPKDFPFGDKN {
+	MPKDFPFGDKN_BY_NONE = 0;
+	MPKDFPFGDKN_BY_SECTOR = 1;
+	MPKDFPFGDKN_BY_CYLINDER = 2;
+}
+
+
+message GDHMBNJHIBA {
+	repeated KOGNFHENIHO NGNMJCNDFGF = 1;
+}
+
+
+message IDFOHILEBHB {
+}
+
+
+message ValueInt { /*[CENDONBDNLL->ValueInt]*/
+	int32 value = 1; /*[GONNLMLACCM->value]*/
+}
+
+
+message KNJAJHIELGF {
+}
+
+
+message PHOONLBMHPL {
+	DEHJDOAANPI offset = 2; /*[ODKPNPEDGFA->offset]*/
+	float HOOMBAEMNHL = 6;
+	float POCFEIMEFGK = 1;
+	float AIMGGNOLDDB = 3;
+	float ECDDCKCJCID = 4;
+	float PIIDELCLJAJ = 5;
+}
+
+
+message CBENBMIKBPL {
+	uint32 AMMJGJMLMLL = 2;
+	uint32 MPJJFKOJHNN = 1;
+}
+
+
+message FMAHKPBICKI {
+}
+
+
+message LMDAAHIDAIC {
+	repeated string GHGHMIGJBAE = 1;
+}
+
+
+message EDKKEMKKKMC {
+	repeated int32 MOCEMHEDCFB = 501;
+}
+
+
+message NDMFLDFOIIP {
+	BAKDDGCDDJA DLGGGKJLFJP = 504;
+	repeated uint32 NIBMLPANCCI = 502;
+	repeated KPHEGAODLCD NADEKAOCCJD = 503;
+}
+
+
+message FLEPFBBEIFM {
+	JAOKELGGJHL JIBPIBHBLLO = 4;
+	DEHJDOAANPI KEPNEOJCNFG = 3;
+	string MBNAHJBPEDI = 1;
+	DEHJDOAANPI offset = 2; /*[ODKPNPEDGFA->offset]*/
+	MIJECGAAPKD EHLLOKIKMIP = 7;
+	OFHHMLKBOAH HNCKIPLCEKM = 5;
+	LFGLDPNCABE FDAIAKMIJND = 6;
+}
+
+
+message DKPFOHIGMFH {
+	DEHJDOAANPI EKOCNHJJDBB = 1;
+	float acceleration = 2; /*[HEEEIDKJDHK->acceleration]*/
+	float accelerate_time = 3; /*[MMAGNCCECII->accelerate_time]*/
+	bool DLAFGNIMMKI = 4;
+}
+
+
+message MNNHAIBKENN {
+	CBPJDDGOFDH NJOHGDFIHAD = 505;
+	uint32 JBELGJKCKPM = 501;
+	float NFDIGNOODNH = 502;
+	bool MHBCLLPAEOD = 503;
+	bool FIFLCNHLKII = 504;
+}
+
+
+message CJPIFKEKEJC {
+	repeated uint32 FBANHEJPAIE = 1;
+}
+
+
+enum LEPCIFNBALN {
+	LEPCIFNBALN_NONE = 0;
+	LEPCIFNBALN_STOP = 1;
+	LEPCIFNBALN_ABSORB = 2;
+}
+
+
+message ENJBMGJIGDJ {
+	AFJGMILNKMB data = 1; /*[GGEBNBICIKB->data]*/
+}
+
+
+message ConfigStructId { /*[CFIGGGEDCCN->ConfigStructId]*/
+	uint32 HOGHGNKNOJI = 1;
+}
+
+
+message GGMGINJHMEB {
+	int32 GGPJOJHLJHD = 501;
+}
+
+
+message IPOAIDNIEGL {
+	IFIIIKAOFOL data = 1; /*[GGEBNBICIKB->data]*/
+}
+
+
+message PJJCEICKMDL {
+	ONHOCIDAFMB icon = 503; /*[MCMCFPALLPM->icon]*/
+	LDHHOHBJEJD FLHBEADILJN = 502;
+	int32 index = 505; /*[BIJCOCHPGDN->index]*/
+	int32 content_type = 501; /*[NDEOOOEPACD->content_type]*/
+}
+
+
+message CLEKGGBHOHB {
+	NBOCECHCDMM OFHMMCDBKEJ = 1;
+}
+
+
+message EKJMJLNJDPK {
+	DEHJDOAANPI rotation = 3; /*[BOKDCGBKKPE->rotation]*/
+	DEHJDOAANPI position = 2; /*[HOOCGKDDCPI->position]*/
+	DEHJDOAANPI GNOFNBODIOJ = 4;
+	uint32 HDJNBDEIENE = 1;
+}
+
+
+message NFMDDNLLGHM {
+	string IGNMIPEEKON = 3;
+	int32 MOCJHGNMEJN = 2;
+	uint32 FLPLBIECFIN = 6;
+	uint32 NOLMFLFGJNL = 7;
+	uint32 BLEEJDLCONE = 5;
+	float BIELHEKHAAN = 4;
+	uint32 EGOFKMKKGNO = 1;
+}
+
+
+message HABHDKPOPEH {
+	OMGKLMIHHIL OFHMMCDBKEJ = 1;
+}
+
+
+message ValueVector { /*[IJFDLEKJKDI->ValueVector]*/
+	MHMPJJEKOBD value = 1; /*[GONNLMLACCM->value]*/
+}
+
+
+message JDCENECAAGP {
+	HICBCGMJOHM OOCAPMKEGLM = 1;
+}
+
+
+message JIDDHPBFHDK {
+	repeated EHDHEMEKPIK OFHMMCDBKEJ = 501;
+	uint32 EKMFDHJAMJE = 503;
+	int32 GEDGGGPIHOM = 502;
+}
+
+
+message BPDBGJLEFFK {
+	EAPKIALFJKI APIKEKJBEAI = 1;
+	uint32 count = 2; /*[MPJIJHKIGBK->count]*/
+}
+
+
+message OAAJACLIPHD {
+	OAGBFMDEJPI FJLECLLDJPA = 7;
+	repeated LFGLDPNCABE PBGBCMPPKFH = 13;
+	repeated string BMHDPKNKNHD = 5;
+	EAPKIALFJKI KAKEPIFMIEA = 6;
+	repeated DGDOCDECOKO ENAPANNFDEC = 1;
+	repeated LFGLDPNCABE NJOIPMKFGJK = 9;
+	repeated int32 NODMLLLEJEN = 12;
+	bool PMEMOLBBNJM = 501;
+	bool DFIHCBDKLMF = 1002;
+	bool KEBMDPLDIKN = 2;
+	float NNBHIJKFIGK = 4;
+	float CNBGKCEIBGK = 11;
+	LFGLDPNCABE DAPGMBLJNDC = 3;
+	int32 filter_type = 503; /*[CFIIDPABPCM->filter_type]*/
+	LFGLDPNCABE CFLNJFGDBOL = 8;
+}
+
+
+message IBONIGMPLLD {
+	DEHJDOAANPI rot = 4; /*[PPOMCELLJLE->rot]*/
+	DEHJDOAANPI pos = 3; /*[CGOHAKJFKMH->pos]*/
+	NKCNGICCKIP HPIDADCKFAP = 1;
+	float PJNFJGIPPCL = 2;
+	bool NFCHIDLGPKC = 501;
+	oneof detail { /*[ENPDCINEPHH->detail]*/
+		GNEFJDDKHPK spot_light_config = 52;
+		HGKEIFGDMDA point_light_config = 51;
+	}
+}
+
+
+message FMCANKPHJAK {
+	repeated uint32 KOCBDJLPCGA = 501;
+	uint32 JHILDIFBMPI = 502;
+}
+
+
+enum JHKPFFOIDJN {
+	JHKPFFOIDJN_BEYOND_ENERGY_INCREASE_ANYWAY = 0;
+	JHKPFFOIDJN_BEYOND_ENERGY_HOLD_WHEN_UNUSE = 1;
+	JHKPFFOIDJN_BEYOND_ENERGY_CLEAR_WHEN_UNUSE = 2;
+}
+
+
+message FEOOOCMOMLB {
+	DPIALOPEOIA MHEFALFDNMP = 4;
+	string BJGHMIPGJBI = 5;
+	uint32 OALJLGNKMKC = 1;
+	uint32 NOKIMKDPFNH = 2;
+}
+
+
+message LMOPFKCPLBJ {
+	bool KHFMADHEDBP = 3;
+	bool BFIPBCALNBN = 4;
+	bool AHEPIBCBHBG = 1;
+	bool KGEKELNOPPG = 2;
+	bool FLBKKCMJJIC = 5;
+}
+
+
+message HKCIIBFNJBG {
+	repeated EKJMJLNJDPK IPEDPDEACBE = 1;
+}
+
+
+message PODGDHDNDIJ {
+	repeated MEDOBIOFKGM JDKGCMOMLFC = 1;
+}
+
+
+enum LFGLDPNCABE {
+	LFGLDPNCABE_BEYOND_ENUM_NONE = 0;
+	LFGLDPNCABE_BEYOND_COMPARE_OPERATOR_EQUAL = 100;
+	LFGLDPNCABE_BEYOND_COMPARE_OPERATOR_LESS = 101;
+	LFGLDPNCABE_BEYOND_COMPARE_OPERATOR_LESS_EQUAL = 102;
+	LFGLDPNCABE_BEYOND_COMPARE_OPERATOR_GREATER = 103;
+	LFGLDPNCABE_BEYOND_COMPARE_OPERATOR_GREATER_EQUAL = 104;
+	LFGLDPNCABE_BEYOND_COMPARE_OPERATOR_NOT_EQUAL = 105;
+	LFGLDPNCABE_BEYOND_LOGIC_OPERATOR_AND = 200;
+	LFGLDPNCABE_BEYOND_LOGIC_OPERATOR_OR = 201;
+	LFGLDPNCABE_BEYOND_LOGIC_OPERATOR_XOR = 202;
+	LFGLDPNCABE_BEYOND_LOGIC_OPERATOR_NOT = 203;
+	LFGLDPNCABE_BEYOND_NUMERICAL_OPERATOR_ADD = 300;
+	LFGLDPNCABE_BEYOND_NUMERICAL_OPERATOR_SUBTRACT = 301;
+	LFGLDPNCABE_BEYOND_NUMERICAL_OPERATOR_MULTIPLY = 302;
+	LFGLDPNCABE_BEYOND_NUMERICAL_OPERATOR_DIVID = 303;
+	LFGLDPNCABE_BEYOND_NUMERICAL_OPERATOR_MODULO = 304;
+	LFGLDPNCABE_BEYOND_NUMERICAL_OPERATOR_POWER = 305;
+	LFGLDPNCABE_BEYOND_NUMERICAL_OPERATOR_MAX = 306;
+	LFGLDPNCABE_BEYOND_NUMERICAL_OPERATOR_MIN = 307;
+	LFGLDPNCABE_BEYOND_NUMERICAL_OPERATOR_LOG = 308;
+	LFGLDPNCABE_BEYOND_NUMERICAL_OPERATOR_ABS = 309;
+	LFGLDPNCABE_BEYOND_NUMERICAL_OPERATOR_SIGN = 310;
+	LFGLDPNCABE_BEYOND_NUMERICAL_OPERATOR_SQRT = 311;
+	LFGLDPNCABE_BEYOND_NUMERICAL_OPERATOR_CLAMP = 312;
+	LFGLDPNCABE_BEYOND_ATTACK_SHAPE_BOX = 400;
+	LFGLDPNCABE_BEYOND_ATTACK_SHAPE_SPHERE = 401;
+	LFGLDPNCABE_BEYOND_ATTACK_SHAPE_CIRCLE = 402;
+	LFGLDPNCABE_BEYOND_CIRCLE_DETECT_DIRECTION_CENTER_TO_SIDE = 450;
+	LFGLDPNCABE_BEYOND_CIRCLE_DETECT_DIRECTION_CLOCKWISE = 451;
+	LFGLDPNCABE_BEYOND_CIRCLE_DETECT_DIRECTION_COUNTERCLOCKWISE = 452;
+	LFGLDPNCABE_BEYOND_ENTITY_LIFE_STATE_LIVE = 500;
+	LFGLDPNCABE_BEYOND_ENTITY_LIFE_STATE_DEAD = 501;
+	LFGLDPNCABE_BEYOND_ORDER_RULE_ASCENDING = 600;
+	LFGLDPNCABE_BEYOND_ORDER_RULE_DESCENDING = 601;
+	LFGLDPNCABE_BEYOND_ORDER_RULE_RANDOM = 602;
+	LFGLDPNCABE_BEYOND_ROUND_RULE_CEILING = 700;
+	LFGLDPNCABE_BEYOND_ROUND_RULE_FLOOR = 701;
+	LFGLDPNCABE_BEYOND_ROUND_RULE_ROUND = 702;
+	LFGLDPNCABE_BEYOND_ROUND_RULE_TRUNCATE = 703;
+	LFGLDPNCABE_BEYOND_CONVERTOR_INT_32_BOOL = 800;
+	LFGLDPNCABE_BEYOND_CONVERTOR_INT_32_FLOAT = 801;
+	LFGLDPNCABE_BEYOND_CONVERTOR_INT_32_STRING = 802;
+	LFGLDPNCABE_BEYOND_CONVERTOR_ENTITY_STRING = 803;
+	LFGLDPNCABE_BEYOND_CONVERTOR_GUID_STRING = 804;
+	LFGLDPNCABE_BEYOND_CONVERTOR_BOOL_INT_32 = 805;
+	LFGLDPNCABE_BEYOND_CONVERTOR_BOOL_STRING = 806;
+	LFGLDPNCABE_BEYOND_CONVERTOR_FLOAT_INT_32 = 807;
+	LFGLDPNCABE_BEYOND_CONVERTOR_FLOAT_STRING = 808;
+	LFGLDPNCABE_BEYOND_CONVERTOR_VECTOR_3_STRING = 809;
+	LFGLDPNCABE_BEYOND_CONVERTOR_ARMY_STRING = 810;
+	LFGLDPNCABE_BEYOND_ENTITY_POINT_TYPE_VECTOR = 900;
+	LFGLDPNCABE_BEYOND_ENTITY_POINT_TYPE_CURVE = 901;
+	LFGLDPNCABE_BEYOND_ENTITY_MOVE_TYPE_ONEWAY = 1000;
+	LFGLDPNCABE_BEYOND_ENTITY_MOVE_TYPE_RECIPROCATE = 1001;
+	LFGLDPNCABE_BEYOND_ENTITY_MOVE_TYPE_LOOP = 1002;
+	LFGLDPNCABE_BEYOND_FOLLOW_TYPE_DEFAULT = 1100;
+	LFGLDPNCABE_BEYOND_FOLLOW_TYPE_POS = 1101;
+	LFGLDPNCABE_BEYOND_FOLLOW_TYPE_ROT = 1102;
+	LFGLDPNCABE_BEYOND_FOLLOW_COORDINATE_RELATIVE = 1200;
+	LFGLDPNCABE_BEYOND_FOLLOW_COORDINATE_ABSOLUTE = 1201;
+	LFGLDPNCABE_BEYOND_ELEMENT_TYPE_NONE = 1300;
+	LFGLDPNCABE_BEYOND_ELEMENT_TYPE_FIRE = 1301;
+	LFGLDPNCABE_BEYOND_ELEMENT_TYPE_WATER = 1302;
+	LFGLDPNCABE_BEYOND_ELEMENT_TYPE_WIND = 1303;
+	LFGLDPNCABE_BEYOND_ELEMENT_TYPE_THUNDER = 1304;
+	LFGLDPNCABE_BEYOND_ELEMENT_TYPE_GRASS = 1305;
+	LFGLDPNCABE_BEYOND_ELEMENT_TYPE_ICE = 1306;
+	LFGLDPNCABE_BEYOND_ELEMENT_TYPE_ROCK = 1307;
+	LFGLDPNCABE_BEYOND_ENTITY_TYPE_LEVEL = 1401;
+	LFGLDPNCABE_BEYOND_ENTITY_TYPE_GADGET = 1402;
+	LFGLDPNCABE_BEYOND_ENTITY_TYPE_PLAYER = 1403;
+	LFGLDPNCABE_BEYOND_ENTITY_TYPE_AVATAR = 1404;
+	LFGLDPNCABE_BEYOND_ENTITY_TYPE_MONSTER = 1405;
+	LFGLDPNCABE_BEYOND_ROLE_STATUS_REASON_ADD_FAILED_EXCEPTION = 1500;
+	LFGLDPNCABE_BEYOND_ROLE_STATUS_REASON_ADD_FAILED_RESISTED = 1501;
+	LFGLDPNCABE_BEYOND_ROLE_STATUS_REASON_ADD_FAILED_OVERSLOTS = 1502;
+	LFGLDPNCABE_BEYOND_ROLE_STATUS_REASON_ADD_FAILED_OVERCOUNT = 1503;
+	LFGLDPNCABE_BEYOND_ROLE_STATUS_REASON_ADD_SUCC_NEW_SLOT = 1504;
+	LFGLDPNCABE_BEYOND_ROLE_STATUS_REASON_ADD_SUCC_UPDATE = 1505;
+	LFGLDPNCABE_BEYOND_ROLE_STATUS_REASON_REMOVE_SLOT_REPLACED = 1506;
+	LFGLDPNCABE_BEYOND_ROLE_STATUS_REASON_REMOVE_LIFE_END = 1507;
+	LFGLDPNCABE_BEYOND_ROLE_STATUS_REASON_REMOVE_DISPERSE = 1508;
+	LFGLDPNCABE_BEYOND_ROLE_STATUS_REASON_REMOVE_CANCEL = 1509;
+	LFGLDPNCABE_BEYOND_ROLE_STATUS_REASON_REMOVE_DUTY_CHANGE = 1510;
+	LFGLDPNCABE_BEYOND_ROLE_STATUS_REASON_REMOVE_AFFIX_DEACTIVE = 1511;
+	LFGLDPNCABE_BEYOND_ROLE_STATUS_REASON_REMOVE_SHIELD_BREAK = 1512;
+	LFGLDPNCABE_BEYOND_ROLE_STATUS_REMOVE_POLICY_ALL = 1540;
+	LFGLDPNCABE_BEYOND_ROLE_STATUS_REMOVE_POLICY_SINGLE = 1541;
+	LFGLDPNCABE_BEYOND_REVIVE_POINT_SELECT_POLICY_NEAREST = 1601;
+	LFGLDPNCABE_BEYOND_REVIVE_POINT_SELECT_POLICY_LAST_ACTIVE = 1602;
+	LFGLDPNCABE_BEYOND_REVIVE_POINT_SELECT_POLICY_PRIORITY = 1603;
+	LFGLDPNCABE_BEYOND_REVIVE_POINT_SELECT_POLICY_RANDOM = 1604;
+	LFGLDPNCABE_BEYOND_DIE_REASON_BEYOND_BLUEPRINT = 1605;
+	LFGLDPNCABE_BEYOND_DIE_REASON_NORMAL = 1606;
+	LFGLDPNCABE_BEYOND_DIE_REASON_SPECIAL = 1607;
+	LFGLDPNCABE_BEYOND_TRIGONOMETRIC_OP_CAL_COS = 1700;
+	LFGLDPNCABE_BEYOND_TRIGONOMETRIC_OP_CAL_SIN = 1701;
+	LFGLDPNCABE_BEYOND_TRIGONOMETRIC_OP_CAL_TAN = 1702;
+	LFGLDPNCABE_BEYOND_TRIGONOMETRIC_OP_CAL_ACOS = 1703;
+	LFGLDPNCABE_BEYOND_TRIGONOMETRIC_OP_CAL_ASIN = 1704;
+	LFGLDPNCABE_BEYOND_TRIGONOMETRIC_OP_CAL_ATAN = 1705;
+	LFGLDPNCABE_BEYOND_TRIGONOMETRIC_OP_CAL_RAD_2_DAG = 1706;
+	LFGLDPNCABE_BEYOND_TRIGONOMETRIC_OP_CAL_DAG_2_RAD = 1707;
+	LFGLDPNCABE_BEYOND_AVATAR_DISTURBER_TRAVELLER = 1800;
+	LFGLDPNCABE_BEYOND_AVATAR_DISTURBER_FIELD = 1801;
+	LFGLDPNCABE_BEYOND_AVATAR_DISTURBER_EJECT = 1802;
+	LFGLDPNCABE_BEYOND_AVATAR_DISTURBER_DRAG = 1803;
+	LFGLDPNCABE_BEYOND_AVATAR_DISTURBER_RADIATE = 1810;
+	LFGLDPNCABE_BEYOND_AVATAR_DISTURBER_SINGLE_DIR = 1811;
+	LFGLDPNCABE_BEYOND_UI_SWITCH_STATUS_OFF = 1900;
+	LFGLDPNCABE_BEYOND_UI_SWITCH_STATUS_ON = 1901;
+	LFGLDPNCABE_BEYOND_UI_SWITCH_STATUS_HIDE = 1902;
+	LFGLDPNCABE_BEYOND_MP_ACTION_TARGET_TYPE_NONE = 2000;
+	LFGLDPNCABE_BEYOND_MP_ACTION_TARGET_TYPE_ALIANCE = 2001;
+	LFGLDPNCABE_BEYOND_MP_ACTION_TARGET_TYPE_ENEMY = 2002;
+	LFGLDPNCABE_BEYOND_MP_ACTION_TARGET_TYPE_SELF = 2003;
+	LFGLDPNCABE_BEYOND_MP_ACTION_TARGET_TYPE_SELF_CAMP = 2004;
+	LFGLDPNCABE_BEYOND_MP_ACTION_TARGET_TYPE_ALL = 2005;
+	LFGLDPNCABE_BEYOND_MP_ACTION_TARGET_TYPE_ALL_EXCEPT_SELF = 2006;
+	LFGLDPNCABE_BEYOND_MP_ACTION_TARGET_TYPE_ALLIANCE_INCLUDE_SELF = 2007;
+	LFGLDPNCABE_BEYOND_HIT_DETECTION_TRIGGER_NONE = 2100;
+	LFGLDPNCABE_BEYOND_HIT_DETECTION_TRIGGER_ONCE = 2101;
+	LFGLDPNCABE_BEYOND_HIT_DETECTION_TRIGGER_NO_REPEAT = 2102;
+	LFGLDPNCABE_BEYOND_HIT_DETECTION_TRIGGER_ALWAYS = 2103;
+	LFGLDPNCABE_BEYOND_STRIKE_TYPE_NONE = 2200;
+	LFGLDPNCABE_BEYOND_STRIKE_TYPE_DEFAULT = 2201;
+	LFGLDPNCABE_BEYOND_STRIKE_TYPE_SLASH = 2202;
+	LFGLDPNCABE_BEYOND_STRIKE_TYPE_BLUNT = 2203;
+	LFGLDPNCABE_BEYOND_STRIKE_TYPE_PIERCE = 2204;
+	LFGLDPNCABE_BEYOND_STRIKE_TYPE_SPEAR = 2205;
+	LFGLDPNCABE_BEYOND_ATTACK_TYPE_NONE = 2300;
+	LFGLDPNCABE_BEYOND_ATTACK_TYPE_MELEE = 2301;
+	LFGLDPNCABE_BEYOND_ATTACK_TYPE_RANGE = 2302;
+	LFGLDPNCABE_BEYOND_ATTACK_TYPE_DEFAULT = 2303;
+	LFGLDPNCABE_BEYOND_HIT_IMPULSE_TYPE_DEFAULT = 2400;
+	LFGLDPNCABE_BEYOND_HIT_IMPULSE_TYPE_LV_0 = 2401;
+	LFGLDPNCABE_BEYOND_HIT_IMPULSE_TYPE_LV_1 = 2402;
+	LFGLDPNCABE_BEYOND_HIT_IMPULSE_TYPE_LV_2 = 2403;
+	LFGLDPNCABE_BEYOND_HIT_IMPULSE_TYPE_LV_3 = 2404;
+	LFGLDPNCABE_BEYOND_HIT_IMPULSE_TYPE_LV_4 = 2405;
+	LFGLDPNCABE_BEYOND_HIT_IMPULSE_TYPE_LV_5 = 2406;
+	LFGLDPNCABE_BEYOND_HIT_IMPULSE_TYPE_LV_6 = 2407;
+	LFGLDPNCABE_BEYOND_HIT_IMPULSE_TYPE_LV_7 = 2408;
+	LFGLDPNCABE_BEYOND_HIT_IMPULSE_TYPE_LV_8 = 2409;
+	LFGLDPNCABE_BEYOND_HIT_IMPULSE_TYPE_LV_9 = 2410;
+	LFGLDPNCABE_BEYOND_RETREAT_TYPE_NONE = 2500;
+	LFGLDPNCABE_BEYOND_RETREAT_TYPE_BY_ATTACKER = 2501;
+	LFGLDPNCABE_BEYOND_RETREAT_TYPE_BY_HIT_DIRECTION = 2502;
+	LFGLDPNCABE_BEYOND_RETREAT_TYPE_BY_ORIGINAL_OWNER = 2503;
+	LFGLDPNCABE_BEYOND_RETREAT_TYPE_BY_TANGENT = 2504;
+	LFGLDPNCABE_BEYOND_RETREAT_TYPE_BY_HIT_DIRECTION_INVERSE = 2505;
+	LFGLDPNCABE_BEYOND_RETREAT_TYPE_BY_ATTACKER_FORWARD = 2506;
+	LFGLDPNCABE_BEYOND_RETREAT_TYPE_BY_ATTACKER_INVERSE = 2507;
+	LFGLDPNCABE_BEYOND_CHECK_HIT_LAYER_TYPE_NONE = 2600;
+	LFGLDPNCABE_BEYOND_CHECK_HIT_LAYER_TYPE_ONLY_HITBOX = 2601;
+	LFGLDPNCABE_BEYOND_CHECK_HIT_LAYER_TYPE_ONLY_SCENE = 2602;
+	LFGLDPNCABE_BEYOND_CHECK_HIT_LAYER_TYPE_ONLY_MASSIVE = 2603;
+	LFGLDPNCABE_BEYOND_CHECK_HIT_LAYER_TYPE_ALL = 2604;
+	LFGLDPNCABE_BEYOND_CHECK_HIT_LAYER_TYPE_GADGET_COLLIDER = 2605;
+	LFGLDPNCABE_BEYOND_VELOCITY_FORCE_TYPE_RETREAT_TYPE = 2700;
+	LFGLDPNCABE_BEYOND_VELOCITY_FORCE_TYPE_RETREAT_AIR_TYPE = 2701;
+	LFGLDPNCABE_BEYOND_VELOCITY_FORCE_TYPE_RUSH_MOVE_TYPE = 2702;
+	LFGLDPNCABE_BEYOND_VELOCITY_FORCE_TYPE_WIND_ZONE_TYPE = 2703;
+	LFGLDPNCABE_BEYOND_VELOCITY_FORCE_TYPE_AIR_FLOW_TYPE = 2704;
+	LFGLDPNCABE_BEYOND_VELOCITY_FORCE_TYPE_RISE_TYPE = 2705;
+	LFGLDPNCABE_BEYOND_VELOCITY_FORCE_TYPE_SPEED_UP_TYPE = 2706;
+	LFGLDPNCABE_BEYOND_VELOCITY_FORCE_TYPE_AIRFLOW_ACC_TYPE = 2707;
+	LFGLDPNCABE_BEYOND_VELOCITY_FORCE_TYPE_INERTIA_TYPE = 2708;
+	LFGLDPNCABE_BEYOND_VELOCITY_FORCE_TYPE_FIXED_RUSH_MOVE_TYPE = 2709;
+	LFGLDPNCABE_BEYOND_VELOCITY_FORCE_TYPE_LIGHT_CORE_TYPE_NORMAL = 2710;
+	LFGLDPNCABE_BEYOND_VELOCITY_FORCE_TYPE_LIGHT_CORE_TYPE_ACCELERATE = 2711;
+	LFGLDPNCABE_BEYOND_VELOCITY_FORCE_TYPE_GOROU_ZONE_TYPE = 2712;
+	LFGLDPNCABE_BEYOND_VELOCITY_FORCE_TYPE_UGC_DIRECTED_FORCE_TYPE = 2713;
+	LFGLDPNCABE_BEYOND_VELOCITY_FORCE_TYPE_TRAMPOLINE_FORCE_TYPE = 2714;
+	LFGLDPNCABE_BEYOND_VELOCITY_FORCE_TYPE_GRAPPLING_HOOK_MOVE_TYPE = 2715;
+	LFGLDPNCABE_BEYOND_VELOCITY_FORCE_TYPE_WIDGET_AIRFLOW_TYPE = 2716;
+	LFGLDPNCABE_BEYOND_VELOCITY_FORCE_TYPE_LINEAR_ATTENUATION_IGNORE_AIR_G_TYPE = 2717;
+	LFGLDPNCABE_BEYOND_VELOCITY_FORCE_TYPE_BEYOND_TYPE = 2718;
+	LFGLDPNCABE_BEYOND_VELOCITY_FORCE_TYPE_BEYOND_FORCE_FIELD_TYPE = 2719;
+	LFGLDPNCABE_BEYOND_VELOCITY_FORCE_TYPE_BEYOND_EJECT_TYPE = 2720;
+	LFGLDPNCABE_BEYOND_VELOCITY_FORCE_TYPE_BEYOND_DRAG_TYPE = 2721;
+	LFGLDPNCABE_BEYOND_CUSTOM_SKILL_MOVE_TYPE_COMBAT_SKILL_MOVE = 2800;
+	LFGLDPNCABE_BEYOND_CUSTOM_SKILL_MOVE_TYPE_COMBAT_AIR = 2801;
+	LFGLDPNCABE_BEYOND_CUSTOM_SKILL_SLOT_VISIBLE_TYPE_SHOW = 2802;
+	LFGLDPNCABE_BEYOND_CUSTOM_SKILL_SLOT_VISIBLE_TYPE_HIDE = 2803;
+	LFGLDPNCABE_BEYOND_CUSTOM_SKILL_INTERVAL_MODE_CLOSED = 2804;
+	LFGLDPNCABE_BEYOND_CUSTOM_SKILL_INTERVAL_MODE_OPEN = 2805;
+	LFGLDPNCABE_BEYOND_CUSTOM_SKILL_INTERVAL_MODE_OPEN_CLOSED = 2806;
+	LFGLDPNCABE_BEYOND_CUSTOM_SKILL_INTERVAL_MODE_CLOSED_OPEN = 2807;
+	LFGLDPNCABE_BEYOND_TURNMODE_PREFER_TARGET_TO_INPUT = 2900;
+	LFGLDPNCABE_BEYOND_TURNMODE_ONLY_INPUT = 2901;
+	LFGLDPNCABE_BEYOND_TURNMODE_ONLY_TARGET = 2902;
+	LFGLDPNCABE_BEYOND_TURNMODE_PREFER_TARGET_TO_CAMERA = 2903;
+	LFGLDPNCABE_BEYOND_TURNMODE_ONLY_CAMERA = 2904;
+	LFGLDPNCABE_BEYOND_TURNMODE_PREFER_INPUT_TO_TARGET = 2905;
+	LFGLDPNCABE_BEYOND_BORN_TYPE_SELF = 3000;
+	LFGLDPNCABE_BEYOND_BORN_TYPE_BORN_BY_COLLISION_POINT = 3001;
+	LFGLDPNCABE_BEYOND_CUSTOM_SKILL_SLOT_TYPE_ATTACK = 3100;
+	LFGLDPNCABE_BEYOND_CUSTOM_SKILL_SLOT_TYPE_SKILL_1 = 3101;
+	LFGLDPNCABE_BEYOND_CUSTOM_SKILL_SLOT_TYPE_SKILL_4 = 3104;
+	LFGLDPNCABE_BEYOND_CUSTOM_SKILL_SLOT_TYPE_SKILL_11 = 3111;
+	LFGLDPNCABE_BEYOND_CUSTOM_SKILL_SLOT_TYPE_SKILL_12 = 3112;
+	LFGLDPNCABE_BEYOND_CUSTOM_SKILL_SLOT_TYPE_SKILL_13 = 3113;
+	LFGLDPNCABE_BEYOND_CUSTOM_SKILL_SLOT_TYPE_SKILL_14 = 3114;
+	LFGLDPNCABE_BEYOND_CUSTOM_SKILL_SLOT_TYPE_SKILL_21 = 3121;
+	LFGLDPNCABE_BEYOND_CUSTOM_SKILL_SLOT_TYPE_SKILL_22 = 3122;
+	LFGLDPNCABE_BEYOND_CUSTOM_SKILL_SLOT_TYPE_SKILL_23 = 3123;
+	LFGLDPNCABE_BEYOND_CUSTOM_SKILL_SLOT_TYPE_SKILL_24 = 3124;
+	LFGLDPNCABE_BEYOND_CUSTOM_SKILL_SLOT_TYPE_SKILL_25 = 3125;
+	LFGLDPNCABE_BEYOND_CUSTOM_SKILL_SLOT_TYPE_SKILL_26 = 3126;
+	LFGLDPNCABE_BEYOND_CUSTOM_SKILL_SLOT_TYPE_SKILL_27 = 3127;
+	LFGLDPNCABE_BEYOND_CUSTOM_SKILL_SLOT_TYPE_SKILL_28 = 3128;
+	LFGLDPNCABE_BEYOND_CUSTOM_SKILL_SLOT_TYPE_SKILL_29 = 3129;
+	LFGLDPNCABE_BEYOND_CUSTOM_SKILL_SLOT_TYPE_SKILL_30 = 3130;
+	LFGLDPNCABE_BEYOND_CUSTOM_SKILL_SLOT_TYPE_SKILL_31 = 3131;
+	LFGLDPNCABE_BEYOND_CUSTOM_SKILL_SLOT_TYPE_SKILL_32 = 3132;
+	LFGLDPNCABE_BEYOND_CUSTOM_SKILL_SLOT_TYPE_SKILL_33 = 3133;
+	LFGLDPNCABE_BEYOND_CUSTOM_SKILL_SLOT_TYPE_SKILL_34 = 3134;
+	LFGLDPNCABE_BEYOND_CUSTOM_SKILL_SLOT_TYPE_SKILL_35 = 3135;
+	LFGLDPNCABE_BEYOND_ENMITY_TRACE_TYPE_SELF = 3200;
+	LFGLDPNCABE_BEYOND_ENMITY_TRACE_TYPE_OWNER = 3201;
+	LFGLDPNCABE_BEYOND_ENMITY_TRACE_TYPE_TOP_OWNER = 3202;
+	LFGLDPNCABE_BEYOND_AI_THREAT_LEVEL_UNAWARE = 3300;
+	LFGLDPNCABE_BEYOND_AI_THREAT_LEVEL_AWARE = 3301;
+	LFGLDPNCABE_BEYOND_AI_THREAT_LEVEL_ALERT = 3302;
+	LFGLDPNCABE_BEYOND_ATTENUATION_CURVE_TYPE_LINEAR = 3400;
+	LFGLDPNCABE_BEYOND_ATTENUATION_CURVE_TYPE_EASE_OUT = 3401;
+	LFGLDPNCABE_BEYOND_ATTENUATION_CURVE_TYPE_EASE_IN = 3402;
+	LFGLDPNCABE_BEYOND_POP_UP_FINISH_TYPE_DEFAULT = 3500;
+	LFGLDPNCABE_BEYOND_POP_UP_FINISH_TYPE_TIME_OUT = 3501;
+	LFGLDPNCABE_BEYOND_POP_UP_FINISH_TYPE_REFRESH_ACT = 3502;
+	LFGLDPNCABE_BEYOND_POP_UP_FINISH_TYPE_REFRESH_ALL = 3503;
+	LFGLDPNCABE_BEYOND_POP_UP_FINISH_TYPE_CLOSE_ACT = 3504;
+	LFGLDPNCABE_BEYOND_POP_UP_FINISH_TYPE_CLOSE_BP = 3505;
+	LFGLDPNCABE_BEYOND_POP_UP_REFRESH_TYPE_NONE = 3510;
+	LFGLDPNCABE_BEYOND_POP_UP_REFRESH_TYPE_PART = 3511;
+	LFGLDPNCABE_BEYOND_POP_UP_REFRESH_TYPE_ALL = 3512;
+	LFGLDPNCABE_BEYOND_MONSTER_PATROL_SPEED_LEVEL_TYPE_IDLE = 3600;
+	LFGLDPNCABE_BEYOND_MONSTER_PATROL_SPEED_LEVEL_TYPE_WALK = 3601;
+	LFGLDPNCABE_BEYOND_MONSTER_PATROL_SPEED_LEVEL_TYPE_RUN = 3602;
+	LFGLDPNCABE_BEYOND_MONSTER_PATROL_SPEED_LEVEL_TYPE_SPRINT = 3603;
+	LFGLDPNCABE_BEYOND_MONSTER_PATROL_ROUTE_POINT_TYPE_NORMAL_MOVE = 3700;
+	LFGLDPNCABE_BEYOND_MONSTER_PATROL_ROUTE_POINT_TYPE_MOVE_AFTER_ROT = 3701;
+	LFGLDPNCABE_BEYOND_MONSTER_PATROL_MOVE_TYPE_ONCE = 3800;
+	LFGLDPNCABE_BEYOND_MONSTER_PATROL_MOVE_TYPE_ROUND = 3801;
+	LFGLDPNCABE_BEYOND_MONSTER_PATROL_MOVE_TYPE_LOOP = 3802;
+	LFGLDPNCABE_BEYOND_HIT_LEVEL_TYPE_MUTE = 3900;
+	LFGLDPNCABE_BEYOND_HIT_LEVEL_TYPE_SHAKE = 3901;
+	LFGLDPNCABE_BEYOND_HIT_LEVEL_TYPE_LIGHT = 3902;
+	LFGLDPNCABE_BEYOND_HIT_LEVEL_TYPE_HEAVY = 3903;
+	LFGLDPNCABE_BEYOND_HIT_LEVEL_TYPE_AIR = 3904;
+	LFGLDPNCABE_BEYOND_ATTACK_DAMAGE_ATTENUATION_DISTANCE_TYPE_BORN_POS = 4000;
+	LFGLDPNCABE_BEYOND_ATTACK_DAMAGE_ATTENUATION_DISTANCE_TYPE_CUR_POS = 4001;
+	LFGLDPNCABE_BEYOND_SETTLE_STATUS_NONE = 4100;
+	LFGLDPNCABE_BEYOND_SETTLE_STATUS_SUCC = 4101;
+	LFGLDPNCABE_BEYOND_SETTLE_STATUS_FAIL = 4102;
+	LFGLDPNCABE_BEYOND_SETTLE_STATUS_ESCAPE = 4103;
+	LFGLDPNCABE_BEYOND_STUFF_RARITY_WHITE = 4200;
+	LFGLDPNCABE_BEYOND_STUFF_RARITY_GREEN = 4201;
+	LFGLDPNCABE_BEYOND_STUFF_RARITY_BLUE = 4202;
+	LFGLDPNCABE_BEYOND_STUFF_RARITY_PURPLE = 4203;
+	LFGLDPNCABE_BEYOND_STUFF_RARITY_ORANGE = 4204;
+	LFGLDPNCABE_BEYOND_STUFF_CATEGORY_EQUIP = 4300;
+	LFGLDPNCABE_BEYOND_STUFF_CATEGORY_MATERIAL = 4301;
+	LFGLDPNCABE_BEYOND_STUFF_CATEGORY_CONSUMABLE = 4302;
+	LFGLDPNCABE_BEYOND_STUFF_CATEGORY_PRECIOUS = 4303;
+	LFGLDPNCABE_BEYOND_DROP_STUFF_OUTPUT_TYPE_SHARE = 4350;
+	LFGLDPNCABE_BEYOND_DROP_STUFF_OUTPUT_TYPE_INDEPENDENT = 4351;
+	LFGLDPNCABE_BEYOND_BASE_PROP_TYPE_HP = 4400;
+	LFGLDPNCABE_BEYOND_BASE_PROP_TYPE_HP_PERCENT = 4401;
+	LFGLDPNCABE_BEYOND_BASE_PROP_TYPE_ATTACK = 4402;
+	LFGLDPNCABE_BEYOND_BASE_PROP_TYPE_ATTACK_PERCENT = 4403;
+	LFGLDPNCABE_BEYOND_BASE_PROP_TYPE_DEFENSE = 4404;
+	LFGLDPNCABE_BEYOND_BASE_PROP_TYPE_DEFENSE_PERCENT = 4405;
+	LFGLDPNCABE_BEYOND_BASE_PROP_TYPE_FIRE_SUB_HURT = 4406;
+	LFGLDPNCABE_BEYOND_BASE_PROP_TYPE_ELEC_SUB_HURT = 4407;
+	LFGLDPNCABE_BEYOND_BASE_PROP_TYPE_WATER_SUB_HURT = 4408;
+	LFGLDPNCABE_BEYOND_BASE_PROP_TYPE_GRASS_SUB_HURT = 4409;
+	LFGLDPNCABE_BEYOND_BASE_PROP_TYPE_WIND_SUB_HURT = 4410;
+	LFGLDPNCABE_BEYOND_BASE_PROP_TYPE_ROCK_SUB_HURT = 4411;
+	LFGLDPNCABE_BEYOND_BASE_PROP_TYPE_ICE_SUB_HURT = 4412;
+	LFGLDPNCABE_BEYOND_BASE_PROP_TYPE_CRITICAL = 4413;
+	LFGLDPNCABE_BEYOND_BASE_PROP_TYPE_CRITICAL_HURT = 4414;
+	LFGLDPNCABE_BEYOND_BASE_PROP_TYPE_HEAL_ADD = 4415;
+	LFGLDPNCABE_BEYOND_BASE_PROP_TYPE_HEALED_ADD = 4416;
+	LFGLDPNCABE_BEYOND_BASE_PROP_TYPE_FIRE_ADD_HURT = 4417;
+	LFGLDPNCABE_BEYOND_BASE_PROP_TYPE_ELEC_ADD_HURT = 4418;
+	LFGLDPNCABE_BEYOND_BASE_PROP_TYPE_WATER_ADD_HURT = 4419;
+	LFGLDPNCABE_BEYOND_BASE_PROP_TYPE_GRASS_ADD_HURT = 4420;
+	LFGLDPNCABE_BEYOND_BASE_PROP_TYPE_WIND_ADD_HURT = 4421;
+	LFGLDPNCABE_BEYOND_BASE_PROP_TYPE_ROCK_ADD_HURT = 4422;
+	LFGLDPNCABE_BEYOND_BASE_PROP_TYPE_ICE_ADD_HURT = 4423;
+	LFGLDPNCABE_BEYOND_BASE_PROP_TYPE_PHYSICAL_ADD_HURT = 4424;
+	LFGLDPNCABE_BEYOND_ELEMENT_REACTION_TYPE_NONE = 4700;
+	LFGLDPNCABE_BEYOND_ELEMENT_REACTION_TYPE_EXPLODE = 4701;
+	LFGLDPNCABE_BEYOND_ELEMENT_REACTION_TYPE_STREAM = 4702;
+	LFGLDPNCABE_BEYOND_ELEMENT_REACTION_TYPE_BURNING = 4703;
+	LFGLDPNCABE_BEYOND_ELEMENT_REACTION_TYPE_BURNED = 4704;
+	LFGLDPNCABE_BEYOND_ELEMENT_REACTION_TYPE_WET = 4705;
+	LFGLDPNCABE_BEYOND_ELEMENT_REACTION_TYPE_OVERGROW = 4706;
+	LFGLDPNCABE_BEYOND_ELEMENT_REACTION_TYPE_MELT = 4707;
+	LFGLDPNCABE_BEYOND_ELEMENT_REACTION_TYPE_FREEZE = 4708;
+	LFGLDPNCABE_BEYOND_ELEMENT_REACTION_TYPE_ANTI_FIRE = 4709;
+	LFGLDPNCABE_BEYOND_ELEMENT_REACTION_TYPE_ROCK = 4710;
+	LFGLDPNCABE_BEYOND_ELEMENT_REACTION_TYPE_SLOW_DOWN = 4711;
+	LFGLDPNCABE_BEYOND_ELEMENT_REACTION_TYPE_SHOCK = 4712;
+	LFGLDPNCABE_BEYOND_ELEMENT_REACTION_TYPE_WIND = 4713;
+	LFGLDPNCABE_BEYOND_ELEMENT_REACTION_TYPE_ELECTRIC = 4714;
+	LFGLDPNCABE_BEYOND_ELEMENT_REACTION_TYPE_FIRE = 4715;
+	LFGLDPNCABE_BEYOND_ELEMENT_REACTION_TYPE_SUPERCONDUCTOR = 4716;
+	LFGLDPNCABE_BEYOND_ELEMENT_REACTION_TYPE_SWIRL_FIRE = 4717;
+	LFGLDPNCABE_BEYOND_ELEMENT_REACTION_TYPE_SWIRL_WATER = 4718;
+	LFGLDPNCABE_BEYOND_ELEMENT_REACTION_TYPE_SWIRL_ELECTRIC = 4719;
+	LFGLDPNCABE_BEYOND_ELEMENT_REACTION_TYPE_SWIRL_ICE = 4720;
+	LFGLDPNCABE_BEYOND_ELEMENT_REACTION_TYPE_SWIRL_FIRE_ACCUMULATE = 4721;
+	LFGLDPNCABE_BEYOND_ELEMENT_REACTION_TYPE_SWIRL_WATER_ACCUMULATE = 4722;
+	LFGLDPNCABE_BEYOND_ELEMENT_REACTION_TYPE_SWIRL_ELECTRIC_ACCUMULATE = 4723;
+	LFGLDPNCABE_BEYOND_ELEMENT_REACTION_TYPE_SWIRL_ICE_ACCUMULATE = 4724;
+	LFGLDPNCABE_BEYOND_ELEMENT_REACTION_TYPE_STICK_ROCK = 4725;
+	LFGLDPNCABE_BEYOND_ELEMENT_REACTION_TYPE_STICK_WATER = 4726;
+	LFGLDPNCABE_BEYOND_ELEMENT_REACTION_TYPE_CRYSTALLIZE_FIRE = 4727;
+	LFGLDPNCABE_BEYOND_ELEMENT_REACTION_TYPE_CRYSTALLIZE_WATER = 4728;
+	LFGLDPNCABE_BEYOND_ELEMENT_REACTION_TYPE_CRYSTALLIZE_ELECTRIC = 4729;
+	LFGLDPNCABE_BEYOND_ELEMENT_REACTION_TYPE_CRYSTALLIZE_ICE = 4730;
+	LFGLDPNCABE_BEYOND_ELEMENT_REACTION_TYPE_FROZEN_BROKEN = 4731;
+	LFGLDPNCABE_BEYOND_ELEMENT_REACTION_TYPE_STICK_GRASS = 4732;
+	LFGLDPNCABE_BEYOND_ELEMENT_REACTION_TYPE_OVERDOSE = 4733;
+	LFGLDPNCABE_BEYOND_ELEMENT_REACTION_TYPE_OVERDOSE_ELECTRIC = 4734;
+	LFGLDPNCABE_BEYOND_ELEMENT_REACTION_TYPE_OVERDOSE_GRASS = 4735;
+	LFGLDPNCABE_BEYOND_ELEMENT_REACTION_TYPE_OVERGROW_MUSHROOM_FIRE = 4736;
+	LFGLDPNCABE_BEYOND_ELEMENT_REACTION_TYPE_OVERGROW_MUSHROOM_ELECTRIC = 4737;
+	LFGLDPNCABE_BEYOND_ELEMENT_REACTION_TYPE_PHLOGISTON_SOLIDIFICATION = 4738;
+	LFGLDPNCABE_BEYOND_ELEMENT_REACTION_TYPE_PHLOGISTON_SOLIDIFICATION_END = 4739;
+	LFGLDPNCABE_BEYOND_ELEMENT_REACTION_TYPE_MOON_SHOCK = 4740;
+	LFGLDPNCABE_BEYOND_ELEMENT_REACTION_TYPE_MOON_OVERGROW = 4741;
+	LFGLDPNCABE_BEYOND_ELEMENT_REACTION_TYPE_MOON_CRYSTALLIZE_WATER = 4742;
+	LFGLDPNCABE_BEYOND_BAG_STUFF_CHANGE_ACTION_DESTROY = 4900;
+	LFGLDPNCABE_BEYOND_BAG_STUFF_CHANGE_ACTION_DROP = 4901;
+	LFGLDPNCABE_BEYOND_BAG_STUFF_CHANGE_ACTION_USE = 4902;
+	LFGLDPNCABE_BEYOND_BAG_STUFF_CHANGE_ACTION_DIE_DROP = 4903;
+	LFGLDPNCABE_BEYOND_BAG_STUFF_CHANGE_ACTION_SHOP_TRADE = 4904;
+	LFGLDPNCABE_BEYOND_BAG_STUFF_CHANGE_ACTION_BLUEPRINT_OPERATION = 4905;
+	LFGLDPNCABE_BEYOND_BAG_STUFF_CHANGE_ACTION_PICK_UP = 4950;
+	LFGLDPNCABE_BEYOND_SCAN_ENTITY_STATE_NONE = 5000;
+	LFGLDPNCABE_BEYOND_SCAN_ENTITY_STATE_AVAILABLE_TARGET = 5001;
+	LFGLDPNCABE_BEYOND_SCAN_ENTITY_STATE_AVAILABLE_NOT_TARGET = 5002;
+	LFGLDPNCABE_BEYOND_SCAN_ENTITY_STATE_NOT_AVAILABLE = 5003;
+	LFGLDPNCABE_BEYOND_SCAN_ENTITY_SCORE_RULE_TYPE_VIEW = 5100;
+	LFGLDPNCABE_BEYOND_SCAN_ENTITY_SCORE_RULE_TYPE_DISTANCE = 5101;
+	LFGLDPNCABE_BEYOND_ENDURE_STATE_TYPE_NORMAL = 5200;
+	LFGLDPNCABE_BEYOND_ENDURE_STATE_TYPE_RECOVER = 5201;
+	LFGLDPNCABE_BEYOND_ENDURE_STATE_TYPE_PROTECT = 5202;
+	LFGLDPNCABE_BEYOND_CHAT_CHANNEL_TYPE_ARMY = 5300;
+	LFGLDPNCABE_BEYOND_CHAT_CHANNEL_TYPE_CUSTOM_PLAYER = 5301;
+	LFGLDPNCABE_BEYOND_ABILITY_SHOW_DAMAGE_TEXT_TYPE_NONE = 5400;
+	LFGLDPNCABE_BEYOND_ABILITY_SHOW_DAMAGE_TEXT_TYPE_NORMAL = 5401;
+	LFGLDPNCABE_BEYOND_ABILITY_SHOW_DAMAGE_TEXT_TYPE_CRITICAL = 5402;
+	LFGLDPNCABE_BEYOND_FIXED_POS_ROT_MOVER_MOVE_TYPE_IMMEDIATE = 5500;
+	LFGLDPNCABE_BEYOND_FIXED_POS_ROT_MOVER_MOVE_TYPE_UNIFORM_LINEAR = 5501;
+	LFGLDPNCABE_BEYOND_FIXED_POS_ROT_MOVER_PARAM_TRANS_TYPE_SPEED_BASE = 5600;
+	LFGLDPNCABE_BEYOND_FIXED_POS_ROT_MOVER_PARAM_TRANS_TYPE_TIME_BASE = 5601;
+	LFGLDPNCABE_BEYOND_PLAY_TYPE_TRIAL = 5700;
+	LFGLDPNCABE_BEYOND_PLAY_TYPE_ROOM = 5701;
+	LFGLDPNCABE_BEYOND_PLAY_TYPE_MATCH = 5702;
+	LFGLDPNCABE_BEYOND_PLAYER_INPUT_DEVICE_TYPE_KEYBOARD = 5800;
+	LFGLDPNCABE_BEYOND_PLAYER_INPUT_DEVICE_TYPE_CONTROLLER = 5801;
+	LFGLDPNCABE_BEYOND_PLAYER_INPUT_DEVICE_TYPE_TOUCH_SCREEN = 5802;
+	LFGLDPNCABE_BEYOND_MONSTER_VERSION_TYPE_MONSTER_V_1 = 5900;
+	LFGLDPNCABE_BEYOND_MONSTER_VERSION_TYPE_MONSTER_V_2 = 5901;
+	LFGLDPNCABE_BEYOND_CLIENT_AI_TARGET_TYPE_THREAT = 6000;
+	LFGLDPNCABE_BEYOND_CLIENT_AI_TARGET_TYPE_OWNER = 6001;
+	LFGLDPNCABE_BEYOND_CLIENT_AI_TARGET_TYPE_CHILDREN = 6002;
+	LFGLDPNCABE_BEYOND_CLIENT_AI_TARGET_TYPE_SELF = 6003;
+	LFGLDPNCABE_BEYOND_CLIENT_AI_TARGET_TYPE_TARGET = 6004;
+	LFGLDPNCABE_BEYOND_CLIENT_AI_TARGET_TYPE_TARGET_TEAM = 6005;
+	LFGLDPNCABE_BEYOND_CLIENT_AI_TARGET_TYPE_COMMAND = 6006;
+	LFGLDPNCABE_BEYOND_CLIENT_AI_TARGET_TYPE_LEVEL_ENTITY = 6007;
+	LFGLDPNCABE_BEYOND_CLIENT_AI_TACTIC_ROTATE_DIR_TYPE_DEFAULT = 6100;
+	LFGLDPNCABE_BEYOND_CLIENT_AI_TACTIC_ROTATE_DIR_TYPE_CLOCKWISE = 6101;
+	LFGLDPNCABE_BEYOND_CLIENT_AI_TACTIC_ROTATE_DIR_TYPE_ANTICLOCKWISE = 6102;
+	LFGLDPNCABE_BEYOND_CLIENT_AI_TACTIC_TYPE_IDLE = 6200;
+	LFGLDPNCABE_BEYOND_CLIENT_AI_TACTIC_TYPE_MOVE_TO_MANUAL_POSITION = 6201;
+	LFGLDPNCABE_BEYOND_CLIENT_AI_TACTIC_TYPE_MOVE_TO_MANUAL_TARGET = 6202;
+	LFGLDPNCABE_BEYOND_CLIENT_AI_TACTIC_TYPE_ROTATE_TO_MANUAL_ROTATION = 6203;
+	LFGLDPNCABE_BEYOND_CLIENT_AI_TACTIC_TYPE_ROTATE_MANUAL_ANGLE = 6204;
+	LFGLDPNCABE_BEYOND_CLIENT_AI_TACTIC_TYPE_MELEE_CHARGE = 6205;
+	LFGLDPNCABE_BEYOND_CLIENT_AI_TACTIC_TYPE_FLEE = 6206;
+	LFGLDPNCABE_BEYOND_CLIENT_AI_TACTIC_TYPE_WANDER = 6207;
+	LFGLDPNCABE_BEYOND_CLIENT_AI_TACTIC_TYPE_RETURN_TO_BORN = 6208;
+	LFGLDPNCABE_BEYOND_CLIENT_AI_TACTIC_TYPE_FACING_MOVE = 6209;
+	LFGLDPNCABE_BEYOND_CLIENT_AI_TACTIC_TYPE_FOLLOW_SERVER_ROUTE = 6210;
+	LFGLDPNCABE_BEYOND_CLIENT_AI_TACTIC_TYPE_ROTATE_TO_MANUAL_TARGET = 6211;
+	LFGLDPNCABE_BEYOND_CLIENT_TARGET_SORT_TYPE_DEFAULT = 1000001;
+	LFGLDPNCABE_BEYOND_CLIENT_TARGET_SORT_TYPE_RANDOM = 1000002;
+	LFGLDPNCABE_BEYOND_CLIENT_TARGET_SORT_TYPE_NEAREST = 1000003;
+	LFGLDPNCABE_BEYOND_CLIENT_FILTER_TYPE_BOOL = 1000010;
+	LFGLDPNCABE_BEYOND_CLIENT_FILTER_TYPE_INT = 10000011;
+}
+
+
+enum LLEFBCJKAEC {
+	LLEFBCJKAEC_NONE = 0;
+	LLEFBCJKAEC_EVENT = 1;
+	LLEFBCJKAEC_ACTION_11 = 2;
+	LLEFBCJKAEC_ACTION_1_N = 3;
+	LLEFBCJKAEC_CALNN = 4;
+	LLEFBCJKAEC_CALN_1 = 5;
+	LLEFBCJKAEC_BRANCH_BOOL = 6;
+	LLEFBCJKAEC_BRANCH = 7;
+	LLEFBCJKAEC_WITH_EXTRA_PARAM = 8;
+	LLEFBCJKAEC_EVENT_WITH_FLEXIBLE_PIN = 9;
+}
+
+
+message HGABGCBDDBI {
+}
+
+
+message KMOFOMAKDOE {
+	string DCJJELCENIL = 8;
+	DEHJDOAANPI EKOCNHJJDBB = 1;
+	LEPCIFNBALN ILGGICLIPPA = 11;
+	uint32 IIBMFCAJOCO = 4;
+	bool DFIHCBDKLMF = 1002;
+	bool BKKDHJJHLHK = 6;
+	float acceleration = 2; /*[HEEEIDKJDHK->acceleration]*/
+	float IEGEMGEFCBI = 7;
+	float BKEMNLPPNFP = 5;
+	float DKCIAFAHNFO = 10;
+	float accelerate_time = 3; /*[MMAGNCCECII->accelerate_time]*/
+	float NFPCGNHALPA = 9;
+}
+
+
+message HHJJLOABEEB {
+	EAPKIALFJKI JBMKFMECEFN = 1;
+	uint32 count = 2; /*[MPJIJHKIGBK->count]*/
+}
+
+
+message ELNGKPJCKOF {
+	repeated MNGJDPAEBIH OIAHPKNOAFG = 2;
+}
+
+
+message JABNAAIFOFA {
+	HGIALENBKJJ CHJOELHMICL = 501;
+	int32 KKOHEMJCKMF = 3;
+	bool DBBBINLNCFL = 502;
+	bool FGGFNAMMKLG = 2;
+	int32 LNJAABCFCGN = 1;
+}
+
+
+message KCDFIPOFEOO {
+	IDHCBGIOGKF KCGCAMABLOG = 4;
+	OKBNCDDIENI PJDNINPCGPG = 501;
+	KPADBBCLLKG MOOBKAIPFML = 1;
+	string KNGDPHIEPGC = 7;
+	EAPKIALFJKI HECKIEOLPCN = 8;
+	bool COHCOLAKLEG = 502;
+	LDIOAKEFJBD ENBCFOJILPO = 2;
+	JJLOEALGPFM HIMOOKOPPOP = 6;
+	OAHKGEAJDLI IAIJDHIDNHJ = 3;
+	float PMPKAPEPIBA = 5;
+}
+
+
+message CDFMDGJMOAD {
+	ELGHNGINLHN EKLLAOPGFBP = 506;
+	ONHOCIDAFMB icon = 503; /*[MCMCFPALLPM->icon]*/
+	IMBEOBECFGE AODHBEDCIKA = 507;
+	LDHHOHBJEJD FLHBEADILJN = 502;
+	APNONMNPGJP JOFOAAHLFNJ = 505;
+	KENGBFFCPPO HNMIMEIJCDD = 504;
+	int32 content_type = 501; /*[NDEOOOEPACD->content_type]*/
+	int32 index = 602; /*[BIJCOCHPGDN->index]*/
+}
+
+
+message PCCDIBLOKFA {
+	bool ADHPMOJKMIF = 1;
+}
+
+
+message CPKKBMFEPJK {
+	float BEHDIDALDAB = 3;
+	float DLAGEAOGAGH = 5;
+	bool PGPBLANHMNB = 1;
+	float KOALGONHMNE = 2;
+	float FDDMGHIIJOF = 4;
+}
+
+
+message IDHCBGIOGKF {
+	float max_value = 2; /*[NOMCDJLMKKD->max_value]*/
+	float KLOPALLAFBF = 1;
+}
+
+
+enum HCEBJAMMMPF {
+	HCEBJAMMMPF_GRAY = 0;
+	HCEBJAMMMPF_GREEN = 1;
+	HCEBJAMMMPF_BLUE = 2;
+	HCEBJAMMMPF_PURPLE = 3;
+	HCEBJAMMMPF_ORANGE = 4;
+}
+
+
+message KPKBLGACODG {
+	DPIALOPEOIA MHEFALFDNMP = 1;
+}
+
+
+message KENGBFFCPPO {
+	CBPJDDGOFDH max_value = 506; /*[NOMCDJLMKKD->max_value]*/
+	DFHJELLNOEJ offset = 510; /*[ODKPNPEDGFA->offset]*/
+	CBPJDDGOFDH KNLBLCMGPDF = 504;
+	DFHJELLNOEJ AGJBDAJNCIM = 509;
+	CBPJDDGOFDH KLOPALLAFBF = 505;
+	string name = 507; /*[PEMBNEOLEAN->name]*/
+	int32 JNBNEFMEDNL = 502;
+	bool CLCEFANOKJE = 508;
+	float OGDJNOCGBDJ = 511;
+	int32 shape = 501; /*[MAENONBBPEE->shape]*/
+	int32 CFCKFDDFGDH = 503;
+}
+
+
+enum GJMKKFEGOHN {
+	GJMKKFEGOHN_NONE = 0;
+	GJMKKFEGOHN_ALL = 1;
+	GJMKKFEGOHN_SPECIFIC = 2;
+}
+
+
+message PAEMPOIKPDA {
+	LJGJDAMBIIA FGJDDBGBILN = 1;
+}
+
+
+message JCFMDDJELKE {
+	bool ECPFBAPCEHJ = 2;
+	uint32 mode = 1; /*[BOACLLNGPGG->mode]*/
+	uint32 KKPDIAHJIGM = 3;
+	float NEIGKIDKEOA = 4;
+}
+
+
+message IHJNPHKBEGF {
+	repeated string ONJCFALJNNE = 141;
+	string CGFJDECLOBN = 61;
+	CCNIOPHEHNH PCBCJIIPHGL = 63;
+	EAPKIALFJKI KBNBBEADIPP = 3;
+	CCNIOPHEHNH JDEKMBBCJAP = 67;
+	string LLAELHHPLAG = 502;
+	repeated string JEAMIBBDBBF = 103;
+	CCNIOPHEHNH HNFAGOGFAOD = 65;
+	string FLHLKNMGMHN = 23;
+	EAPKIALFJKI BCKNNJMHDFK = 2;
+	DEHJDOAANPI CMKEEFAHDNN = 25;
+	repeated int32 NODMLLLEJEN = 4;
+	string FDADMKECJGB = 101;
+	bool OOHEMMIMNFN = 60;
+	bool OOMJFFOIDMJ = 24;
+	bool KLGJDABOHNN = 64;
+	uint32 id = 1; /*[PCPENLLKDLK->id]*/
+	int32 filter_type = 503; /*[CFIIDPABPCM->filter_type]*/
+	bool BKLFIPJCGPO = 20;
+	bool OIHNNDFFDFH = 140;
+	bool CAFDHBCHEFJ = 100;
+	bool FHMCICKBIMD = 66;
+	bool FGGFNAMMKLG = 501;
+	bool KHIKGPFKBJI = 22;
+	bool EEPHBKDDAGM = 102;
+	bool FEHGEMAFOAI = 62;
+	uint32 NIICLEMCPHM = 21;
+}
+
+
+message AHPHCMAPEEL {
+	bool value = 1; /*[GONNLMLACCM->value]*/
+}
+
+
+message NCIIIEGKGAD {
+	repeated EAPKIALFJKI IGOOCLFKAEF = 4;
+	repeated EAPKIALFJKI FHKJJIOCCFP = 5;
+	repeated EAPKIALFJKI PKEOCKPLDNJ = 3;
+	bool BKBLFPGCBML = 1;
+	bool MFDDHMNCHAD = 2;
+}
+
+
+message PrefabData { /*[JCOMOBOICPN->PrefabData]*/
+}
+
+
+message FLABDCCIJJB {
+	DEHJDOAANPI target_rot = 2; /*[IGJCHOOAIBF->target_rot]*/
+	DEHJDOAANPI target_pos = 1; /*[GHNBFJALCIC->target_pos]*/
+	bool HOPOMIOOOLF = 5;
+	LFGLDPNCABE OLPKHMNPKHP = 3;
+	float time = 7; /*[HGPLMCPPPPC->time]*/
+	float speed = 4; /*[CLIHNHFJFJD->speed]*/
+	LFGLDPNCABE PBOHMFOENIB = 6;
+}
+
+
+message BAKDDGCDDJA {
+	repeated KFOKEIIKOEP card_list = 1; /*[DLPMGNGNHHL->card_list]*/
+}
+
+
+message HMKKHFPOHCC {
+	repeated int32 CIGGNFBMANE = 10;
+	int32 FMIKLBCIGDD = 7;
+	int32 revive_count = 6; /*[EGMJFJBGMKG->revive_count]*/
+	LFGLDPNCABE HKPIFKJODFH = 1;
+	float ILDIMFOMILK = 2;
+	float IPGLDJANNPJ = 3;
+	bool DAMFAGJOECK = 9;
+	bool FMMLEKDPLKL = 5;
+	bool LGMGBFEKILF = 8;
+	bool CBDOHPAFAKC = 4;
+}
+
+
+enum GANACPJFEAM {
+	GANACPJFEAM_FORCE = 0;
+	GANACPJFEAM_HOLD = 1;
+	GANACPJFEAM_NORMAL = 2;
+	GANACPJFEAM_COMBO = 3;
+	GANACPJFEAM_AIM = 4;
+}
+
+
+message BKFOFFAJBLK {
+	DEHJDOAANPI offset = 1; /*[ODKPNPEDGFA->offset]*/
+	DEHJDOAANPI rotation = 2; /*[BOKDCGBKKPE->rotation]*/
+}
+
+
+message ONHOCIDAFMB {
+	DFHJELLNOEJ AGJBDAJNCIM = 504;
+	string name = 501; /*[PEMBNEOLEAN->name]*/
+	DFHJELLNOEJ offset = 505; /*[ODKPNPEDGFA->offset]*/
+	int32 AMDPHGFAKNE = 502;
+	int32 JCOKEFGIEEN = 503;
+}
+
+
+message MHOFPPOIKPM {
+	IPPGICHJLFA OFHMMCDBKEJ = 1;
+}
+
+
+message PAKFLPHCFLP {
+	string BPOJJDNIMBB = 502;
+	DEHJDOAANPI offset = 503; /*[ODKPNPEDGFA->offset]*/
+	uint32 NIICLEMCPHM = 501;
+}
+
+
+message CKOJICBBEOG {
+	OFKCKGNDFDJ IHIGHNBNGNJ = 4;
+	BHLEHHMFGCF CALIAADKBDL = 3;
+	AFNLKHMLOFE OEPLNCCCMMD = 1;
+	LFGLDPNCABE GKLODCOLNPH = 5;
+}
+
+
+message JABHFCELELK {
+	DEHJDOAANPI FLHHOHLHKFN = 1;
+}
+
+
+enum MEBCFBBHKEE {
+	MEBCFBBHKEE_NORMAL = 0;
+	MEBCFBBHKEE_LOCAL_BULLET = 1;
+	MEBCFBBHKEE_DROP_GATHER = 2;
+	MEBCFBBHKEE_PREFAB_GROUP = 3;
+	MEBCFBBHKEE_MONSTER_V_2 = 4;
+}
+
+
+message JNHEACEAOAC {
+	repeated MGAIBFJBEFP OFHMMCDBKEJ = 1;
+	repeated uint32 POBEOLIOILN = 2;
+}
+
+
+enum GJBMJPLJIHM {
+	GJBMJPLJIHM_NONE = 0;
+	GJBMJPLJIHM_PREFAB_GADGET = 1;
+	GJBMJPLJIHM_PREFAB_MONSTER = 2;
+	GJBMJPLJIHM_INSTANCE_GADGET = 3;
+	GJBMJPLJIHM_INSTANCE_MONSTER = 4;
+	GJBMJPLJIHM_TILEMAP = 5;
+	GJBMJPLJIHM_DUMMY_POINT = 6;
+	GJBMJPLJIHM_ROLESTATUS = 7;
+	GJBMJPLJIHM_CUSTOM_SKILL = 8;
+	GJBMJPLJIHM_INSTRUCTION_GRAPH_SERVER = 9;
+	GJBMJPLJIHM_INSTRUCTION_GRAPH_FILTER = 10;
+	GJBMJPLJIHM_INSTRUCTION_GRAPH_MP_ACTION = 11;
+	GJBMJPLJIHM_NODE_CONFIG_SERVER = 12;
+	GJBMJPLJIHM_CAMERA_DATA = 13;
+	GJBMJPLJIHM_SIGNAL = 14;
+	GJBMJPLJIHM_CUSTOM_UI_NODE = 15;
+	GJBMJPLJIHM_ENERGY = 16;
+	GJBMJPLJIHM_DUTY = 17;
+	GJBMJPLJIHM_PREFAB_PLAYER = 18;
+	GJBMJPLJIHM_PREFAB_AVATAR = 19;
+	GJBMJPLJIHM_CUSTOM_UI_LAYOUT = 20;
+	GJBMJPLJIHM_CUSTOM_UI_PROTOTYPE = 21;
+	GJBMJPLJIHM_INSTRUCTION_GRAPH_BUFF = 22;
+	GJBMJPLJIHM_INSTRUCTION_GRAPH_DUTY = 23;
+	GJBMJPLJIHM_COUNTDOWN = 24;
+	GJBMJPLJIHM_BULLET = 25;
+	GJBMJPLJIHM_NORMAL_STUFF = 26;
+	GJBMJPLJIHM_EQUIP_STUFF = 27;
+	GJBMJPLJIHM_ATTACH_ARCHETYPE = 28;
+	GJBMJPLJIHM_STRUCT = 29;
+	GJBMJPLJIHM_SHOP_TEMPLATE = 30;
+	GJBMJPLJIHM_AFFIX = 31;
+	GJBMJPLJIHM_TYPE = 32;
+	GJBMJPLJIHM_TAG = 33;
+	GJBMJPLJIHM_EQUIP_STUFF_BAG = 34;
+	GJBMJPLJIHM_CURRENCY = 35;
+	GJBMJPLJIHM_STUFF_BAG = 36;
+	GJBMJPLJIHM_CHIP_STRUCT = 37;
+	GJBMJPLJIHM_ABSOLUTE_ROUTE = 38;
+	GJBMJPLJIHM_SHIELD = 39;
+	GJBMJPLJIHM_CHIP_TEMPLATE = 40;
+	GJBMJPLJIHM_CHIP_CUSTOM_TRIAL_DATA = 41;
+	GJBMJPLJIHM_SUITE = 43;
+	GJBMJPLJIHM_ENTITY_TAG = 44;
+	GJBMJPLJIHM_SCAN_ENTITY_SUB_TAG_TEMPLATE = 45;
+	GJBMJPLJIHM_INSTRUCTION_GRAPH_STUFF = 46;
+	GJBMJPLJIHM_INSTRUCTION_GRAPH_FILTER_INT = 47;
+	GJBMJPLJIHM_ENVIRO_LIGHT = 48;
+	GJBMJPLJIHM_ENVIRONMENT = 49;
+	GJBMJPLJIHM_DLC_FREE = 50;
+	GJBMJPLJIHM_INSTRUCTION_GRAPH_AI = 51;
+	GJBMJPLJIHM_INSTRUCTION_GRAPH_MONSTER_SKILL = 52;
+	GJBMJPLJIHM_INSTRUCTION_GRAPH_AI_STATE = 53;
+	GJBMJPLJIHM_MONSTER_CUSTOM_SKILL = 54;
+	GJBMJPLJIHM_PCG_GENERATOR_TEMPLATE = 55;
+	GJBMJPLJIHM_PCG_GENERATOR_INSTANCE = 56;
+	GJBMJPLJIHM_DLC_PAID = 57;
+}
+
+
+message BLJAPBBGNGL {
+	DEHJDOAANPI BEDNIOALALH = 4;
+	float JIIKJNHKHIG = 6;
+	float HDEFNPPKILI = 2;
+	LFGLDPNCABE PBNHPAEEBAJ = 1;
+	bool PIDLFAPBFPK = 3;
+	bool CGIOJLNPILN = 7;
+	bool IKNOBMBNAPM = 8;
+	float FNBBDLCHGCA = 5;
+	LFGLDPNCABE ABHOGGAABNH = 507;
+	int32 LGBFONHFCCK = 502;
+	int32 OIGJOJMDMII = 503;
+	float EIPDILOAHCD = 501;
+}
+
+
+message ODCEMJHFPPI {
+	EAPKIALFJKI EMBAONMIMGI = 4;
+	int32 JNBDDLLGODF = 1;
+	bool is_active = 3; /*[PPLMDHPODMN->is_active]*/
+	int32 POGABNBPPFH = 2;
+}
+
+
+message KGEKNHCGDJL {
+	repeated AMMKANIIGLO MCIEDOIGAHP = 7;
+	repeated DCDOEKEEPGD KLLPJKFHPLP = 6;
+	repeated BGOAJHLHEPJ EJLHFNIPNAB = 3;
+	repeated PPPKECADNLM PDOPLHAFIDP = 4;
+	OHDAMLAGNFL guid = 1; /*[OIIGKJPGPBC->guid]*/
+	repeated PMJNDNOBBCD MCGHLCGKPLO = 5;
+	string name = 2; /*[PEMBNEOLEAN->name]*/
+	uint32 DCKCMMAAMJM = 100;
+	float KBGGBINDJKO = 101;
+}
+
+
+message ConfigList { /*[AIAAKKPKOJO->ConfigList]*/
+	GKHNHEFJBAC PHHBKFFNMMJ = 1;
+}
+
+
+message NMMJBKEFDDP {
+	DEHJDOAANPI rotation = 3; /*[BOKDCGBKKPE->rotation]*/
+	DEHJDOAANPI position = 2; /*[HOOCGKDDCPI->position]*/
+	uint32 JLGPNCBLALI = 7;
+	uint32 KIOPFDDAMCK = 5;
+	uint32 FNHPJCHECDJ = 1;
+	uint32 LMLAGCLDHLC = 6;
+}
+
+
+message ConfigPinVisibilityControllerV2 { /*[IKAHNFGMLIJ->ConfigPinVisibilityControllerV2]*/
+	PinName NHKAACJOOFP = 1; /*[KGKFKBPGIOK->PinName]*/
+	uint32 HEHKAOMGDCD = 4;
+	uint32 FINGNOALBBI = 5;
+	uint32 LGFAFFHNKIA = 3;
+	uint32 FHFEDNNCABF = 2;
+}
+
+
+enum DAOHLICBIHA {
+	DAOHLICBIHA_ALL = 0;
+	DAOHLICBIHA_SPECIFIC = 1;
+}
+
+
+message AIJALDECBIA {
+	int32 NLGFIEDICFG = 3;
+	uint32 OPHLFGNOBAE = 1;
+}
+
+
+message ONJBMCGAPNK {
+	string name = 2; /*[PEMBNEOLEAN->name]*/
+	string HNEABPPNDMI = 9;
+	repeated uint32 FFNAOILAJBE = 6;
+	repeated uint32 JMHADOGFLID = 7;
+	repeated uint32 ONBLBKMDLEG = 5;
+	repeated uint32 DHECKDGCHOM = 4;
+	uint32 id = 1; /*[PCPENLLKDLK->id]*/
+	bool HCDCPNGCKFB = 8;
+	bool AJBBKPIEIHJ = 3;
+}
+
+
+message StructInfo { /*[AOPDJKKIGLO->StructInfo]*/
+	uint32 FMINBCJDHAE = 1;
+}
+
+
+enum EBMMIOBHFOL {
+	EBMMIOBHFOL_BASE_PROP = 0;
+	EBMMIOBHFOL_CUSTOM = 1;
+	EBMMIOBHFOL_ROLE_STATUS = 2;
+}
+
+
+message AMFOBFNKIJG {
+	DEHJDOAANPI direction = 5; /*[MCPNFMEGLCP->direction]*/
+	DEHJDOAANPI INOHAPCPLEJ = 2;
+	DEHJDOAANPI center = 1; /*[BDOBKMBOOBB->center]*/
+	float height = 4; /*[IOFHOHOJOAP->height]*/
+	float radius = 3; /*[FLNKEHMENOB->radius]*/
+}
+
+
+message ConfigRepairOnImport { /*[LEMKNLAHLIL->ConfigRepairOnImport]*/
+	LLNICMLAFBD AOCFCDLEIPC = 2;
+	uint32 config_id = 1; /*[KAHMADIKBNG->config_id]*/
+}
+
+
+message ODDGDMNBGOC {
+	DEHJDOAANPI EKOCNHJJDBB = 1;
+	float MKNKGHEPJBM = 2;
+}
+
+
+message KNLHDPPJNAO {
+	int32 OPKHFJOBKLI = 2;
+	int32 OMINPCAFNFI = 4;
+	int32 LAKOODABMAO = 1;
+	int32 BJCGDHMBKLJ = 3;
+}
+
+
+message MKKOBPPAEDP {
+	string HDFDPEHKCOG = 501;
+	repeated BOOEAOOFPHD KEHFCHIOMOA = 2;
+	string MNHJPDGPDEH = 3;
+	string LGHIDCDLPBH = 503;
+	bool is_active = 1; /*[PPLMDHPODMN->is_active]*/
+	bool FGMJEOILFAE = 502;
+	uint32 DDGCAJBLOOI = 4;
+}
+
+
+message HFAAMIFKIEJ {
+	string key = 2; /*[EFGFLCKJPHM->key]*/
+	JBOCGMPLJBN DEJCJOGFDKL = 6;
+	GLLCAINELOJ FBDLKPBKHBF = 4;
+	bool EIHCNGCDAHG = 5;
+	uint32 config_id = 1; /*[KAHMADIKBNG->config_id]*/
+}
+
+
+message FNEGLPOFIDJ {
+	EAPKIALFJKI KAKEPIFMIEA = 504;
+	string KJDNJBHJLCP = 602;
+	repeated int32 NODMLLLEJEN = 516;
+	repeated PJJCEICKMDL CMJCFFBKPJK = 511;
+	DFHJELLNOEJ MDJKBIIFAGA = 506;
+	EAPKIALFJKI MJFPJFOOBGH = 604;
+	DEHJDOAANPI KLKCPKGILKF = 515;
+	repeated CDFMDGJMOAD CPLAPHCBDHP = 512;
+	string MBNAHJBPEDI = 503;
+	float CFKMOLDPDPG = 505;
+	int32 DNOKAMCIPPB = 509;
+	float EIAEJNBPJAM = 508;
+	int32 index = 501; /*[BIJCOCHPGDN->index]*/
+	int32 filter_type = 605; /*[CFIIDPABPCM->filter_type]*/
+	uint32 MOIGKBEHADF = 603;
+	int32 FNHPJCHECDJ = 513;
+	bool KKNCLPPKDOF = 510;
+	bool MNPBPIFCGCF = 514;
+	bool is_active = 502; /*[PPLMDHPODMN->is_active]*/
+	float BDMIMNPCGOM = 507;
+}
+
+
+message NNCLNGFEODJ {
+	EPOKBPCPNOC OFHMMCDBKEJ = 1;
+}
+
+
+message LLDKFMKBHNJ {
+	float wait_time = 1; /*[JGAMDDPEDBJ->wait_time]*/
+}
+
+
+message ValueServerParamKvPair { /*[AHOJBFKKPFG->ValueServerParamKvPair]*/
+	NCNLIEFBLMN key = 1; /*[EFGFLCKJPHM->key]*/
+	NCNLIEFBLMN value = 2; /*[GONNLMLACCM->value]*/
+}
+
+
+message IBDKICJPJCG {
+	repeated OHBGJPCLMLH CGFNFLEIGNA = 1;
+	int32 LKBABKDNLEN = 506;
+	int32 COKLONCMKOB = 2;
+}
+
+
+message JGAIINAIHFO {
+	int32 OJJOHDJJOLD = 1;
+	oneof detail { /*[ENPDCINEPHH->detail]*/
+		MHCGBKCNIAK attach_effect = 11;
+		LPDPDBKJGDB can_do_skill = 15;
+		FPHOKKFPPOD combo_jump = 17;
+		EJOIALNNDJA avatar_steer_by_camera = 13;
+		ODKAGKIDOEC avatar_levitate = 12;
+		LIMJAPHMNLO cancel_interval = 14;
+		PHOONLBMHPL avatar_enter_focus = 18;
+		KAAHMEHCBMK attach_shoot_helper_bydeffect = 20;
+		PODGDHDNDIJ branch_jump = 16;
+		MKLCFBLOEBI aim_ui = 19;
+		LADPKCHFFLB monster_steer = 21;
+	}
+}
+
+
+message KOGNFHENIHO {
+	DEHJDOAANPI APLJCOOGBNB = 12;
+	string OKPHHJOCFBM = 10;
+	string LELBLLBNGOL = 501;
+	float FEEDFKKLKEK = 6;
+	float NLNDHHCOADA = 4;
+	int32 index = 1; /*[BIJCOCHPGDN->index]*/
+	uint32 DBJDEHLEPCO = 502;
+	int32 OKHEJIDKEIN = 2;
+	bool GNKJIJNDICI = 7;
+	bool ILPAJOFAKPC = 8;
+	bool MBGMHBFHMPG = 5;
+	LFGLDPNCABE HIDAPKDFMEA = 11;
+	int32 BBGLHOBJKAI = 3;
+	float IHKEDNFHKLA = 9;
+}
+
+
+message EBOINOPJLIN {
+	uint32 LMCNLHNLJGH = 503;
+	uint32 MPCDHNJKMEO = 504;
+	bool IJHIPFDGCFD = 502;
+}
+
+
+message GGKHNKJEKAF {
+	repeated DOGAJKEJEOD KDDCOINPKID = 1;
+}
+
+
+message KPHEGAODLCD {
+	string title = 502; /*[BELEIOJMANC->title]*/
+	bool AOPPKDPPAEL = 505;
+	uint32 OALJLGNKMKC = 504;
+	uint32 card_id = 503; /*[NJLPDLDANFD->card_id]*/
+}
+
+
+message FBNLGBNCHPB {
+	DGDOCDECOKO BCHCMBEJDMF = 1;
+}
+
+
+message MHAOOLMICBL {
+	repeated IJEJJMGANAA KEHFCHIOMOA = 1;
+	string HDFDPEHKCOG = 501;
+	bool CBKAADPLJCE = 502;
+	bool OHAIOCPPAJA = 505;
+	uint32 KOAJIOMCOBI = 503;
+	uint32 ANKIDDHDEPF = 504;
+}
+
+
+message BHKGKKKCPJC {
+	repeated PBOGIOIPPFF GFDPBDFFMGK = 1;
+}
+
+
+message JHLDEJOCGKE {
+	repeated IBCOELGJACO FDILMJCBLJG = 1;
+}
+
+
+enum CLIEHJMGOOG {
+	CLIEHJMGOOG_NONE = 0;
+	CLIEHJMGOOG_GENERICS_SERVER_PARAM_DICTIONARY = 1;
+}
+
+
+enum MKCMKBBBEIE {
+	MKCMKBBBEIE_WHITE = 0;
+	MKCMKBBBEIE_GREEN = 1;
+	MKCMKBBBEIE_BLUE = 2;
+	MKCMKBBBEIE_PURPLE = 3;
+	MKCMKBBBEIE_ORANGE = 4;
+	MKCMKBBBEIE_GRAY = 5;
+	MKCMKBBBEIE_BROWN = 6;
+	MKCMKBBBEIE_BLACK = 7;
+	MKCMKBBBEIE_RED = 9;
+}
+
+
+message JOEFOHIKLAI {
+	string IGNMIPEEKON = 2;
+	JGAIINAIHFO KGMOKDDBFED = 21;
+	uint32 BLEEJDLCONE = 4;
+	int32 MOCJHGNMEJN = 1;
+	uint32 FLPLBIECFIN = 5;
+	uint32 config_id = 3; /*[KAHMADIKBNG->config_id]*/
+	uint32 NOLMFLFGJNL = 6;
+}
+
+
+message GCJGALEKGFH {
+	MFBJIKFGBFA JKJAIDKCCBO = 1;
+	bool FGGFNAMMKLG = 2;
+	oneof detail { /*[ENPDCINEPHH->detail]*/
+		NJDIKHNKHIO timer_comp = 13;
+		BJDMJLAKPMB scan_entity_comp = 50;
+		FIPHHGDCCFD move_comp = 14;
+		BLMCLHJNDPA bullet_move_comp = 21;
+		OAAJACLIPHD hit_detection_comp = 22;
+		LMDAAHIDAIC count_down_comp = 26;
+		IMLDMHMEHDJ born_point_comp = 17;
+		IHMFEGHAODL camera_comp = 23;
+		JONJKALCOKE equip_stuff_bag_comp = 45;
+		KFLPJDMBHPJ hitbox_comp = 29;
+		PJLPNBGOLFD attach_point_comp = 32;
+		CGMHDDCIDOL pop_up_comp = 51;
+		GDHMBNJHIBA sound_effect_comp = 40;
+		JEDHCJNGMOM minimap_mark_comp = 43;
+		LGLFDAOKNEE shop_comp = 46;
+		HAEPKDFFMOC light_group_comp = 49;
+		EIIIADPKOJN bullet_pattern_comp = 30;
+		AFIMJECFMBG enmity_comp = 37;
+		LMIEOCLCIHK nameplate_comp = 38;
+		EIHACNKPMNO obstacle_comp = 52;
+		KNEEPEJFAGO collision_comp = 18;
+		FBNLGBNCHPB intee_comp = 34;
+		KPAJLDKMAGF role_status_comp = 24;
+		PAOOEPAFIFM drop_gather_comp = 47;
+		FMOAPHCIPJF effect_comp = 16;
+		JFHCHLDAOLL custom_value_comp = 11;
+		JFNMBFPJECB follow_move_comp = 19;
+		BCLLOLBIHAK stuff_bag_comp = 44;
+		BHJIPGADBPD custom_skill_comp = 33;
+		KADHOFNCBGH combat_comp = 28;
+		ILLLCIKDEMD talk_comp = 39;
+		CKOJICBBEOG drop_stuff_comp = 48;
+		BJCPGAHLGIC client_trigger_comp = 15;
+		DBKPKOHKAAC monster_ai_comp = 53;
+		IBDKICJPJCG avatar_disturber_comp = 25;
+		KNCCMKOEPHH option_comp = 27;
+	}
+}
+
+
+message HIHDICKFHKP {
+	float y = 502; /*[APMPIPOAAHJ->y]*/
+	float x = 501; /*[OFLHBJCAIHD->x]*/
+}
+
+
+message IPFFDPGCAHC {
+}
+
+
+message DJPJCELGHEI {
+	bool KPIFMMACGMH = 2;
+	uint32 FNHPJCHECDJ = 1;
+}
+
+
+message FBFEHPJCNGM {
+	bool HIFKLPKHKGG = 501;
+	bool MDKFCCFDHDE = 502;
+}
+
+
+message HAFDALGNAHN {
+	float KDBKOGMKAHG = 502;
+	bool JGACMPLJFMG = 501;
+}
+
+
+message KFOKEIIKOEP {
+	OKBNCDDIENI LNCNPMLOFBD = 4;
+	string KDKLMNCECGG = 5;
+	string KJHLBNKHFOE = 7;
+	uint32 card_id = 1; /*[NJLPDLDANFD->card_id]*/
+	MKCMKBBBEIE JILEBOLPLAP = 6;
+	bool DPEBMMFAJKB = 2;
+	uint32 MIKDBPFDDGP = 3;
+}
+
+
+message KADHOFNCBGH {
+	CCNIOPHEHNH OJPFAHNFGIH = 9;
+	CCNIOPHEHNH KNIBELEKENG = 10;
+	string EFEPKDHMGBP = 11;
+	bool JPGGGAFFHFP = 1;
+	bool EGOGGKFIBCK = 2;
+	bool DBAHLPOPOPH = 3;
+	bool PMPEFHEOHLN = 8;
+	bool HHKGKHNAAPE = 7;
+	bool ODHMFLPCDFM = 5;
+}
+
+
+message FIGALBBFLME {
+	DPIALOPEOIA MHEFALFDNMP = 3;
+	uint32 NBDIHHMPJON = 1;
+}
+
+
+message NBHKOGONJID {
+	EGMEOGJODHJ OOCAPMKEGLM = 1;
+}
+
+
+message AIIOEHBKENF {
+	bool DBCJCAJFDOB = 1;
+	bool FKEKOAEKAJM = 2;
+	float NJIGHGLBLDB = 4;
+	float DNEAJGPCECF = 3;
+}
+
+
+message HOJNFMEHJIK {
+}
+
+
+message ServerParamDictionaryInfo { /*[OGCBBMMHJFD->ServerParamDictionaryInfo]*/
+	uint32 AMMJGJMLMLL = 2;
+	BANMCEGHLKO ABGKPOMBKHG = 5;
+	uint32 MPJJFKOJHNN = 1;
+	bool DJFBLKKKDEP = 4;
+	uint32 FMINBCJDHAE = 3;
+}
+
+
+message DMFDCEGKABG {
+	ADCIDEDKLDJ type = 1; /*[KIFBBKDKNJI->type]*/
+	optional OOEKDGPILHH data_pin_visibility_controller_v_2 = 100;
+}
+
+
+message DJAKEAECLGI {
+	OHDAMLAGNFL AOHPMOEKLOG = 1;
+	OHDAMLAGNFL OKCFACNJPDI = 4;
+	repeated APCEFMPGMGO EGEDDEKPCJE = 3;
+	OHDAMLAGNFL GLMADENCABJ = 2;
+	uint32 version = 5; /*[HFBIBKANLDM->version]*/
+}
+
+
+message IMLDMHMEHDJ {
+}
+
+
+message AMMKANIIGLO {
+	EGGMBKMPPFF CBACDNJCHGC = 2;
+	KGEKNHCGDJL IGHDPOMCLMF = 4;
+	AMCIPCEMDNO type = 1; /*[KIFBBKDKNJI->type]*/
+	NFCOMACKNDP LDPGLEENJOD = 3;
+}
+
+
+message OALOMPJHCHB {
+}
+
+
+message KBNBBOOPFKB {
+	string PCKLOHJONPB = 4;
+	repeated uint32 FLIDBKOENFB = 3;
+	MPCJKBAMHMH action_type = 2; /*[KAGEJECCNPP->action_type]*/
+	uint32 config_id = 1; /*[KAHMADIKBNG->config_id]*/
+	oneof detail { /*[ENPDCINEPHH->detail]*/
+		JFFAOJEBEAI bullet_trigger_bullet = 14;
+		LCMJNNGGPJA trigger_attack_event = 11;
+		JDCBHJMAAPD kill_self = 13;
+		AIJALDECBIA add_role_status = 15;
+		EKCGFLEIAPB bullet_fire_effect = 17;
+		BNMPFOOBEHN remove_role_status = 16;
+		FLEPFBBEIFM damage_by_attack_val = 12;
+		DCCJPCPPECE heal = 18;
+	}
+}
+
+
+message OKEOMOPKBGL {
+	DEHJDOAANPI HFBHOLGPABP = 3;
+	float GPHPHDGGAJE = 2;
+	float time = 1; /*[HGPLMCPPPPC->time]*/
+}
+
+
+message ConfigPinVisibilityController { /*[BHHJMDHOPBD->ConfigPinVisibilityController]*/
+	PinName NHKAACJOOFP = 2; /*[KGKFKBPGIOK->PinName]*/
+	PinName GNJEAMPGOPO = 1; /*[KGKFKBPGIOK->PinName]*/
+	uint32 FHFEDNNCABF = 3;
+	uint32 LGFAFFHNKIA = 4;
+}
+
+
+message ConfigSignalEvent { /*[GJOOHAKPKAJ->ConfigSignalEvent]*/
+	string AFAHIOECEHF = 1;
+	OHDAMLAGNFL BHEABHCJELL = 2;
+	OHDAMLAGNFL DEMDDMHLIDN = 3;
+}
+
+
+message IGPOHIALCGI {
+	bool FHBFGKMFJOJ = 1;
+	bool NFHGKJOIDKP = 501;
+}
+
+
+message FOJAFCDJKEO {
+	FGOJCBPLIEF OFHMMCDBKEJ = 1;
+}
+
+
+message BDKAMPOALFO {
+	uint32 exp = 2; /*[PACNPGDLFEO->exp]*/
+	uint32 level = 1; /*[KAIEIHHCCAA->level]*/
+}
+
+
+message HAEPKDFFMOC {
+	repeated JABNAAIFOFA OHNKNGKBBEH = 1;
+}
+
+
+message PGDGLODJGEF {
+	float JFHOLEGJMLD = 2;
+	float KCMEOPDHAAN = 3;
+	float CLJAMFDPJNJ = 4;
+	bool KBGPGDEBFCH = 6;
+	float DJBBHFCLPPM = 1;
+	float NKDCNBDGALP = 5;
+}
+
+
+message MHMPJJEKOBD {
+	float y = 2; /*[APMPIPOAAHJ->y]*/
+	float x = 1; /*[OFLHBJCAIHD->x]*/
+	float z = 3; /*[PMGEEJDCAJK->z]*/
+}
+
+
+message LBIMLIEIHFC {
+	int32 key = 1; /*[EFGFLCKJPHM->key]*/
+	int32 value = 2; /*[GONNLMLACCM->value]*/
+}
+
+
+message CGHAMEPPPAO {
+	float DKMMDFHDAEP = 3;
+	bool BJCDDOKFNFA = 7;
+	bool ANFDAIIMGAA = 8;
+	float ABGCOFJBCMC = 2;
+	EPIAMDDCKAP CNFHENBPBDK = 9;
+	int32 CLNMBLHEPII = 5;
+	float PLANBMKKAHF = 4;
+	int32 ILJBPDOFHJB = 6;
+	float BJEKECLJPGP = 1;
+}
+
+
+message APCEFMPGMGO {
+	OHDAMLAGNFL EHGOPCEAMGK = 3;
+	OHDAMLAGNFL NGHENEGGDEN = 1;
+	repeated IFGFJADNOID IGOAADPEHHI = 2;
+	CAMMNEGEKBL GDOOJIKIMGC = 4;
+}
+
+
+message OAOJFIHEDBK {
+	KONPJEFKEIK GIOBJGEFPHE = 1;
+}
+
+
+message DFKHCEGNPGN {
+	DMCFNFNCDHL GLJMHLLNDFB = 1;
+}
+
+
+message JFFAOJEBEAI {
+	DEHJDOAANPI offset = 2; /*[ODKPNPEDGFA->offset]*/
+	DEHJDOAANPI KEPNEOJCNFG = 3;
+	uint32 FNHPJCHECDJ = 4;
+	LFGLDPNCABE FDAIAKMIJND = 1;
+}
+
+
+message PCNHHFPAMEK {
+	float radius = 1; /*[FLNKEHMENOB->radius]*/
+	float height = 2; /*[IOFHOHOJOAP->height]*/
+}
+
+
+message IFKHMIBFCKP {
+	DEHJDOAANPI FLHHOHLHKFN = 1;
+}
+
+
+message Struct { /*[DHHEEOCEIKM->Struct]*/
+	EGADDCFOKHJ data = 1; /*[GGEBNBICIKB->data]*/
+}
+
+
+message PPPKECADNLM {
+	PinName NPEECGOAINB = 3; /*[KGKFKBPGIOK->PinName]*/
+	PinName OPKFLKNMKDP = 1; /*[KGKFKBPGIOK->PinName]*/
+	PinName FICGNINAGEP = 4; /*[KGKFKBPGIOK->PinName]*/
+	uint32 IIPBMEDFECI = 2;
+}
+
+
+message DOBELBAFNND {
+	CBPJDDGOFDH IKIECAKJJGB = 515;
+	CBPJDDGOFDH MIONDBODDLO = 514;
+	CBPJDDGOFDH OGBDJGCONJH = 510;
+	CBPJDDGOFDH CELKIBAMMKP = 511;
+	CBPJDDGOFDH BKJHLDICLCK = 516;
+	CBPJDDGOFDH GHOLDNFMNGH = 507;
+	CBPJDDGOFDH CDPBADCGBLN = 505;
+	int32 BBDIMIGMPPC = 506;
+	int32 EGDFKJAICJN = 503;
+	bool EPOINBFKCGN = 512;
+	bool PAKOCCJBAFL = 509;
+	int32 KIOBKOHGBDG = 504;
+	int32 LHAGILNJCKF = 517;
+	bool HJICKOIEBKM = 513;
+	bool MLKAGBBCGHL = 502;
+	bool EFEBBDDNMJK = 508;
+	int32 MOLOCMNPDIO = 501;
+}
+
+
+message AFKDCLGKHNH {
+	ELDMHNFNCBF OOIGKHIOILP = 11;
+	string HLENFFKPMLJ = 502;
+	string FICNEDCNMCA = 501;
+	string MPFDAMPBIND = 503;
+	uint32 HKLPJFOJMHM = 2;
+	uint32 DBDGMEIJLBK = 7;
+	uint32 KFBNJGBHLFP = 504;
+	uint32 PNCACGCKCMB = 6;
+	uint32 DCIKDCCEKPP = 9;
+	bool is_locked = 505; /*[FCIMBFCJADF->is_locked]*/
+	bool PCNCIPAGNHB = 8;
+	uint32 BABNEPBOMPN = 1;
+	HCEBJAMMMPF KPOKLIPMIMF = 4;
+	uint32 IJBIDBNFDJP = 5;
+	NGGAAPMMCGB MDMMJGNGLNN = 3;
+}
+
+
+message DPIALOPEOIA {
+	BHLEHHMFGCF CALIAADKBDL = 4;
+	NLJFKMCHNBF NLAFHPFPADD = 1;
+	LFGLDPNCABE GKLODCOLNPH = 3;
+}
+
+
+message ADEKPCHMHML {
+	OGEHAFFNIAK OFHMMCDBKEJ = 1;
+}
+
+
+message ConfigEnum { /*[GNBGKDIGJKD->ConfigEnum]*/
+	uint32 key = 1; /*[EFGFLCKJPHM->key]*/
+}
+
+
+message LHAFBPEEDJL {
+	string BNIFBHADKMI = 2;
+	uint32 monster_id = 1; /*[JHKBLGNOCOE->monster_id]*/
+	uint32 GGOOPOMGOBO = 3;
+}
+
+
+message KNEEPEJFAGO {
+	repeated DLEHFBBMAEP PLKGDGAFPOO = 1;
+	bool FDCDJMCNFFH = 501;
+}
+
+
+message TierData { /*[FENDMCKCEOO->TierData]*/
+	KKIMBLLPCBD data = 1; /*[GGEBNBICIKB->data]*/
+}
+
+
+message MJCCHCDNHHL {
+	HIHDICKFHKP IPBJCDFJDFP = 505;
+	DEHJDOAANPI BOENMCPNDOM = 501;
+	HIHDICKFHKP PDBOPAPPPHM = 503;
+	HIHDICKFHKP LFKKHJEDLMP = 502;
+	HIHDICKFHKP HNFCKAGFPIJ = 504;
+	HIHDICKFHKP AHGDPLKKDKD = 506;
+	uint32 EKMFDHJAMJE = 507;
+}
+
+
+message NKEAPNHPJOK {
+	BGELAGPJGLM LKDACPHICBK = 1;
+	bool OADDIPBMADA = 2;
+	oneof JHBCHEKKPGN {
+		AFDMINPNIDP config_function = 104;
+		ConfigTagSearch config_tag_search = 101; /*[FMMDOODMEOG->ConfigTagSearch]*/
+		ConfigRepairOnImport config_repair_on_import = 103; /*[LEMKNLAHLIL->ConfigRepairOnImport]*/
+		ConfigEnableEditList config_enable_edit_list = 105; /*[EILNMJCNOAJ->ConfigEnableEditList]*/
+		ConfigRef config_ref = 102; /*[COJCJKCMFHP->ConfigRef]*/
+		ConfigBeyondGuidReferenceOnExport config_beyond_guid_reference_on_export = 106; /*[OANDPIOHLMH->ConfigBeyondGuidReferenceOnExport]*/
+	}
+}
+
+
+message DBGLHCGPCGC {
+	MFEOBJLDMIG LKDACPHICBK = 1;
+	optional HKLDGKPCHDK tag_struct_instance_id = 100;
+}
+
+
+message BPEEGEBLIDE {
+	MKHMLMEGHJK GMFOLMJGPCJ = 1;
+}
+
+
+message IJEJJMGANAA {
+	repeated GLLCAINELOJ BMIHCOOMLEM = 2;
+	uint32 FMINBCJDHAE = 501;
+	uint32 NNEEIGLFLGM = 1;
+}
+
+
+message NPAFEBGCDDK {
+	CLAKMEMKOKK OFHMMCDBKEJ = 1;
+}
+
+
+message JPPBDGJDANG {
+	repeated NFFANFNGJFA OFHMMCDBKEJ = 503;
+	int32 MNNGIKJDJGJ = 501;
+	int32 MFHHEMPCNLL = 502;
+	oneof detail { /*[ENPDCINEPHH->detail]*/
+		IIEOHFGAONM sync_topo_comp = 12;
+		EDKKEMKKKMC prototype_comp = 14;
+		CCJFNABAILD group_comp = 16;
+		HOJNFMEHJIK prototype_hierarchy_comp = 17;
+		MIJINKLPNBB layout_comp = 15;
+		MDLBOACOBHI persist_comp = 11;
+		GGMGINJHMEB instance_comp = 13;
+	}
+}
+
+
+enum CDPFLBJDFHB {
+	CDPFLBJDFHB_AVATAR = 0;
+	CDPFLBJDFHB_GADGET = 1;
+	CDPFLBJDFHB_MONSTER = 2;
+}
+
+
+message LFPOGHOHENK {
+	NDEONKHNCHC action_type = 1; /*[KAGEJECCNPP->action_type]*/
+	optional BOCCBBCNJOD modify_node_type = 101;
+}
+
+
+message JGOKBPEILIC {
+	EGMEOGJODHJ data = 1; /*[GGEBNBICIKB->data]*/
+}
+
+
+message PKJBEFGBABM {
+	LCEKHMELLPI EPACHBEMKJO = 3;
+	PFEKEDPNJCJ HPHFCLHEFLB = 2;
+	FKPODOLNDLN basic_info = 1; /*[HEJALHOMELO->basic_info]*/
+}
+
+
+message EKCGFLEIAPB {
+	DEHJDOAANPI EPHAGNILNKM = 5;
+	DEHJDOAANPI AKIAAALDJDK = 4;
+	EAPKIALFJKI HODICCKFDLA = 6;
+	LFGLDPNCABE born_type = 2; /*[NEFJOBEEGCO->born_type]*/
+	float ADDFOPFMIIE = 3;
+	int32 FIPDGLMDJNE = 1;
+	bool ADHPMOJKMIF = 7;
+}
+
+
+message ABFJEPFIBEK {
+	repeated POGJHDLOEAH CMNOCHJDELD = 5;
+	string IHMAGAMKIPP = 7;
+	repeated OGMOMAGDJFM GMLBIPNDEMK = 4;
+	bool ECNIDDODIMK = 3;
+	int32 DPKNBPCPDNF = 1;
+	uint32 index = 6; /*[BIJCOCHPGDN->index]*/
+	int32 HFHPLDNCDLE = 2;
+}
+
+
+message PKHFFBNHMEL {
+	OPKMLIPMGOP basic_info = 1; /*[HEJALHOMELO->basic_info]*/
+	GPIHKNNJBHE KHLGHEBCION = 3;
+	NCIIIEGKGAD BAHDCMJKCDC = 11;
+	KPKBLGACODG OODIIOLGJNC = 2;
+	int32 HJAOLCONBPB = 5;
+	uint32 OALJLGNKMKC = 4;
+}
+
+
+message PAKJECOJFOE {
+	repeated PCAOFKIHJHC AADBLBADENI = 1;
+}
+
+
+message IOINDHOAOJM {
+	string name = 501; /*[PEMBNEOLEAN->name]*/
+	OKBNCDDIENI content = 503; /*[AGAJKAMMHID->content]*/
+	float JBKJHKIOILD = 504;
+	int32 index = 601; /*[BIJCOCHPGDN->index]*/
+	int32 PFNNPKANGNO = 502;
+}
+
+
+message CFPHBNGAPCF {
+	DJDPHBNJNDG data = 1; /*[GGEBNBICIKB->data]*/
+}
+
+
+message HLIGFBALNLA {
+	int32 IHAAOHMHMLM = 501;
+}
+
+
+message FEINIEPOHPD {
+	repeated IKMIFOCHPKL PBFFEPEGFIE = 1;
+	IIHFKDCNFAD HNNPKFDCFNI = 2;
+}
+
+
+message JONJKALCOKE {
+	EAPKIALFJKI HFACBBAPDBF = 1;
+}
+
+
+message ILLLCIKDEMD {
+	repeated BGJANDDIMDL CBGJJDMFNMD = 501;
+	repeated HPMIEJANCHA JJFCFFJMCDB = 1;
+	int32 LKBABKDNLEN = 502;
+}
+
+
+message UgcGiaArchiveInfoBin { /*[EBHKACOBCOJ->UgcGiaArchiveInfoBin]*/
+	string GOOOPCDEJKB = 3;
+	repeated DDPEFFMEAND GEPMDHKAFNN = 1;
+	repeated DDPEFFMEAND MFMMCBMCBPG = 2;
+	string HIGININCAKK = 5;
+	int32 FHMEGKHJOBH = 4;
+}
+

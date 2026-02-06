@@ -1,7 +1,9 @@
 package com.nailong.ys.ugc.sdk.service;
 
+import com.google.protobuf.Message;
 import com.google.protobuf.util.JsonFormat;
-import com.nailong.ys.ugc.proto.UgcGilArchiveInfoBin;
+import com.nailong.ys.ugc.proto.gia.UgcGiaArchiveInfoBin;
+import com.nailong.ys.ugc.proto.gil.UgcGilArchiveInfoBin;
 import com.nailong.ys.ugc.sdk.enums.GiFileType;
 import com.nailong.ys.ugc.sdk.model.GiFileModel;
 import jakarta.annotation.PostConstruct;
@@ -31,14 +33,34 @@ public class DecodeService {
      */
     @PostConstruct
     public void init() throws IOException {
-        for (File file : findFilesByExtension("./input", new String[]{".gil"})) {
+        for (File file : findFilesByExtension("./input", new String[]{".gil", ".gia"})) {
             String fileName = file.getName();
 
-            UgcGilArchiveInfoBin ugcGilArchiveInfoBin = (UgcGilArchiveInfoBin) decodeGiFile(String.valueOf(file)).getProtoMessage();
+            GiFileModel fileModel = decodeGiFile(String.valueOf(file));
 
-            try (BufferedWriter writer = Files.newBufferedWriter(Path.of("./output/" + fileName.replace(".gil", ".jsonc")))) {
-                writer.write(JsonFormat.printer().print(ugcGilArchiveInfoBin));
-                log.info("已生成{}", "./output/" + fileName.replace(".gil", ".jsonc"));
+            switch (fileModel.getGiFileType()) {
+                case GIL -> {
+                    UgcGilArchiveInfoBin ugcGilArchiveInfoBin = (UgcGilArchiveInfoBin) fileModel.getProtoMessage();
+
+                    fileName = fileName.replace(".gil", ".jsonc");
+
+                    try (BufferedWriter writer = Files.newBufferedWriter(Path.of("./output/" + fileName))) {
+                        writer.write(JsonFormat.printer().print(ugcGilArchiveInfoBin));
+                        log.info("已生成{}", "./output/" + fileName);
+                    }
+                }
+                case GIA -> {
+                    UgcGiaArchiveInfoBin ugcGilArchiveInfoBin = (UgcGiaArchiveInfoBin) fileModel.getProtoMessage();
+
+                    fileName = fileName.replace(".gia", ".jsonc");
+
+                    try (BufferedWriter writer = Files.newBufferedWriter(Path.of("./output/" + fileName))) {
+                        writer.write(JsonFormat.printer().print(ugcGilArchiveInfoBin));
+                        log.info("已生成{}", "./output/" + fileName);
+                    }
+                }
+                case GIP, GIR -> log.warn("当前还未支持 {GIP, GIR} 格式");
+                default -> log.warn("未解析任何内容，因为规则未命中");
             }
         }
     }
@@ -125,7 +147,17 @@ public class DecodeService {
 
         /* proto message */
         {
-            giFileModel.setProtoMessage(decodeGilFile(rawData));
+            Message proto = null;
+
+            switch (giFileModel.getGiFileType()) {
+                case GIL -> proto = decodeGilFile(rawData);
+                case GIA -> proto = decodeGiaFile(rawData);
+                default -> log.warn("Proto 解析时规则未命中，跳过");
+            }
+
+            if (proto != null) {
+                giFileModel.setProtoMessage(proto);
+            }
         }
 
         log.info("已成功解析:{}", giFileModel);
@@ -134,6 +166,10 @@ public class DecodeService {
 
     public UgcGilArchiveInfoBin decodeGilFile(byte[] data) throws IOException {
         return UgcGilArchiveInfoBin.parseFrom(data);
+    }
+
+    public UgcGiaArchiveInfoBin decodeGiaFile(byte[] data) throws IOException {
+        return UgcGiaArchiveInfoBin.parseFrom(data);
     }
 
     /**

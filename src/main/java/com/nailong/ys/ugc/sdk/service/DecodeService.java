@@ -43,9 +43,10 @@ public class DecodeService {
     }
 
     /**
-     * 智能解码UGC数据 - 自动处理多层编码
+     * 解码UGC数据
      *
      * @param path 文件路径
+     * @return proto
      */
     public UgcGilArchiveInfoBin decodeGilProto(String path) throws IOException {
         // data长度+data

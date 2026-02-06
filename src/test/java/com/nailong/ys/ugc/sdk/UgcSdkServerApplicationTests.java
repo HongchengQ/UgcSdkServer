@@ -22,6 +22,6 @@ class UgcSdkServerApplicationTests {
 
     @Test
     void setDecodeService() throws IOException {
-        decodeService.decodeGilProto("./input/官方教程-导出.gil");
+//        decodeService.decodeGilFile("./input/官方教程-导出.gil");
     }
 }

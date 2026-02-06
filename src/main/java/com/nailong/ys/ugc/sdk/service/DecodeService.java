@@ -2,9 +2,10 @@ package com.nailong.ys.ugc.sdk.service;
 
 import com.google.protobuf.util.JsonFormat;
 import com.nailong.ys.ugc.proto.UgcGilArchiveInfoBin;
+import com.nailong.ys.ugc.sdk.enums.GiFileType;
+import com.nailong.ys.ugc.sdk.model.GiFileModel;
 import jakarta.annotation.PostConstruct;
 import lombok.extern.log4j.Log4j2;
-import org.apache.tomcat.util.buf.HexUtils;
 import org.springframework.stereotype.Service;
 
 import java.io.BufferedWriter;
@@ -14,6 +15,9 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.Arrays;
 
+import static com.nailong.ys.ugc.sdk.constants.MagicNumberConstants.HEAD_MAGIC_NUMBER;
+import static com.nailong.ys.ugc.sdk.constants.MagicNumberConstants.TAIL_MAGIC_NUMBER;
+import static com.nailong.ys.ugc.sdk.utils.ByteHelper.get4BytesToIntFromStart;
 import static com.nailong.ys.ugc.sdk.utils.ByteUtils.*;
 import static com.nailong.ys.ugc.sdk.utils.FileUtils.fileConvertToByteArray;
 import static com.nailong.ys.ugc.sdk.utils.FileUtils.findFilesByExtension;
@@ -21,9 +25,6 @@ import static com.nailong.ys.ugc.sdk.utils.FileUtils.findFilesByExtension;
 @Service
 @Log4j2
 public class DecodeService {
-    // 魔数
-    byte[] headMagicNumber = HexUtils.fromHexString("000000010000032600000002"); // 头部魔数
-    byte[] tailMagicNumber = HexUtils.fromHexString("00000679");                 // 尾部魔数
 
     /**
      * 启动时解包所有本地存档
@@ -33,7 +34,7 @@ public class DecodeService {
         for (File file : findFilesByExtension("./input", new String[]{".gil"})) {
             String fileName = file.getName();
 
-            UgcGilArchiveInfoBin ugcGilArchiveInfoBin = decodeGilProto(String.valueOf(file));
+            UgcGilArchiveInfoBin ugcGilArchiveInfoBin = (UgcGilArchiveInfoBin) decodeGiFile(String.valueOf(file)).getProtoMessage();
 
             try (BufferedWriter writer = Files.newBufferedWriter(Path.of("./output/" + fileName.replace(".gil", ".jsonc")))) {
                 writer.write(JsonFormat.printer().print(ugcGilArchiveInfoBin));
@@ -42,42 +43,97 @@ public class DecodeService {
         }
     }
 
-    /**
-     * 解码UGC数据
-     *
-     * @param path 文件路径
-     * @return proto
-     */
-    public UgcGilArchiveInfoBin decodeGilProto(String path) throws IOException {
-        // data长度+data
+    public GiFileModel decodeGiFile(String path) throws IOException {
+        GiFileModel giFileModel = new GiFileModel();
+
         byte[] rawData = fileConvertToByteArray(new File(path));
 
-        // data: 魔数头+proto+魔数尾
-        byte[] protoData = checkDataLength(rawData);
+        /* file size */
+        {
+            // 读取前四字节转int，用于与后续真实内容长度进行比较
+            int declaredDataSize = get4BytesToIntFromStart(rawData);
 
-        // 头部魔数
-        if (!Arrays.equals(Arrays.copyOf(protoData, Math.min(headMagicNumber.length, protoData.length)), headMagicNumber)) {
-            log.error("头部魔数验证未通过");
-            return null;
-        } else {
-            // 更新data 删掉头部魔数
-            protoData = removeBytesFromStart(protoData, headMagicNumber.length);
-            log.info("头部魔数验证通过,移除头部魔数, data_size:{}", protoData.length);
+            // 头部删除四字节
+            rawData = removeBytesFromStart(rawData, 4);
+
+            checkDataLength(declaredDataSize, rawData.length);
+
+            giFileModel.setFileSize(declaredDataSize);
         }
 
-        // 尾部魔数
-        if (!Arrays.equals(getTailBytes(protoData, tailMagicNumber.length), tailMagicNumber)) {
-            log.error("尾部魔数验证未通过");
-            return null;
-        } else {
-            // 更新data 删掉头部魔数
-            protoData = removeBytesFromEnd(protoData, tailMagicNumber.length);
-            log.info("尾部魔数验证通过,移除尾部魔数, data_size:{}", protoData.length);
+        /* version */
+        {
+            // 读取前四字节转int
+            int version = get4BytesToIntFromStart(rawData);
+
+            // 头部删除四字节
+            rawData = removeBytesFromStart(rawData, 4);
+
+            giFileModel.setVersion(version);
         }
 
-        protoData = checkDataLength(protoData);
+        /* 头部魔数 */
+        {
+            checkMagicNumber(true, rawData);
 
-        return UgcGilArchiveInfoBin.parseFrom(protoData);
+            // 删除头部魔数
+            rawData = removeBytesFromStart(rawData, HEAD_MAGIC_NUMBER.length);
+
+            giFileModel.setHeadMagicNumber(byteArrayToIntManually(HEAD_MAGIC_NUMBER));
+
+            log.info("头部魔数验证通过,移除头部魔数, data_size:{}", rawData.length);
+        }
+
+        /* 尾部魔数 */
+        {
+            checkMagicNumber(false, rawData);
+
+            // 删除尾部魔数
+            rawData = removeBytesFromEnd(rawData, TAIL_MAGIC_NUMBER.length);
+
+            giFileModel.setTailMagicNumber(byteArrayToIntManually(TAIL_MAGIC_NUMBER));
+
+            log.info("尾部魔数验证通过,移除尾部魔数, data_size:{}", rawData.length);
+        }
+
+        /* 文件类型 */
+        {
+            // 读取前四字节转int
+            int version = get4BytesToIntFromStart(rawData);
+
+            // 头部删除四字节
+            rawData = removeBytesFromStart(rawData, 4);
+
+            // 转枚举
+            GiFileType fileType = GiFileType.values()[version];
+
+            giFileModel.setGiFileType(fileType);
+        }
+
+        /* fileSize */
+        {
+            // 读取前四字节转int，用于与后续真实内容长度进行比较
+            int declaredDataSize = get4BytesToIntFromStart(rawData);
+
+            // 头部删除四字节
+            rawData = removeBytesFromStart(rawData, 4);
+
+            checkDataLength(declaredDataSize, rawData.length);
+
+            giFileModel.setDataLength(declaredDataSize);
+        }
+
+        /* proto message */
+        {
+            giFileModel.setProtoMessage(decodeGilFile(rawData));
+        }
+
+        log.info("已成功解析:{}", giFileModel);
+        return giFileModel;
+    }
+
+    public UgcGilArchiveInfoBin decodeGilFile(byte[] data) throws IOException {
+        return UgcGilArchiveInfoBin.parseFrom(data);
     }
 
     /**
@@ -85,17 +141,32 @@ public class DecodeService {
      *
      * @return 如果长度相等 则将长度定义删除并返回剩余内容
      */
-    private byte[] checkDataLength(byte[] rawData) {
-        byte[] protoData = removeBytesFromStart(rawData, 4);
+    private void checkDataLength(int checkDataSize, int nextDataSize) throws RuntimeException {
 
-        int defineTheLength = byteArrayToIntManually(Arrays.copyOf(rawData, Math.min(4, rawData.length)));
-
-        if (defineTheLength != protoData.length) {
-            log.error("data长度验证不正确, 原文件大小:{}, 后续真实数据长度:{}, 长度应该是:{}", rawData.length, protoData.length, defineTheLength);
+        if (checkDataSize != nextDataSize) {
+            log.error("data长度验证不正确,后续真实数据长度:{}, 预期长度应该是:{}", nextDataSize, checkDataSize);
             throw new RuntimeException();
         }
 
-        log.info("已成功验证data长度, 原文件大小:{}, 后续真实数据长度:{}, 长度应该是:{}", rawData.length, protoData.length, defineTheLength);
-        return protoData;
+        log.info("已成功验证data长度");
+    }
+
+    private void checkMagicNumber(boolean isHead, byte[] rawData) throws RuntimeException {
+        byte[] fileMagicNumber;
+
+        if (isHead) {
+            fileMagicNumber = Arrays.copyOf(rawData, Math.min(HEAD_MAGIC_NUMBER.length, rawData.length));
+            if (Arrays.equals(fileMagicNumber, HEAD_MAGIC_NUMBER)) {
+                return;
+            }
+        } else {
+            fileMagicNumber = getTailBytes(rawData, TAIL_MAGIC_NUMBER.length);
+            if (Arrays.equals(fileMagicNumber, TAIL_MAGIC_NUMBER)) {
+                return;
+            }
+        }
+
+        log.error("魔数校验失败,当前是否为头部:{}", isHead);
+        throw new RuntimeException();
     }
 }

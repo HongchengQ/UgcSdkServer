@@ -150,8 +150,8 @@ public class DecodeService {
             Message proto = null;
 
             switch (giFileModel.getGiFileType()) {
-                case GIL -> proto = decodeGilFile(rawData);
-                case GIA -> proto = decodeGiaFile(rawData);
+                case GIL -> proto = UgcGilArchiveInfoBin.parseFrom(rawData);
+                case GIA -> proto = UgcGiaArchiveInfoBin.parseFrom(rawData);
                 default -> log.warn("Proto 解析时规则未命中，跳过");
             }
 
@@ -164,18 +164,8 @@ public class DecodeService {
         return giFileModel;
     }
 
-    public UgcGilArchiveInfoBin decodeGilFile(byte[] data) throws IOException {
-        return UgcGilArchiveInfoBin.parseFrom(data);
-    }
-
-    public UgcGiaArchiveInfoBin decodeGiaFile(byte[] data) throws IOException {
-        return UgcGiaArchiveInfoBin.parseFrom(data);
-    }
-
     /**
      * 检查文件中定义的后续数据长度与实际是否相等
-     *
-     * @return 如果长度相等 则将长度定义删除并返回剩余内容
      */
     private void checkDataLength(int checkDataSize, int nextDataSize) throws RuntimeException {
 
@@ -187,6 +177,12 @@ public class DecodeService {
         log.info("已成功验证data长度");
     }
 
+    /**
+     * 检查魔数
+     * @param isHead 是头还是尾
+     * @param rawData 原始数据
+     * @throws RuntimeException 魔数校验失败
+     */
     private void checkMagicNumber(boolean isHead, byte[] rawData) throws RuntimeException {
         byte[] fileMagicNumber;
 

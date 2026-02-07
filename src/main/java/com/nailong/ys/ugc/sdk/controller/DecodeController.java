@@ -17,6 +17,6 @@ class DecodeController {
     @RequestMapping("reload")
     public String decodeReload() throws IOException {
         decodeService.init();
-        return "本地解包已完成";
+        return "本地解包任务都已完成";
     }
 }

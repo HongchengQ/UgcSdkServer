@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UGC文件转换器</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- 导航栏 -->
+        <header class="apple-header">
+            <div class="header-content">
+                <h1 class="app-title">UGC文件转换器</h1>
+                <nav class="nav-menu">
+                    <button class="nav-btn active" data-tab="convert">文件转换</button>
+                    <button class="nav-btn" data-tab="history">转换历史</button>
+                    <button class="nav-btn" data-tab="about">关于</button>
+                </nav>
+            </div>
+        </header>
+
+        <!-- 主要内容区域 -->
+        <main class="main-content">
+            <!-- 文件转换标签页 -->
+            <section id="convert-tab" class="tab-content active">
+                <div class="card">
+                    <h2 class="section-title">选择要转换的文件</h2>
+                    
+                    <!-- 转换模式选择 -->
+                    <div class="conversion-mode">
+                        <h3 class="mode-title">转换模式</h3>
+                        <div class="mode-options">
+                            <label class="mode-option">
+                                <input type="radio" name="conversionMode" value="forward" checked>
+                                <span class="mode-label">正向转换</span>
+                                <span class="mode-description">原始格式 → JSON格式</span>
+                            </label>
+                            <label class="mode-option">
+                                <input type="radio" name="conversionMode" value="reverse">
+                                <span class="mode-label">反向转换</span>
+                                <span class="mode-description">JSON格式 → 原始格式</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- 正向转换输出格式选择 -->
+                    <div class="forward-format-selection" id="forwardFormatSelection" style="display: block;">
+                        <h3 class="format-title">输出格式</h3>
+                        <div class="format-options">
+                            <label class="format-option">
+                                <input type="radio" name="outputFormat" value="json1" checked>
+                                <span class="format-label">JSON格式 - Name Key</span>
+                                <span class="format-description">人类阅读轻松 不推荐二次使用 兼容性最差</span>
+                            </label>
+                            <label class="format-option">
+                                <input type="radio" name="outputFormat" value="json2">
+                                <span class="format-label">JSON格式 - Field Key</span>
+                                <span class="format-description">人类阅读较困难 可以修改文件二次使用 兼容后续游戏版本</span>
+                            </label>
+                            <label class="format-option">
+                                <input type="radio" name="outputFormat" value="pb">
+                                <span class="format-label">Protocol Buffer</span>
+                                <span class="format-description">二进制协议缓冲区 人类无法阅读 兼容性最强</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- 反向转换文件类型选择 -->
+                    <div class="reverse-type-selection" id="reverseTypeSelection" style="display: none;">
+                        <h3 class="type-title">目标文件类型</h3>
+                        <div class="type-options">
+                            <label class="type-option">
+                                <input type="radio" name="targetFileType" value="gil" checked>
+                                <span class="type-label">.gil 文件</span>
+                                <span class="type-description">UGC Gil档案文件</span>
+                            </label>
+                            <label class="type-option">
+                                <input type="radio" name="targetFileType" value="gia">
+                                <span class="type-label">.gia 文件</span>
+                                <span class="type-description">UGC Gia档案文件</span>
+                            </label>
+                            <label class="type-option">
+                                <input type="radio" name="targetFileType" value="gip">
+                                <span class="type-label">.gip 文件</span>
+                                <span class="type-description">UGC Gip档案文件</span>
+                            </label>
+                            <label class="type-option">
+                                <input type="radio" name="targetFileType" value="gir">
+                                <span class="type-label">.gir 文件</span>
+                                <span class="type-description">UGC Gir档案文件</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- 文件拖拽区域 -->
+                    <div class="drop-zone" id="dropZone">
+                        <div class="drop-content">
+                            <div class="upload-icon">📁</div>
+                            <p class="drop-text">将文件拖拽到这里或点击选择文件</p>
+                            <p class="drop-subtext" id="supportedFormats">支持 .gil, .gia, .gip, .gir 格式</p>
+                            <input type="file" id="fileInput" accept=".gil,.gia,.gip,.gir,.json" multiple hidden>
+                            <button class="browse-btn" id="browseBtn">浏览文件</button>
+                        </div>
+                    </div>
+
+                    <!-- 文件列表 -->
+                    <div class="file-list-container" id="fileListContainer" style="display: none;">
+                        <h3 class="file-list-title">待转换文件</h3>
+                        <div class="file-list" id="fileList"></div>
+                        <div class="action-buttons">
+                            <button class="btn btn-secondary" id="clearBtn">清空列表</button>
+                            <button class="btn btn-primary" id="convertBtn">开始转换</button>
+                        </div>
+                        <div class="conversion-info" id="conversionInfo" style="display: none;">
+                            <div class="info-item">
+                                <span class="info-label">转换方向:</span>
+                                <span class="info-value" id="directionInfo"></span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">输出格式:</span>
+                                <span class="info-value" id="outputFormatInfo"></span>
+                            </div>
+                            <div class="info-item" id="targetTypeInfo" style="display: none;">
+                                <span class="info-label">目标类型:</span>
+                                <span class="info-value" id="targetTypeInfoValue"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 转换进度 -->
+                    <div class="progress-container" id="progressContainer" style="display: none;">
+                        <h3 class="progress-title">转换进度</h3>
+                        <div class="progress-bar">
+                            <div class="progress-fill" id="progressFill"></div>
+                        </div>
+                        <p class="progress-text" id="progressText">准备转换...</p>
+                    </div>
+
+                    <!-- 结果展示 -->
+                    <div class="result-container" id="resultContainer" style="display: none;">
+                        <h3 class="result-title">转换结果</h3>
+                        <div class="result-content" id="resultContent"></div>
+                        <button class="btn btn-primary" id="downloadBtn">下载结果</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 转换历史标签页 -->
+            <section id="history-tab" class="tab-content">
+                <div class="card">
+                    <h2 class="section-title">转换历史记录</h2>
+                    <div class="history-list" id="historyList">
+                        <div class="empty-state">
+                            <div class="empty-icon">📋</div>
+                            <p>暂无转换记录</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 关于标签页 -->
+            <section id="about-tab" class="tab-content">
+                <div class="card">
+                    <h2 class="section-title">关于此工具</h2>
+                    <div class="about-content">
+                        <div class="info-card">
+                            <h3>🔧 使用说明</h3>
+                            <div style="display: grid; gap: 15px;">
+                                <div>
+                                    <h4 style="margin: 0 0 8px 0; color: #333; font-size: 16px;">📝 转换流程</h4>
+                                    <ol style="margin: 0; padding-left: 20px; font-size: 14px; line-height: 1.6;">
+                                        <li>选择转换模式（正向/反向）</li>
+                                        <li>设置输出格式或目标文件类型</li>
+                                        <li>上传需要转换的文件</li>
+                                        <li>点击"开始转换"等待完成</li>
+                                        <li>下载转换结果文件</li>
+                                    </ol>
+                                </div>
+                                
+                                <div>
+                                    <h4 style="margin: 0 0 8px 0; color: #333; font-size: 16px;">💾 历史记录</h4>
+                                    <ul style="margin: 0; padding-left: 20px; font-size: 14px; line-height: 1.6;">
+                                        <li>自动保存最近转换记录</li>
+                                        <li>支持查看详细转换信息</li>
+                                    </ul>
+                                </div>
+                                
+                                <div style="background: #f8f9fa; padding: 15px; border-radius: 8px; border-left: 4px solid #007AFF;">
+                                    <h4 style="margin: 0 0 8px 0; color: #007AFF; font-size: 15px;">💡 温馨提示</h4>
+                                    <p style="margin: 0; font-size: 13px; color: #666; line-height: 1.5;">
+                                        转换完成后请及时下载结果文件，建议保存到本地以防丢失。
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- 底部信息 -->
+        <footer class="apple-footer">
+            <p>&copy; 2026 UGC文件转换器</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

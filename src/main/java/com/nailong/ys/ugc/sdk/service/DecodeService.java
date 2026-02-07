@@ -36,7 +36,7 @@ public class DecodeService {
         for (File file : findFilesByExtension("./input", new String[]{".gil", ".gia", "gip", "gir"})) {
             String fileName = file.getName();
 
-            GiFileModel fileModel = decodeGiFile(String.valueOf(file));
+            GiFileModel fileModel = decodeGiFile(fileConvertToByteArray(new File(String.valueOf(file))));
 
             switch (fileModel.getGiFileType()) {
                 case GIL -> {
@@ -65,10 +65,8 @@ public class DecodeService {
         }
     }
 
-    public GiFileModel decodeGiFile(String path) throws IOException {
+    public GiFileModel decodeGiFile(byte[] rawData) throws IOException {
         GiFileModel giFileModel = new GiFileModel();
-
-        byte[] rawData = fileConvertToByteArray(new File(path));
 
         /* file size */
         {
@@ -132,7 +130,7 @@ public class DecodeService {
             giFileModel.setGiFileType(fileType);
         }
 
-        /* fileSize */
+        /* data size */
         {
             // 读取前四字节转int，用于与后续真实内容长度进行比较
             int declaredDataSize = get4BytesToIntFromStart(rawData);
@@ -168,12 +166,12 @@ public class DecodeService {
      * 检查文件中定义的后续数据长度与实际是否相等
      */
     private void checkDataLength(int checkDataSize, int nextDataSize) throws RuntimeException {
-
         if (checkDataSize != nextDataSize) {
-            log.error("data长度验证不正确,后续真实数据长度:{}, 预期长度应该是:{}", nextDataSize, checkDataSize);
-            throw new RuntimeException();
+            throw new RuntimeException(String.format(
+                    "数据长度验证失败: 实际长度 %d, 预期长度 %d",
+                    nextDataSize, checkDataSize
+            ));
         }
-
         log.info("已成功验证data长度");
     }
 
@@ -185,20 +183,16 @@ public class DecodeService {
      */
     private void checkMagicNumber(boolean isHead, byte[] rawData) throws RuntimeException {
         byte[] fileMagicNumber;
+        byte[] expectedMagicNumber = isHead ? HEAD_MAGIC_NUMBER : TAIL_MAGIC_NUMBER;
 
         if (isHead) {
-            fileMagicNumber = Arrays.copyOf(rawData, Math.min(HEAD_MAGIC_NUMBER.length, rawData.length));
-            if (Arrays.equals(fileMagicNumber, HEAD_MAGIC_NUMBER)) {
-                return;
-            }
+            fileMagicNumber = java.util.Arrays.copyOf(rawData, Math.min(expectedMagicNumber.length, rawData.length));
         } else {
-            fileMagicNumber = getTailBytes(rawData, TAIL_MAGIC_NUMBER.length);
-            if (Arrays.equals(fileMagicNumber, TAIL_MAGIC_NUMBER)) {
-                return;
-            }
+            fileMagicNumber = getTailBytes(rawData, expectedMagicNumber.length);
         }
 
-        log.error("魔数校验失败,当前是否为头部:{}", isHead);
-        throw new RuntimeException();
+        if (!java.util.Arrays.equals(fileMagicNumber, expectedMagicNumber)) {
+            throw new RuntimeException("魔数校验失败");
+        }
     }
 }

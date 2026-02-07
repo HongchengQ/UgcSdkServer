@@ -114,22 +114,15 @@ public class ConversionService {
             throw new IOException("无法获取Proto消息");
         }
 
-        switch (format.toLowerCase()) {
-            case "json1":
-                // 标准JSON格式（紧凑）
-                return JsonFormat.printer().omittingInsignificantWhitespace().print(protoMessage);
-
-            case "json2":
-                // 美化JSON格式（带缩进）
-                return JsonFormat.printer().print(protoMessage);
-
-            case "pb":
-                // Protocol Buffer二进制格式
-                return Base64.getEncoder().encodeToString(protoMessage.toByteArray());
-
-            default:
-                throw new IllegalArgumentException("不支持的输出格式: " + format);
-        }
+        return switch (format.toLowerCase()) {
+            case "json1", "json2" ->
+                    // 标准JSON格式（紧凑）
+                    JsonFormat.printer().preservingProtoFieldNames().print(protoMessage);
+            case "pb" ->
+                    // Protocol Buffer二进制格式
+                    Base64.getEncoder().encodeToString(protoMessage.toByteArray());
+            default -> throw new IllegalArgumentException("不支持的输出格式: " + format);
+        };
     }
 
     /**

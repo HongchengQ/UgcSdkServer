@@ -623,7 +623,7 @@ function saveToHistory(files) {
 
 // 生成转换后的文件名 - 移除时间戳，保持简洁
 function generateConvertedFileName(originalName, mode, format) {
-    if (!originalName) return 'conversion_result.dat';
+    if (!originalName) return 'nlo.dat';
     
     // 提取原始文件名（不含扩展名）
     const lastDotIndex = originalName.lastIndexOf('.');
@@ -635,11 +635,17 @@ function generateConvertedFileName(originalName, mode, format) {
     // 确保文件名安全，移除特殊字符
     const safeName = nameWithoutExt.replace(/[<>:"/\\|?*\x00-\x1F]/g, '_');
     
-    // 检查是否已经有 conversion_result_ 前缀
-    const hasPrefix = safeName.startsWith('conversion_result_');
-    const baseName = hasPrefix ? safeName : `conversion_result_${safeName}`;
+    // 检查是否已经有 nailong_output_ 前缀
+    const hasPrefix = safeName.startsWith('nlo_');
+    const baseName = hasPrefix ? safeName : `nlo_${safeName}`;
+
+    const extension2 = originalName.split('.').pop();
+
+    console.log(extension2)
+    const addTypeName =
+        (extension2 === "gia" || extension2 === "gil" || extension2 === "gir" || extension2 === "gip") ? ("_" + extension2) : "";
     
-    return `${baseName}.${extension}`;
+    return `${baseName}${addTypeName}.${extension}`;
 }
 
 // 加载转换历史 - 支持单文件记录显示

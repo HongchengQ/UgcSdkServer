@@ -1,11 +1,11 @@
 package com.nailong.ys.ugc.sdk.model;
 
-import com.google.protobuf.Message;
+import com.google.protobuf.GeneratedMessage;
 import com.nailong.ys.ugc.sdk.enums.GiFileType;
 import lombok.Data;
 
 @Data
-public class  GiFileModel {
+public class GiFileModel {
     // 文件大小
     private int fileSize;
 
@@ -22,7 +22,7 @@ public class  GiFileModel {
     private int dataLength;
 
     // 内容
-    private Message protoMessage;
+    private GeneratedMessage protoMessage;
 
     // 尾魔数
     private int tailMagicNumber;

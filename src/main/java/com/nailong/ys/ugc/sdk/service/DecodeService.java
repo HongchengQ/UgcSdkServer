@@ -1,5 +1,6 @@
 package com.nailong.ys.ugc.sdk.service;
 
+import com.google.protobuf.GeneratedMessage;
 import com.google.protobuf.Message;
 import com.google.protobuf.util.JsonFormat;
 import com.nailong.ys.ugc.proto.gia.UgcGiaArchiveInfoBin;
@@ -15,7 +16,6 @@ import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
-import java.util.Arrays;
 
 import static com.nailong.ys.ugc.sdk.constants.MagicNumberConstants.HEAD_MAGIC_NUMBER;
 import static com.nailong.ys.ugc.sdk.constants.MagicNumberConstants.TAIL_MAGIC_NUMBER;
@@ -63,6 +63,15 @@ public class DecodeService {
                 default -> log.warn("未解析任何内容，因为规则未命中");
             }
         }
+
+        // test
+//        {
+//            String filePath = "./input/conversion_result_官方教程-导出.json";
+//            byte[] bytes = fileConvertToByteArray(new File(filePath));
+//            Message.Builder structBuilder = UgcGilArchiveInfoBin.newBuilder();
+//            JsonFormat.parser().merge(new String(bytes), structBuilder);
+//            System.out.println(structBuilder.build());
+//        }
     }
 
     public GiFileModel decodeGiFile(byte[] rawData) throws IOException {
@@ -145,7 +154,7 @@ public class DecodeService {
 
         /* proto message */
         {
-            Message proto = null;
+            GeneratedMessage proto = null;
 
             switch (giFileModel.getGiFileType()) {
                 case GIL -> proto = UgcGilArchiveInfoBin.parseFrom(rawData);
@@ -177,7 +186,8 @@ public class DecodeService {
 
     /**
      * 检查魔数
-     * @param isHead 是头还是尾
+     *
+     * @param isHead  是头还是尾
      * @param rawData 原始数据
      * @throws RuntimeException 魔数校验失败
      */

@@ -6,10 +6,10 @@ import com.google.protobuf.Message;
 import com.google.protobuf.util.JsonFormat;
 import com.nailong.ys.ugc.proto.gia.UgcGiaArchiveInfoBin;
 import com.nailong.ys.ugc.proto.gil.UgcGilArchiveInfoBin;
-import com.nailong.ys.ugc.sdk.constants.MagicNumberConstants;
+import com.nailong.ys.ugc.sdk.config.AppConfiguration;
 import com.nailong.ys.ugc.sdk.enums.GiFileType;
 import com.nailong.ys.ugc.sdk.model.GiFileModel;
-import com.nailong.ys.ugc.sdk.utils.ByteUtils;
+import lombok.RequiredArgsConstructor;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.stereotype.Service;
 
@@ -20,7 +20,10 @@ import static com.nailong.ys.ugc.sdk.utils.ByteUtils.intToByteArray;
 
 @Log4j2
 @Service
+@RequiredArgsConstructor
 public class EncodeService {
+
+    private final AppConfiguration appConfiguration;
 
     public byte[] encodeGiFile(byte[] fileBytes, GiFileType fileType, String originalFileTypeStr) throws InvalidProtocolBufferException {
         GiFileModel giFileModel = new GiFileModel();
@@ -29,20 +32,20 @@ public class EncodeService {
 
         /* version */
         {
-            giFileModel.setVersion(1);
+            giFileModel.setVersion(appConfiguration.getGameFileVersion());
         }
 
         /* 头部魔数 */
         {
-            giFileModel.setHeadMagicNumber(ByteUtils.bytesToInt(MagicNumberConstants.HEAD_MAGIC_NUMBER));
+            giFileModel.setHeadMagicNumber(appConfiguration.getHeadMagicNumberHex());
         }
 
         /* 尾部魔数 */
         {
-            giFileModel.setTailMagicNumber(ByteUtils.bytesToInt(MagicNumberConstants.TAIL_MAGIC_NUMBER));
+            giFileModel.setTailMagicNumber(appConfiguration.getTailMagicNumberHex());
         }
 
-        /* 输出文件类型 setGiFileType */
+        /* 输出文件类型 GiFile Type */
         {
             if (fileType == GiFileType.GIL) {
                 protoBuilder = UgcGilArchiveInfoBin.newBuilder();
@@ -55,7 +58,7 @@ public class EncodeService {
             }
         }
 
-        /* setProtoMessage */
+        /* Proto Message */
         {
             // json or pb
             if (originalFileTypeStr.startsWith("json")) {

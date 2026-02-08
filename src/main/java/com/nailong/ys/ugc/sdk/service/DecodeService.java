@@ -4,9 +4,11 @@ import com.google.protobuf.GeneratedMessage;
 import com.google.protobuf.util.JsonFormat;
 import com.nailong.ys.ugc.proto.gia.UgcGiaArchiveInfoBin;
 import com.nailong.ys.ugc.proto.gil.UgcGilArchiveInfoBin;
+import com.nailong.ys.ugc.sdk.config.AppConfiguration;
 import com.nailong.ys.ugc.sdk.enums.GiFileType;
 import com.nailong.ys.ugc.sdk.model.GiFileModel;
 import jakarta.annotation.PostConstruct;
+import lombok.RequiredArgsConstructor;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.stereotype.Service;
 
@@ -15,9 +17,8 @@ import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.util.Arrays;
 
-import static com.nailong.ys.ugc.sdk.constants.MagicNumberConstants.HEAD_MAGIC_NUMBER;
-import static com.nailong.ys.ugc.sdk.constants.MagicNumberConstants.TAIL_MAGIC_NUMBER;
 import static com.nailong.ys.ugc.sdk.utils.ByteHelper.get4BytesToIntFromStart;
 import static com.nailong.ys.ugc.sdk.utils.ByteUtils.*;
 import static com.nailong.ys.ugc.sdk.utils.FileUtils.fileConvertToByteArray;
@@ -25,7 +26,10 @@ import static com.nailong.ys.ugc.sdk.utils.FileUtils.findFilesByExtension;
 
 @Service
 @Log4j2
+@RequiredArgsConstructor
 public class DecodeService {
+
+    private final AppConfiguration appConfiguration;
 
     /**
      * 启动时解包所有本地存档
@@ -62,15 +66,6 @@ public class DecodeService {
                 default -> log.warn("未解析任何内容，因为规则未命中");
             }
         }
-
-        // test
-//        {
-//            String filePath = "./input/conversion_result_官方教程-导出.json";
-//            byte[] bytes = fileConvertToByteArray(new File(filePath));
-//            Message.Builder structBuilder = UgcGilArchiveInfoBin.newBuilder();
-//            JsonFormat.parser().merge(new String(bytes), structBuilder);
-//            System.out.println(structBuilder.build());
-//        }
     }
 
     public GiFileModel decodeGiFile(byte[] rawData) throws IOException {
@@ -103,9 +98,9 @@ public class DecodeService {
             checkMagicNumber(true, rawData);
 
             // 删除头部魔数
-            rawData = removeBytesFromStart(rawData, HEAD_MAGIC_NUMBER.length);
+            rawData = removeBytesFromStart(rawData, 4);
 
-            giFileModel.setHeadMagicNumber(bytesToInt(HEAD_MAGIC_NUMBER));
+            giFileModel.setHeadMagicNumber(appConfiguration.getHeadMagicNumberHex());
 
             log.info("头部魔数验证通过,移除头部魔数, data_size:{}", rawData.length);
         }
@@ -115,9 +110,9 @@ public class DecodeService {
             checkMagicNumber(false, rawData);
 
             // 删除尾部魔数
-            rawData = removeBytesFromEnd(rawData, TAIL_MAGIC_NUMBER.length);
+            rawData = removeBytesFromEnd(rawData, 4);
 
-            giFileModel.setTailMagicNumber(bytesToInt(TAIL_MAGIC_NUMBER));
+            giFileModel.setTailMagicNumber(appConfiguration.getTailMagicNumberHex());
 
             log.info("尾部魔数验证通过,移除尾部魔数, data_size:{}", rawData.length);
         }
@@ -189,16 +184,16 @@ public class DecodeService {
      * @throws RuntimeException 魔数校验失败
      */
     private void checkMagicNumber(boolean isHead, byte[] rawData) throws RuntimeException {
-        byte[] fileMagicNumber;
-        byte[] expectedMagicNumber = isHead ? HEAD_MAGIC_NUMBER : TAIL_MAGIC_NUMBER;
+        int fileMagicNumber;
+        int expectedMagicNumber = isHead ? appConfiguration.getHeadMagicNumberHex() : appConfiguration.getTailMagicNumberHex();
 
         if (isHead) {
-            fileMagicNumber = java.util.Arrays.copyOf(rawData, Math.min(expectedMagicNumber.length, rawData.length));
+            fileMagicNumber = bytesToInt(Arrays.copyOf(rawData, Math.min(4, rawData.length)));
         } else {
-            fileMagicNumber = getTailBytes(rawData, expectedMagicNumber.length);
+            fileMagicNumber = bytesToInt(getTailBytes(rawData, 4));
         }
 
-        if (!java.util.Arrays.equals(fileMagicNumber, expectedMagicNumber)) {
+        if (fileMagicNumber != expectedMagicNumber) {
             throw new RuntimeException("魔数校验失败");
         }
     }

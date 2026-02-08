@@ -6,4 +6,13 @@ logging:
   level:
     root: INFO
     # web 请求与响应日志
-    org.springframework.web: DEBUG
+    org.springframework.web: INFO
+
+server:
+  port: 1696
+  address: 0.0.0.0
+
+app:
+  game-file-version: 1
+  head-magic-number-hex: 0x326
+  tail-magic-number-hex: 0x679

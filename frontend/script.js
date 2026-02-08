@@ -36,7 +36,7 @@ const targetTypeInfo = document.getElementById('targetTypeInfo');
 const targetTypeInfoValue = document.getElementById('targetTypeInfoValue');
 
 // 初始化应用
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     initializeApp();
 });
 
@@ -52,30 +52,30 @@ function setupEventListeners() {
     // 文件选择相关
     browseBtn.addEventListener('click', () => fileInput.click());
     fileInput.addEventListener('change', handleFileSelect);
-    
+
     // 拖拽功能
     setupDragAndDrop();
-    
+
     // 转换模式选择
     conversionModeInputs.forEach(input => {
         input.addEventListener('change', updateConversionMode);
     });
-    
+
     // 输出格式选择
     outputFormatInputs.forEach(input => {
         input.addEventListener('change', updateOutputFormat);
     });
-    
+
     // 目标文件类型选择
     targetTypeInputs.forEach(input => {
         input.addEventListener('change', updateTargetFileType);
     });
-    
+
     // 按钮事件
     clearBtn.addEventListener('click', clearFileList);
     convertBtn.addEventListener('click', startConversion);
     downloadBtn.addEventListener('click', downloadResults);
-    
+
     // 键盘快捷键
     document.addEventListener('keydown', handleKeyboardShortcuts);
 }
@@ -96,12 +96,12 @@ function switchTab(tabName) {
     navButtons.forEach(btn => {
         btn.classList.toggle('active', btn.dataset.tab === tabName);
     });
-    
+
     // 显示对应的内容
     document.querySelectorAll('.tab-content').forEach(content => {
         content.classList.toggle('active', content.id === `${tabName}-tab`);
     });
-    
+
     // 特殊处理
     if (tabName === 'history') {
         loadConversionHistory();
@@ -164,13 +164,13 @@ function handleFiles(files) {
             showMessage(`不支持的文件类型: ${file.name}`, 'error');
         }
     });
-    
+
     updateUIState();
 }
 
 // 验证文件类型
 function isValidFileType(file) {
-    const validExtensions = currentConversionMode === 'forward' 
+    const validExtensions = currentConversionMode === 'forward'
         ? ['.gil', '.gia', '.gip', '.gir']
         : ['.json', '.bin', '.pb'];
     const extension = '.' + file.name.split('.').pop().toLowerCase();
@@ -184,7 +184,7 @@ function addFileToList(file) {
         showMessage(`${file.name} 已经在列表中`, 'warning');
         return;
     }
-    
+
     selectedFiles.push(file);
     renderFileList();
     updateConversionInfo();
@@ -193,12 +193,12 @@ function addFileToList(file) {
 // 渲染文件列表
 function renderFileList() {
     fileList.innerHTML = '';
-    
+
     selectedFiles.forEach((file, index) => {
         const fileItem = document.createElement('div');
         fileItem.className = 'file-item slide-in-up';
         fileItem.style.animationDelay = `${index * 0.1}s`;
-        
+
         fileItem.innerHTML = `
             <div class="file-info">
                 <div class="file-icon">📄</div>
@@ -209,7 +209,7 @@ function renderFileList() {
             </div>
             <button class="remove-btn" onclick="removeFile(${index})">×</button>
         `;
-        
+
         fileList.appendChild(fileItem);
     });
 }
@@ -235,7 +235,7 @@ function updateUIState() {
     const hasFiles = selectedFiles.length > 0;
     fileListContainer.style.display = hasFiles ? 'block' : 'none';
     convertBtn.disabled = !hasFiles;
-    
+
     // 如果没有文件，隐藏进度和结果
     if (!hasFiles) {
         progressContainer.style.display = 'none';
@@ -246,28 +246,28 @@ function updateUIState() {
 // 更新转换模式
 function updateConversionMode() {
     currentConversionMode = document.querySelector('input[name="conversionMode"]:checked').value;
-    
+
     // 更新文件输入的accept属性
-    fileInput.accept = currentConversionMode === 'forward' 
-        ? '.gil,.gia,.gip,.gir' 
+    fileInput.accept = currentConversionMode === 'forward'
+        ? '.gil,.gia,.gip,.gir'
         : '.json,.bin,.pb';
-    
+
     // 更新支持的格式文本
     supportedFormats.textContent = currentConversionMode === 'forward'
         ? '支持 .gil, .gia, .gip, .gir 格式'
         : '支持 .json, .bin(pb), .pb 格式';
-    
+
     // 控制格式选择区域的显示
     forwardFormatSelection.style.display = currentConversionMode === 'forward' ? 'block' : 'none';
     reverseTypeSelection.style.display = currentConversionMode === 'reverse' ? 'block' : 'none';
-    
+
     // 更新拖拽区域样式
     dropZone.classList.remove('forward-mode', 'reverse-mode');
     dropZone.classList.add(currentConversionMode + '-mode');
-    
+
     // 清空当前文件列表
     clearFileList();
-    
+
     // 更新转换信息显示
     updateConversionInfo();
 }
@@ -289,7 +289,7 @@ function updateConversionInfo() {
     if (selectedFiles.length > 0) {
         conversionInfo.style.display = 'flex';
         directionInfo.textContent = currentConversionMode === 'forward' ? '原始 → 输出格式' : 'JSON → 原始';
-        
+
         // 正向转换时显示输出格式
         if (currentConversionMode === 'forward') {
             const formatNames = {
@@ -313,32 +313,32 @@ function updateConversionInfo() {
 // 开始转换 - 精简版本
 async function startConversion() {
     if (selectedFiles.length === 0) return;
-    
+
     progressContainer.style.display = 'block';
     resultContainer.style.display = 'none';
     convertBtn.disabled = true;
-    
+
     try {
         const results = [];
         const totalFiles = selectedFiles.length;
-        
+
         // 执行转换
         for (let i = 0; i < selectedFiles.length; i++) {
             const file = selectedFiles[i];
             const progress = ((i + 1) / totalFiles) * 100;
             updateProgress(progress, `正在转换 ${file.name}`);
-            
+
             const result = await convertFile(file);
             results.push(result);
             await delay(300);
         }
-        
+
         // 完成处理
         updateProgress(100, '转换完成！');
         showResults(results);
         saveToHistory(selectedFiles);
         showMessage('✅ 转换成功！请记得下载保存结果文件', 'success');
-        
+
     } catch (error) {
         console.error('转换失败:', error);
         showMessage('❌ 转换失败，请重试', 'error');
@@ -352,29 +352,29 @@ async function startConversion() {
 async function convertFile(file) {
     return new Promise((resolve, reject) => {
         const reader = new FileReader();
-        
-        reader.onload = async function(e) {
+
+        reader.onload = async function (e) {
             try {
                 const arrayBuffer = e.target.result;
-                
+
                 // 将二进制数据转换为base64 - 使用安全的方式
                 const base64Data = arrayBufferToBase64(arrayBuffer);
-                
+
                 // 准备发送到后端的数据
                 const requestData = {
                     fileName: file.name,
                     fileType: file.name.split('.').pop().toLowerCase(),
                     base64Data: base64Data
                 };
-                
+
                 let response;
-                
+
                 if (currentConversionMode === 'forward') {
                     // 正向转换：调用 /api/conversion/forward
                     const queryParams = new URLSearchParams({
                         outputFormat: currentOutputFormat
                     });
-                    
+
                     response = await fetch(BASE_URL + `/api/conversion/forward?${queryParams.toString()}`, {
                         method: 'POST',
                         headers: {
@@ -382,14 +382,14 @@ async function convertFile(file) {
                         },
                         body: JSON.stringify(requestData)
                     });
-                    
+
                 } else {
                     // 反向转换：调用 /api/conversion/reverse
                     const queryParams = new URLSearchParams({
                         targetFileType: currentTargetFileType
                     });
-                    
-                    response = await fetch(BASE_URL+`/api/conversion/reverse?${queryParams.toString()}`, {
+
+                    response = await fetch(BASE_URL + `/api/conversion/reverse?${queryParams.toString()}`, {
                         method: 'POST',
                         headers: {
                             'Content-Type': 'application/json',
@@ -397,12 +397,12 @@ async function convertFile(file) {
                         body: JSON.stringify(requestData)
                     });
                 }
-                
+
                 if (!response.ok) {
                     const errorMessage = await response.text();
                     throw new Error(`HTTP error! status: ${response.status}, message: ${errorMessage}`);
                 }
-                
+
                 // 根据转换模式处理响应
                 if (currentConversionMode === 'forward') {
                     // 正向转换直接返回数据
@@ -413,12 +413,12 @@ async function convertFile(file) {
                     const base64Result = await response.text();
                     resolve(base64Result);
                 }
-                
+
             } catch (error) {
                 reject(error);
             }
         };
-        
+
         reader.onerror = () => reject(new Error('文件读取失败'));
         reader.readAsArrayBuffer(file);
     });
@@ -434,11 +434,11 @@ function updateProgress(percentage, text) {
 function showResults(results) {
     resultContainer.style.display = 'block';
     resultContent.innerHTML = '';
-    
+
     results.forEach(result => {
         const resultElement = document.createElement('div');
         resultElement.className = 'success-message';
-        
+
         if (currentConversionMode === 'forward') {
             const resultText = typeof result === 'string' ? result : JSON.stringify(result, null, 2);
             resultElement.innerHTML = `
@@ -456,10 +456,10 @@ function showResults(results) {
                 </div>
             `;
         }
-        
+
         resultContent.appendChild(resultElement);
     });
-    
+
     // 保存结果供下载
     window.conversionResults = results;
 }
@@ -467,7 +467,7 @@ function showResults(results) {
 // 下载结果
 function downloadResults() {
     if (!window.conversionResults) return;
-    
+
     if (currentConversionMode === 'forward') {
         // 正向转换：下载格式化结果
         downloadFormattedResults();
@@ -480,19 +480,19 @@ function downloadResults() {
 // 下载格式化结果 - 使用历史记录中生成的文件名
 function downloadFormattedResults() {
     if (!window.conversionResults) return;
-    
+
     window.conversionResults.forEach((result, index) => {
         // 使用历史记录中生成的文件名
         const originalFile = selectedFiles[index];
         const convertedFileName = generateConvertedFileName(
-            originalFile?.name, 
-            currentConversionMode, 
+            originalFile?.name,
+            currentConversionMode,
             currentOutputFormat
         );
-        
+
         let content = result;
         let mimeType = 'application/octet-stream';
-        
+
         // 根据格式设置MIME类型
         if (currentOutputFormat === 'json1' || currentOutputFormat === 'json2') {
             mimeType = 'application/json';
@@ -514,8 +514,8 @@ function downloadFormattedResults() {
                 }
             }
         }
-        
-        const blob = new Blob([content], { type: mimeType });
+
+        const blob = new Blob([content], {type: mimeType});
         const url = URL.createObjectURL(blob);
         const a = document.createElement('a');
         a.href = url;
@@ -530,7 +530,7 @@ function downloadFormattedResults() {
 // 下载二进制结果 - 使用正确的文件名
 function downloadBinaryResults() {
     if (!window.conversionResults) return;
-    
+
     window.conversionResults.forEach((result, index) => {
         if (result && typeof result === 'string') {
             try {
@@ -540,18 +540,18 @@ function downloadBinaryResults() {
                 for (let i = 0; i < binaryString.length; i++) {
                     bytes[i] = binaryString.charCodeAt(i);
                 }
-                
-                const blob = new Blob([bytes], { type: 'application/octet-stream' });
+
+                const blob = new Blob([bytes], {type: 'application/octet-stream'});
                 const url = URL.createObjectURL(blob);
-                
+
                 // 使用历史记录中生成的文件名
                 const originalFile = selectedFiles[index];
                 const convertedFileName = generateConvertedFileName(
-                    originalFile?.name, 
-                    currentConversionMode, 
+                    originalFile?.name,
+                    currentConversionMode,
                     currentTargetFileType
                 );
-                
+
                 const a = document.createElement('a');
                 a.href = url;
                 a.download = convertedFileName;
@@ -559,7 +559,7 @@ function downloadBinaryResults() {
                 a.click();
                 document.body.removeChild(a);
                 URL.revokeObjectURL(url);
-                
+
             } catch (error) {
                 console.error('解码base64数据失败:', error);
                 showMessage('下载失败：数据解码错误', 'error');
@@ -573,7 +573,7 @@ function downloadBinaryResults() {
 function saveToHistory(files) {
     try {
         const historyItems = [];
-        
+
         // 为每个文件创建历史记录项
         files.forEach((file, index) => {
             const historyItem = {
@@ -584,16 +584,16 @@ function saveToHistory(files) {
                 mode: currentConversionMode,
                 format: currentConversionMode === 'forward' ? currentOutputFormat : currentTargetFileType,
                 convertedFileName: generateConvertedFileName(
-                    file.name, 
-                    currentConversionMode, 
+                    file.name,
+                    currentConversionMode,
                     currentConversionMode === 'forward' ? currentOutputFormat : currentTargetFileType
                 )
             };
             historyItems.push(historyItem);
         });
-        
+
         let history = [];
-        
+
         // 安全读取现有历史
         try {
             const stored = localStorage.getItem('conversionHistory');
@@ -603,19 +603,19 @@ function saveToHistory(files) {
         } catch (e) {
             console.warn('读取历史记录失败');
         }
-        
+
         // 将新记录添加到历史中（限制总数）
         history.unshift(...historyItems);
-        
+
         // 限制总数量（最多50条，避免过多）
         if (history.length > 30) {
             history = history.slice(0, 30);
         }
-        
+
         // 保存到存储
         localStorage.setItem('conversionHistory', JSON.stringify(history));
         conversionHistory = history;
-        
+
     } catch (error) {
         console.warn('保存历史记录失败:', error);
     }
@@ -624,17 +624,17 @@ function saveToHistory(files) {
 // 生成转换后的文件名 - 移除时间戳，保持简洁
 function generateConvertedFileName(originalName, mode, format) {
     if (!originalName) return 'nlo.dat';
-    
+
     // 提取原始文件名（不含扩展名）
     const lastDotIndex = originalName.lastIndexOf('.');
     const nameWithoutExt = lastDotIndex > 0 ? originalName.substring(0, lastDotIndex) : originalName;
-    const extension = mode === 'forward' ? 
-        (format === 'pb' ? 'bin' : 'json') : 
+    const extension = mode === 'forward' ?
+        (format === 'pb' ? 'bin' : 'json') :
         format;
-    
+
     // 确保文件名安全，移除特殊字符
     const safeName = nameWithoutExt.replace(/[<>:"/\\|?*\x00-\x1F]/g, '_');
-    
+
     // 检查是否已经有 nailong_output_ 前缀
     const hasPrefix = safeName.startsWith('nlo_');
     const baseName = hasPrefix ? safeName : `nlo_${safeName}`;
@@ -644,14 +644,14 @@ function generateConvertedFileName(originalName, mode, format) {
     console.log(extension2)
     const addTypeName =
         (extension2 === "gia" || extension2 === "gil" || extension2 === "gir" || extension2 === "gip") ? ("_" + extension2) : "";
-    
+
     return `${baseName}${addTypeName}.${extension}`;
 }
 
 // 加载转换历史 - 支持单文件记录显示
 function loadConversionHistory() {
     historyList.innerHTML = '';
-    
+
     let history = [];
     try {
         const stored = localStorage.getItem('conversionHistory');
@@ -663,7 +663,7 @@ function loadConversionHistory() {
         console.warn('读取历史记录失败');
         conversionHistory = [];
     }
-    
+
     if (history.length === 0) {
         historyList.innerHTML = `
             <div class="empty-state">
@@ -676,16 +676,16 @@ function loadConversionHistory() {
         `;
         return;
     }
-    
+
     // 显示历史记录（每个文件一条记录）
     history.forEach(item => {
         const historyItem = document.createElement('div');
         historyItem.className = 'history-item';
-        
+
         const date = new Date(item.timestamp).toLocaleString('zh-CN');
         const modeIcon = item.mode === 'forward' ? '📤' : '📥';
         const modeText = item.mode === 'forward' ? '正向转换' : '反向转换';
-        
+
         historyItem.innerHTML = `
             <div class="history-info">
                 <div style="margin-bottom: 15px;">
@@ -721,7 +721,7 @@ function loadConversionHistory() {
                 </button>
             </div>
         `;
-        
+
         historyList.appendChild(historyItem);
     });
 }
@@ -730,7 +730,7 @@ function loadConversionHistory() {
 function showHistoryDetails(id) {
     const item = conversionHistory.find(h => h.id === id);
     if (!item) return;
-    
+
     // 创建模态框
     const modal = document.createElement('div');
     modal.id = 'history-modal-' + id;
@@ -747,7 +747,7 @@ function showHistoryDetails(id) {
         z-index: 10000;
         backdrop-filter: blur(5px);
     `;
-    
+
     const modalContent = document.createElement('div');
     modalContent.style.cssText = `
         background: white;
@@ -761,15 +761,15 @@ function showHistoryDetails(id) {
         transform: scale(0.9);
         transition: transform 0.3s ease;
     `;
-    
+
     const date = new Date(item.timestamp).toLocaleString('zh-CN');
     const modeText = item.mode === 'forward' ? '正向转换' : '反向转换';
-    
+
     // 创建关闭函数
-    const closeFunction = function() {
+    const closeFunction = function () {
         modal.remove();
     };
-    
+
     modalContent.innerHTML = `
         <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 25px;">
             <h2 style="margin: 0; font-size: 24px; font-weight: 600; color: #333;">转换详情</h2>
@@ -815,30 +815,30 @@ function showHistoryDetails(id) {
             </div>
         </div>
     `;
-    
+
     modal.appendChild(modalContent);
     document.body.appendChild(modal);
-    
+
     // 显示动画
     setTimeout(() => {
         modalContent.style.transform = 'scale(1)';
     }, 50);
-    
+
     // 绑定关闭事件
     const closeBtn = modalContent.querySelector('#modal-close-btn');
     if (closeBtn) {
         closeBtn.addEventListener('click', closeFunction);
     }
-    
+
     // 点击背景关闭
     modal.addEventListener('click', (e) => {
         if (e.target === modal) {
             closeFunction();
         }
     });
-    
+
     // ESC键关闭
-    const escHandler = function(e) {
+    const escHandler = function (e) {
         if (e.key === 'Escape') {
             closeFunction();
             document.removeEventListener('keydown', escHandler);
@@ -865,13 +865,13 @@ function arrayBufferToBase64(buffer) {
     let binary = '';
     const bytes = new Uint8Array(buffer);
     const chunkSize = 8192; // 分块处理避免内存问题
-    
+
     // 分块处理大文件
     for (let i = 0; i < bytes.length; i += chunkSize) {
         const chunk = bytes.subarray(i, i + chunkSize);
         binary += String.fromCharCode.apply(null, chunk);
     }
-    
+
     return btoa(binary);
 }
 
@@ -880,7 +880,7 @@ function showMessage(message, type = 'info') {
     const toast = document.createElement('div');
     toast.className = `toast toast-${type}`;
     toast.textContent = message;
-    
+
     Object.assign(toast.style, {
         position: 'fixed',
         top: '20px',
@@ -896,7 +896,7 @@ function showMessage(message, type = 'info') {
         transition: 'transform 0.3s ease, opacity 0.3s ease',
         opacity: '0'
     });
-    
+
     const colors = {
         success: '#34C759',
         error: '#FF3B30',
@@ -904,15 +904,15 @@ function showMessage(message, type = 'info') {
         info: '#007AFF'
     };
     toast.style.backgroundColor = colors[type] || colors.info;
-    
+
     document.body.appendChild(toast);
-    
+
     // 显示动画
     setTimeout(() => {
         toast.style.transform = 'translateX(0)';
         toast.style.opacity = '1';
     }, 100);
-    
+
     // 自动消失
     setTimeout(() => {
         toast.style.transform = 'translateX(100%)';
@@ -932,13 +932,13 @@ function handleKeyboardShortcuts(e) {
         e.preventDefault();
         browseBtn.click();
     }
-    
+
     // Ctrl+Enter 开始转换
     if (e.ctrlKey && e.key === 'Enter' && selectedFiles.length > 0) {
         e.preventDefault();
         convertBtn.click();
     }
-    
+
     // ESC 清空列表
     if (e.key === 'Escape') {
         clearFileList();
@@ -952,14 +952,14 @@ function copyHistoryResult(id) {
         showMessage('❌ 无法复制此记录的结果', 'error');
         return;
     }
-    
+
     // 简化处理：复制转换后的文件名作为示例结果
     const resultText = `{
   "message": "这是来自历史记录 ${item.originalFileName} 的转换结果",
   "convertedFileName": "${item.convertedFileName}",
   "timestamp": "${new Date().toISOString()}"
 }`;
-    
+
     copyTextToClipboard(resultText);
 }
 
@@ -970,22 +970,22 @@ function copyResultToClipboard(button, resultText) {
         const originalText = button.innerHTML;
         button.innerHTML = '⏳ 复制中...';
         button.disabled = true;
-        
+
         // 使用通用复制函数
         copyTextToClipboard(resultText);
-        
+
         // 恢复按钮状态
         setTimeout(() => {
             button.innerHTML = '✅ 已复制';
             button.style.backgroundColor = '#4CAF50';
             button.disabled = false;
-            
+
             setTimeout(() => {
                 button.innerHTML = originalText;
                 button.style.backgroundColor = '';
             }, 2000);
         }, 500);
-        
+
     } catch (err) {
         console.error('复制按钮处理失败:', err);
         showMessage('❌ 复制功能出现错误', 'error');
@@ -1021,14 +1021,14 @@ function fallbackCopyTextToClipboard(text) {
     textarea.style.left = '-9999px';
     textarea.style.top = '-9999px';
     document.body.appendChild(textarea);
-    
+
     textarea.select();
     textarea.setSelectionRange(0, 99999);
-    
+
     try {
         const successful = document.execCommand('copy');
         document.body.removeChild(textarea);
-        
+
         if (successful) {
             showMessage('📋 结果已复制到剪贴板 - 降级模式', 'success');
         } else {
@@ -1042,7 +1042,7 @@ function fallbackCopyTextToClipboard(text) {
 }
 
 // 页面可见性变化时更新历史记录
-document.addEventListener('visibilitychange', function() {
+document.addEventListener('visibilitychange', function () {
     if (!document.hidden) {
         loadConversionHistory();
     }

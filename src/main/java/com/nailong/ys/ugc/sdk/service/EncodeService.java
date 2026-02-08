@@ -54,7 +54,7 @@ public class EncodeService {
                 protoBuilder = UgcGiaArchiveInfoBin.newBuilder();
                 giFileModel.setGiFileType(GiFileType.GIA);
             } else {
-                throw new RuntimeException("error");
+                throw new RuntimeException("不支持的文件类型" + fileType.name());
             }
         }
 

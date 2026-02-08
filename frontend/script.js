@@ -5,7 +5,7 @@ let currentConversionMode = 'forward'; // 'forward' 或 'reverse'
 let currentTargetFileType = 'gil'; // 反向转换时的目标文件类型
 let currentOutputFormat = 'json1'; // 正向转换时的输出格式
 
-const BASE_URL = 'http://localhost:8080'; // Spring Boot默认端口
+const BASE_URL = 'http://localhost:1696'; // 后端地址
 
 // DOM元素引用
 const dropZone = document.getElementById('dropZone');
@@ -172,7 +172,7 @@ function handleFiles(files) {
 function isValidFileType(file) {
     const validExtensions = currentConversionMode === 'forward' 
         ? ['.gil', '.gia', '.gip', '.gir']
-        : ['.json'];
+        : ['.json', '.bin', '.pb'];
     const extension = '.' + file.name.split('.').pop().toLowerCase();
     return validExtensions.includes(extension);
 }
@@ -250,12 +250,12 @@ function updateConversionMode() {
     // 更新文件输入的accept属性
     fileInput.accept = currentConversionMode === 'forward' 
         ? '.gil,.gia,.gip,.gir' 
-        : '.json';
+        : '.json,.bin,.pb';
     
     // 更新支持的格式文本
     supportedFormats.textContent = currentConversionMode === 'forward'
         ? '支持 .gil, .gia, .gip, .gir 格式'
-        : '支持 .json 格式';
+        : '支持 .json, .bin(pb), .pb 格式';
     
     // 控制格式选择区域的显示
     forwardFormatSelection.style.display = currentConversionMode === 'forward' ? 'block' : 'none';

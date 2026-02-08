@@ -11,7 +11,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Stream;
 
-public class FileUtils {
+public final class FileUtils {
     /**
      * 把一个文件转化为byte字节数组。
      */

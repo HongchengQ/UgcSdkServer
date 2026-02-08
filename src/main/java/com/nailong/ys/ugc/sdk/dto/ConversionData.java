@@ -7,7 +7,7 @@ import lombok.Data;
  */
 @Data
 public class ConversionData {
-    private String fileName;
-    private String fileType;
-    private String base64Data; // 使用base64编码的文件数据
+    private String fileName;    // 原始文件名
+    private String fileType;    // 原始文件类型
+    private String base64Data;  // 使用base64编码的文件数据
 }

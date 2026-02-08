@@ -2,21 +2,51 @@ package com.nailong.ys.ugc.sdk.utils;
 
 import lombok.extern.log4j.Log4j2;
 
-import java.io.ByteArrayOutputStream;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.IOException;
+import java.nio.ByteBuffer;
 import java.util.Arrays;
 
 @Log4j2
 public final class ByteUtils {
+    /**
+     * byteBuffer 转 byte数组
+     *
+     * @param buffer
+     * @return
+     */
+    public static byte[] bytebufferToByteArray(ByteBuffer buffer) {
+        //重置 limit 和postion 值
+        buffer.flip();
+        //获取buffer中有效大小
+        int len = buffer.limit() - buffer.position();
 
-    public static int byteArrayToIntManually(byte[] bytes) {
+        byte[] bytes = new byte[len];
+
+        for (int i = 0; i < bytes.length; i++) {
+            bytes[i] = buffer.get();
+
+        }
+
+        return bytes;
+    }
+
+    public static int bytesToInt(byte[] bytes) {
         int intValue = 0;
         for (int i = 0; i < 4; i++) {
             intValue = (intValue << 8) | (bytes[i] & 0xFF);
         }
         return intValue;
+    }
+
+    /**
+     * 整数转字节数组（大端序）
+     */
+    public static byte[] intToByteArray(int value) {
+        return new byte[]{
+                (byte) (value >> 24),
+                (byte) (value >> 16),
+                (byte) (value >> 8),
+                (byte) value
+        };
     }
 
     /**

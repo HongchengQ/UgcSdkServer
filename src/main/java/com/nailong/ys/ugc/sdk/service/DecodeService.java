@@ -1,7 +1,6 @@
 package com.nailong.ys.ugc.sdk.service;
 
 import com.google.protobuf.GeneratedMessage;
-import com.google.protobuf.Message;
 import com.google.protobuf.util.JsonFormat;
 import com.nailong.ys.ugc.proto.gia.UgcGiaArchiveInfoBin;
 import com.nailong.ys.ugc.proto.gil.UgcGilArchiveInfoBin;
@@ -59,7 +58,7 @@ public class DecodeService {
                         log.info("已生成{}", "./output/" + fileName);
                     }
                 }
-                case GIP, GIR -> log.warn("当前还未支持 {GIP, GIR} 格式");
+                case GIP, GIR -> log.warn("当前还未支持 {GIP, GIR} 格式，{}", fileName);
                 default -> log.warn("未解析任何内容，因为规则未命中");
             }
         }
@@ -86,8 +85,6 @@ public class DecodeService {
             rawData = removeBytesFromStart(rawData, 4);
 
             checkDataLength(declaredDataSize, rawData.length);
-
-            giFileModel.setFileSize(declaredDataSize);
         }
 
         /* version */
@@ -108,7 +105,7 @@ public class DecodeService {
             // 删除头部魔数
             rawData = removeBytesFromStart(rawData, HEAD_MAGIC_NUMBER.length);
 
-            giFileModel.setHeadMagicNumber(byteArrayToIntManually(HEAD_MAGIC_NUMBER));
+            giFileModel.setHeadMagicNumber(bytesToInt(HEAD_MAGIC_NUMBER));
 
             log.info("头部魔数验证通过,移除头部魔数, data_size:{}", rawData.length);
         }
@@ -120,7 +117,7 @@ public class DecodeService {
             // 删除尾部魔数
             rawData = removeBytesFromEnd(rawData, TAIL_MAGIC_NUMBER.length);
 
-            giFileModel.setTailMagicNumber(byteArrayToIntManually(TAIL_MAGIC_NUMBER));
+            giFileModel.setTailMagicNumber(bytesToInt(TAIL_MAGIC_NUMBER));
 
             log.info("尾部魔数验证通过,移除尾部魔数, data_size:{}", rawData.length);
         }

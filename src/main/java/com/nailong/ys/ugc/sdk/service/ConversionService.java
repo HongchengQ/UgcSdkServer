@@ -114,7 +114,7 @@ public class ConversionService {
         }
 
         return switch (format.toLowerCase()) {
-            case "json1", "json2" ->
+            case "json", "json1", "json2" ->
                 // 标准JSON格式（紧凑）
                     JsonFormat.printer().preservingProtoFieldNames().print(protoMessage);
             case "pb" ->

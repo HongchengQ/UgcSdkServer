@@ -46,7 +46,7 @@ public class GiFileModel {
     @Override
     public String toString() {
         return "GiFileModel{" +
-                ", Version=" + version +
+                "Version=" + version +
                 ", HeadMagicNumber=" + headMagicNumber +
                 ", GiFileType=" + giFileType +
                 ", DataLength=" + dataLength +
@@ -69,12 +69,13 @@ public class GiFileModel {
         // 内容长度需要的空间
         private static final int dataLengthTakesUpSpace = 4;
 
+        // 尾魔数需要的空间
+        private static final int tailMagicNumberTakesUpSpace = 4;
+
         // 内容需要的空间
         @Setter
         private int protoMessageTakesUpSpace;
 
-        // 尾魔数需要的空间
-        private static final int tailMagicNumberTakesUpSpace = 4;
 
         /**
          * 所有基本类型

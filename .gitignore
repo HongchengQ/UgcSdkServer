@@ -36,3 +36,4 @@ build/
 #src/main/proto/
 
 output/
+logs/

@@ -1,8 +1,13 @@
 spring:
   application:
     name: ugc-sdk-server
+  threads:
+    virtual:
+      enabled: true
 
 logging:
+  file:
+    path: ./logs
   level:
     root: INFO
     # web 请求与响应日志
